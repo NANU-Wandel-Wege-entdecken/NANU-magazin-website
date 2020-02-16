@@ -1,0 +1,1562 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Experiement Selbstversorgung responsive v5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2016-04-03 18:24:14+0000\n"
+"Last-Translator: Michael Hartl <schreib.dem.mike@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: comments.php:32
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/comments.php:32
+#, php-format
+#@ attitude
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgstr "Ein Gedanke zu &ldquo;%2$s&rdquo;"
+
+#: comments.php:35
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/comments.php:35
+#, php-format
+#@ attitude
+msgid "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr "%1$s Gedanken zu &ldquo;%2$s&rdquo;"
+
+#: comments.php:46
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/comments.php:46
+#@ attitude
+msgid "Comment navigation"
+msgstr "Kommentar-Navigation"
+
+#: comments.php:47
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/comments.php:47
+#@ attitude
+msgid "&larr; Older Comments"
+msgstr "&larr; Ältere Kommentare"
+
+#: comments.php:48
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/comments.php:48
+#@ attitude
+msgid "Newer Comments &rarr;"
+msgstr "Neuere Kommentare &rarr;"
+
+#: comments.php:55
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/comments.php:55
+#@ attitude
+msgid "Comments are closed."
+msgstr "Kommentieren nicht möglich"
+
+#: functions.php:163
+#@ attitude
+msgid "Primary Menu"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/attitude-metaboxes.php:19
+#@ attitude
+msgid "Select layout for this specific Page only ( Note: This setting only reflects if page Template is set as Default Template and Blog Type Templates.)"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/attitude-metaboxes.php:25
+#@ attitude
+msgid "Select layout for this specific Post only"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/attitude-metaboxes.php:38
+#@ attitude
+msgid "Default Layout Set in"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/attitude-metaboxes.php:38
+#@ attitude
+msgid "Theme Settings"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/attitude-metaboxes.php:44
+#@ attitude
+msgid "No sidebar"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/attitude-metaboxes.php:50
+#@ attitude
+msgid "No sidebar, Full Width"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/attitude-metaboxes.php:56
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:328
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:292
+#@ attitude
+msgid "No Sidebar, One Column"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/attitude-metaboxes.php:62
+#@ attitude
+msgid "Left sidebar"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/attitude-metaboxes.php:68
+#@ attitude
+msgid "Right sidebar"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:95
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:96
+#@ attitude
+msgid "Theme Options"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:125
+#@ attitude
+msgid "Theme Options by"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:125
+#@ attitude
+msgid "http://themehorse.com/"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:125
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/footer_info/attitude-footer_info.php:41
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/shortcodes/attitude-shortcodes.php:61
+#@ attitude
+msgid "Theme Horse"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:127
+#@ attitude
+msgid "Confused about something? See"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:128
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:17
+#@ attitude
+msgid "Attitude Theme Instructions"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:128
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:18
+#@ attitude
+msgid "Theme Instructions"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:129
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:20
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:21
+#@ attitude
+msgid "Support Forum"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:130
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:23
+#@ attitude
+msgid "Attitude Demo"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:130
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:24
+#@ attitude
+msgid "View Demo"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:136
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:11
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:12
+#@ attitude
+msgid "Donate"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:154
+#@ attitude
+msgid "Settings saved."
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:160
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:70
+#@ attitude
+msgid "Design Options"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:161
+#@ attitude
+msgid "Advance Options"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:162
+#@ attitude
+msgid "Featured Post/Page Slider"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:163
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:571
+#@ attitude
+msgid "Social Links"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:164
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:620
+#@ attitude
+msgid "Webmaster Tools"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:170
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:131
+#@ attitude
+msgid "Custom Header"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:175
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:185
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:157
+#@ attitude
+msgid "Header Logo"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:178
+#@ attitude
+msgid "Change Header Logo"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:182
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:239
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:270
+#@ attitude
+msgid "Preview"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:190
+#@ attitude
+msgid "Show"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:193
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:176
+#@ attitude
+msgid "Header Logo Only"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:196
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:177
+#@ attitude
+msgid "Header Text Only"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:199
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:178
+#@ attitude
+msgid "Disable"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:204
+#@ attitude
+msgid "Need to replace Header Image?"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:207
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:364
+#, php-format
+#@ attitude
+msgid "<a class=\"button\" href=\"%s\">Click here</a>"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:211
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:142
+#@ attitude
+msgid "Hide Searchform from Header"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:213
+#@ attitude
+msgid "Check to hide"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:217
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:248
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:279
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:306
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:350
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:397
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:463
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:481
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:514
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:580
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:606
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:659
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:692
+#@ attitude
+msgid "Save All Changes"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:222
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:183
+#@ attitude
+msgid "Fav Icon Options"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:227
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:194
+#@ attitude
+msgid "Disable Favicon"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:229
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:260
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:416
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:530
+#@ attitude
+msgid "Check to disable"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:232
+#@ attitude
+msgid "Fav Icon URL"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:235
+#@ attitude
+msgid "Change Fav Icon"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:242
+#@ attitude
+msgid "favicon"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:253
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:216
+#@ attitude
+msgid "Web Clip Icon Options"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:258
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:227
+#@ attitude
+msgid "Disable Web Clip Icon"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:263
+#@ attitude
+msgid "Web Clip Icon URL"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:266
+#@ attitude
+msgid "Change Web Clip Icon"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:273
+#@ attitude
+msgid "webpage icon"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:284
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:249
+#@ attitude
+msgid "Site Layout Options"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:289
+#@ attitude
+msgid "Site Layout"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:290
+#@ attitude
+msgid "This change is reflected in whole website"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:295
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:266
+#@ attitude
+msgid "Narrow Layout"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:300
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:265
+#@ attitude
+msgid "Wide Layout"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:311
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:271
+#@ attitude
+msgid "Default Layout Options"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:316
+#@ attitude
+msgid "Default Layout"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:320
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:290
+#@ attitude
+msgid "No Sidebar"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:324
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:291
+#@ attitude
+msgid "No Sidebar, Full Width"
+msgstr ""
+
+#: library/widgets/attitude_widgets.php:18
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:332
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:289
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/widgets/attitude_widgets.php:18
+#@ attitude
+msgid "Left Sidebar"
+msgstr ""
+
+#: library/widgets/attitude_widgets.php:29
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:336
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:288
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/widgets/attitude_widgets.php:29
+#@ attitude
+msgid "Right Sidebar"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:342
+#@ attitude
+msgid "Reset Layout"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:345
+#@ attitude
+msgid "Check to reset"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:355
+#@ attitude
+msgid "Custom Background"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:361
+#@ attitude
+msgid "Need to replace default background?"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:367
+#@ attitude
+msgid "Note: The custom background change will be reflected in the background if the site layout is set to be narrow layout instead of the wide layout."
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:376
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:297
+#@ attitude
+msgid "Custom CSS"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:381
+#@ attitude
+msgid "Enter your custom CSS styles."
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:382
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:298
+#@ attitude
+msgid "This CSS will overwrite the CSS of style.css file."
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:390
+#@ attitude
+msgid "CSS Tutorial from W3Schools."
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:392
+#@ attitude
+msgid "http://www.w3schools.com/css/default.asp"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:392
+#@ attitude
+msgid "CSS Tutorial"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:392
+#@ attitude
+msgid "Click Here to Read"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:407
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:316
+#@ attitude
+msgid "Home Slogan Options"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:413
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:327
+#@ attitude
+msgid "Disable Slogan Part"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:419
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:339
+#@ attitude
+msgid "Slogan Position"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:423
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:346
+#@ attitude
+msgid "Above Slider"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:427
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:345
+#@ attitude
+msgid "Below Slider"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:432
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:356
+#@ attitude
+msgid "Home Page Slogan1"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:433
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:441
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:357
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:370
+#@ attitude
+msgid "The appropriate length of the slogan is around 10 words."
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:440
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:369
+#@ attitude
+msgid "Home Page Slogan2"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:448
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:382
+#@ attitude
+msgid "Redirect Button Text"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:449
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:383
+#@ attitude
+msgid "Text to show in Button"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:455
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:395
+#@ attitude
+msgid "Redirect Button Link"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:456
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:396
+#@ attitude
+msgid "Link this button to show your special work, portfolio"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:468
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:403
+#@ attitude
+msgid "Feed Redirect"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:474
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:415
+#@ attitude
+msgid "Feed Redirect URL"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:486
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:423
+#@ attitude
+msgid "Homepage / Frontpage Category Setting"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:492
+#@ attitude
+msgid "Front page posts categories:"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:494
+#@ attitude
+msgid "Only posts that belong to the categories selected here will be displayed on the front page."
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:499
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:53
+#@ attitude
+msgid "--Disabled--"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:509
+#@ attitude
+msgid "You may select multiple categories by holding down the CTRL key."
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:524
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:449
+#@ attitude
+msgid "Slider Options"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:528
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:461
+#@ attitude
+msgid "Disable Slider"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:533
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:474
+#@ attitude
+msgid "Number of Slides"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:538
+#@ attitude
+msgid "Transition Effect:"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:558
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:649
+#, php-format
+#@ attitude
+msgid "%s"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:566
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:513
+#@ attitude
+msgid "Transition Delay"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:569
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:576
+#@ attitude
+msgid "second(s)"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:573
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:526
+#@ attitude
+msgid "Transition Length"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:585
+#@ attitude
+msgid "Featured Post/Page Slider Options"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:589
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:546
+#@ attitude
+msgid "Exclude Slider post from Homepage posts?"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:591
+#@ attitude
+msgid "Check to exclude"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:596
+#@ attitude
+msgid "Featured Slider Post/Page #"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:598
+#@ default
+#@ attitude
+msgid "Click Here To Edit"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:604
+#@ attitude
+msgid "<strong>Following are the steps on how to use the featured slider.</strong><br />* Create Post, Add featured image to the Post.<br />* Add all the Post ID that you want to use in the featured slider. <br /> &nbsp;(You can now see the Posts' respective ID in the All Posts' table in last column.)<br />* Featured Slider will show featured images, Title and excerpt of the respected added post's IDs."
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:605
+#@ attitude
+msgid "<strong>Note:</strong> You can now add Pages ID too. (You can now see the Pages' respective ID in the All Pages' table in last column.) ."
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:667
+#@ attitude
+msgid "Analytics"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:672
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:630
+#@ attitude
+msgid "Code to display on Header"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:678
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:631
+#@ attitude
+msgid "Note: Enter your custom header script."
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:681
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:643
+#@ attitude
+msgid "Code to display on Footer"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:688
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:644
+#@ attitude
+msgid "Note: Enter your custom footer script."
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/functions.php:347
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/functions.php:361
+#@ attitude
+msgid "Navigation"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/footer_info/attitude-footer_info.php:33
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/shortcodes/attitude-shortcodes.php:52
+#@ attitude
+msgid "WordPress"
+msgstr ""
+
+#: author.php:123
+#: library/structure/content-extensions.php:152
+#: library/structure/content-extensions.php:228
+#: library/structure/content-extensions.php:533
+#: library/structure/content-extensions.php:627
+#: library/structure/content-extensions.php:740
+#: library/structure/content-extensions.php:855
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:147
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:308
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:464
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:577
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:692
+#@ attitude
+msgid "By"
+msgstr "Von"
+
+#: author.php:129
+#: library/structure/content-extensions.php:234
+#: library/structure/content-extensions.php:539
+#: library/structure/content-extensions.php:633
+#: library/structure/content-extensions.php:746
+#: library/structure/content-extensions.php:861
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:153
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:314
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:470
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:583
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:698
+#@ attitude
+msgid "No Comments"
+msgstr "Keine Kommentare"
+
+#: author.php:129
+#: library/structure/content-extensions.php:234
+#: library/structure/content-extensions.php:539
+#: library/structure/content-extensions.php:633
+#: library/structure/content-extensions.php:746
+#: library/structure/content-extensions.php:861
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:153
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:314
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:470
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:583
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:698
+#@ attitude
+msgid "1 Comment"
+msgstr "Ein Kommentar"
+
+#: author.php:129
+#: library/structure/content-extensions.php:234
+#: library/structure/content-extensions.php:539
+#: library/structure/content-extensions.php:633
+#: library/structure/content-extensions.php:746
+#: library/structure/content-extensions.php:861
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:153
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:314
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:470
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:583
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:698
+#@ attitude
+msgid "% Comments"
+msgstr "%   Kommentare"
+
+#: author.php:129
+#: library/structure/content-extensions.php:234
+#: library/structure/content-extensions.php:539
+#: library/structure/content-extensions.php:633
+#: library/structure/content-extensions.php:746
+#: library/structure/content-extensions.php:861
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:153
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:314
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:470
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:583
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:698
+#@ attitude
+msgid "Comments Off"
+msgstr "Kommentieren nicht m&ouml;glich"
+
+#: author.php:133
+#: library/structure/content-extensions.php:238
+#: library/structure/content-extensions.php:543
+#: library/structure/content-extensions.php:637
+#: library/structure/content-extensions.php:750
+#: library/structure/content-extensions.php:836
+#: library/widgets/attitude_widgets.php:269
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:157
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:474
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:587
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:673
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/widgets/attitude_widgets.php:242
+#@ attitude
+msgid "Read more"
+msgstr "Weiterlesen..."
+
+#: author.php:148
+#: library/structure/content-extensions.php:170
+#: library/structure/content-extensions.php:320
+#: library/structure/content-extensions.php:476
+#: library/structure/content-extensions.php:665
+#: library/structure/content-extensions.php:778
+#: library/structure/content-extensions.php:890
+#: library/structure/content-extensions.php:1076
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:172
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:243
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:340
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:391
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:502
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:615
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:727
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:916
+#@ attitude
+msgid "No Posts Found."
+msgstr "Keine Beitr&auml;ge gefunden"
+
+#: library/structure/content-extensions.php:289
+#: library/structure/content-extensions.php:839
+#: library/structure/content-extensions.php:1050
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:212
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:296
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:676
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:890
+#@ attitude
+msgid "Pages:"
+msgstr "Seiten:"
+
+#: library/structure/content-extensions.php:434
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:282
+#@ attitude
+msgid ", "
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:288
+#@ attitude
+msgid "Tagged on: "
+msgstr "Themen: "
+
+#: library/structure/content-extensions.php:656
+#: library/structure/content-extensions.php:769
+#: library/structure/content-extensions.php:881
+#: library/structure/content-extensions.php:917
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:493
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:606
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:718
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:754
+#@ attitude
+msgid "&laquo; Previous"
+msgstr "&laquo; Fr&uuml;here Artikel"
+
+#: library/structure/content-extensions.php:657
+#: library/structure/content-extensions.php:770
+#: library/structure/content-extensions.php:882
+#: library/structure/content-extensions.php:918
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:494
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:607
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:719
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:755
+#@ attitude
+msgid "Next &raquo;"
+msgstr "Neuere Artikel &raquo;"
+
+#: library/structure/content-extensions.php:937
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:774
+#@ attitude
+msgid "&larr; Previous"
+msgstr "&larr; J&uuml;ngere Beitr&auml;ge"
+
+#: library/structure/content-extensions.php:938
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:775
+#@ attitude
+msgid "Next &rarr;"
+msgstr "N&auml;chste &rarr;"
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:782
+#@ attitude
+msgctxt "Previous post link"
+msgid "&larr;"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:783
+#@ attitude
+msgctxt "Next post link"
+msgid "&rarr;"
+msgstr ""
+
+#: library/structure/content-extensions.php:981
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:821
+#@ attitude
+msgid "Pingback:"
+msgstr ""
+
+#: library/structure/content-extensions.php:981
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:821
+#@ attitude
+msgid "(Edit)"
+msgstr "(Bearbeiten)"
+
+#: library/structure/content-extensions.php:996
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:836
+#@ attitude
+msgid "Post author"
+msgstr "Autor*in des Artikels"
+
+#. translators: 1: date, 2: time
+#. translators: 1: date, 2: time
+#: library/structure/content-extensions.php:1002
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:842
+#, php-format
+#@ attitude
+msgid "%1$s at %2$s"
+msgstr "%1$s um %2$s"
+
+#: library/structure/content-extensions.php:1008
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:848
+#@ attitude
+msgid "Your comment is awaiting moderation."
+msgstr "Dein Kommentar erscheint, sobald wir es uns angesehen haben."
+
+#: library/structure/content-extensions.php:1013
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:853
+#@ attitude
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: library/structure/content-extensions.php:1017
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:857
+#@ attitude
+msgid "Reply <span>&darr;</span>"
+msgstr "Antworten <span>&darr;</span>"
+
+#: library/structure/content-extensions.php:1099
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:939
+#@ attitude
+msgid "Error 404-Page NOT Found"
+msgstr "Fehler 404 - Seite nicht gefunden"
+
+#: library/structure/content-extensions.php:1102
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:942
+#@ attitude
+msgid "It seems we can't find what you're looking for."
+msgstr "Es konnte nicht angezeigt werden, wonach Du gesucht hast."
+
+#: library/structure/content-extensions.php:1103
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:943
+#@ attitude
+msgid "This might be because:"
+msgstr "Das k&ouml;nnte an folgendem liegen:"
+
+#: library/structure/content-extensions.php:1104
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:944
+#@ attitude
+msgid "You have typed the web address incorrectly, or the page you were looking for may have been moved, updated or deleted."
+msgstr "Vielleicht hast Du die Adresse falsch eingetipppt oder die Seite, auf die Du gehen wolltest, wurde verschoben oder gel&ouml;scht."
+
+#: library/structure/content-extensions.php:1105
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:945
+#@ attitude
+msgid "Please try the following instead:"
+msgstr "Bitte versuche stattdessen:"
+
+#: library/structure/content-extensions.php:1106
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/content-extensions.php:946
+#@ attitude
+msgid "Check for a mis-typed URL error, then press the refresh button on your browser."
+msgstr "&Uuml;berpr&uuml;fe die Adresse nach Fehlern oder nutze die Suche."
+
+#: library/structure/footer-extensions.php:44
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/footer-extensions.php:44
+#@ attitude
+msgid "Copyright &copy;"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/footer-extensions.php:44
+#@ attitude
+msgid "Theme by:"
+msgstr "Theme basiert auf \"Attitude\" von"
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/footer-extensions.php:44
+#@ attitude
+msgid "Powered by:"
+msgstr "Diese Seite läuft mit"
+
+#: library/structure/footer-extensions.php:67
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/footer-extensions.php:67
+#@ attitude
+msgid "Back to Top"
+msgstr "Nach oben"
+
+#: library/structure/header-extensions.php:55
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/header-extensions.php:80
+#, php-format
+#@ attitude
+msgid "Page %s"
+msgstr "Seite %s"
+
+#: library/structure/header-extensions.php:339
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/header-extensions.php:353
+#, php-format
+#@ attitude
+msgid "%1$s on %2$s"
+msgstr ""
+
+#: library/structure/header-extensions.php:490
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/header-extensions.php:505
+#@ attitude
+msgid "Page NOT Found"
+msgstr "Seite nicht gefunden"
+
+#: library/structure/header-extensions.php:493
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/header-extensions.php:508
+#@ attitude
+msgid "Search Results"
+msgstr "Suchergebnisse"
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/searchform-extensions.php:20
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/searchform-extensions.php:21
+#@ attitude
+msgid "Search"
+msgstr "Suche"
+
+#: library/widgets/attitude_widgets.php:20
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/widgets/attitude_widgets.php:20
+#@ attitude
+msgid "Shows widgets at Left side."
+msgstr "Zeigt die Widgets auf der linken Seite an"
+
+#: library/widgets/attitude_widgets.php:31
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/widgets/attitude_widgets.php:31
+#@ attitude
+msgid "Shows widgets at Right side."
+msgstr "Zeit die Widgets auf der rechten Seite an"
+
+#: library/widgets/attitude_widgets.php:51
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/widgets/attitude_widgets.php:40
+#@ attitude
+msgid "Business Page Sidebar"
+msgstr ""
+
+#: library/widgets/attitude_widgets.php:53
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/widgets/attitude_widgets.php:42
+#@ attitude
+msgid "Shows widgets on Business Page Template. Sutiable widget: Theme Horse: Featured widget, Theme Horse: Testimonial, Theme Horse: Services"
+msgstr ""
+
+#: library/widgets/attitude_widgets.php:62
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/widgets/attitude_widgets.php:51
+#@ attitude
+msgid "Contact Page Sidebar"
+msgstr "Sidebar für Seiten"
+
+#: library/widgets/attitude_widgets.php:64
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/widgets/attitude_widgets.php:53
+#@ attitude
+msgid "Shows widgets on Contact Page Template."
+msgstr "Zeigt Widgets auf dem Seiten-Template an, wenn es ausgewählt wird."
+
+#: library/widgets/attitude_widgets.php:73
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/widgets/attitude_widgets.php:62
+#@ attitude
+msgid "Footer Sidebar"
+msgstr ""
+
+#: library/widgets/attitude_widgets.php:75
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/widgets/attitude_widgets.php:64
+#@ attitude
+msgid "Shows widgets at footer."
+msgstr ""
+
+#: library/widgets/attitude_widgets.php:127
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/widgets/attitude_widgets.php:91
+#@ attitude
+msgid "Displays Custom Tag Cloud"
+msgstr ""
+
+#: library/widgets/attitude_widgets.php:129
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/widgets/attitude_widgets.php:93
+#@ attitude
+msgid "Theme Horse: Custom Tag Cloud"
+msgstr ""
+
+#: library/widgets/attitude_widgets.php:181
+#: library/widgets/attitude_widgets.php:312
+#: library/widgets/attitude_widgets.php:443
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/widgets/attitude_widgets.php:145
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/widgets/attitude_widgets.php:286
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/widgets/attitude_widgets.php:417
+#@ attitude
+msgid "Title:"
+msgstr ""
+
+#: library/widgets/attitude_widgets.php:195
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/widgets/attitude_widgets.php:159
+#@ attitude
+msgid "Display Services( Business Layout )"
+msgstr ""
+
+#: library/widgets/attitude_widgets.php:197
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/widgets/attitude_widgets.php:161
+#@ attitude
+msgid "Theme Horse: Services"
+msgstr ""
+
+#: library/widgets/attitude_widgets.php:213
+#: library/widgets/attitude_widgets.php:321
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/widgets/attitude_widgets.php:177
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/widgets/attitude_widgets.php:295
+#@ attitude
+msgid "Page"
+msgstr "Seite"
+
+#: library/widgets/attitude_widgets.php:289
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/widgets/attitude_widgets.php:263
+#@ attitude
+msgid "Use this widget to show recent work, portfolio or any pages as your wish ( Business Layout )"
+msgstr ""
+
+#: library/widgets/attitude_widgets.php:291
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/widgets/attitude_widgets.php:265
+#@ attitude
+msgid "Theme Horse: Featured Widget"
+msgstr ""
+
+#: library/widgets/attitude_widgets.php:315
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/widgets/attitude_widgets.php:289
+#@ attitude
+msgid "Description"
+msgstr "Beschreibung"
+
+#: library/widgets/attitude_widgets.php:399
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/widgets/attitude_widgets.php:373
+#@ attitude
+msgid "Display Testimonial( Business Layout )"
+msgstr ""
+
+#: library/widgets/attitude_widgets.php:401
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/widgets/attitude_widgets.php:375
+#@ attitude
+msgid "Theme Horse: Testimonial"
+msgstr ""
+
+#: library/widgets/attitude_widgets.php:445
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/widgets/attitude_widgets.php:419
+#@ attitude
+msgid "Testimonial Description"
+msgstr ""
+
+#: library/widgets/attitude_widgets.php:448
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/widgets/attitude_widgets.php:422
+#@ attitude
+msgid "Name:"
+msgstr ""
+
+#: library/widgets/attitude_widgets.php:451
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/widgets/attitude_widgets.php:425
+#@ attitude
+msgid "Byline:"
+msgstr ""
+
+#: library/widgets/attitude_widgets.php:40
+#@ attitude
+msgid "Social Sidebar"
+msgstr ""
+
+#: library/widgets/attitude_widgets.php:42
+#@ attitude
+msgid "Widgets in der rechten Sidebar ganz unten"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:134
+#@ attitude
+msgid "Want to add bunch of additional features? Upgrade to Pro version!"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:135
+#@ attitude
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:137
+#@ attitude
+msgid "Review Clean Retina"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:137
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:15
+#@ attitude
+msgid "Rate Attitude"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:617
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:576
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/header-extensions.php:324
+#@ attitude
+msgid "Facebook"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:618
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:577
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/header-extensions.php:325
+#@ attitude
+msgid "Twitter"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:619
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:578
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/header-extensions.php:326
+#@ attitude
+msgid "Google Plus"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:620
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:579
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/header-extensions.php:327
+#@ attitude
+msgid "Pinterest"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:621
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:580
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/header-extensions.php:328
+#@ attitude
+msgid "Youtube"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:622
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:581
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/header-extensions.php:329
+#@ attitude
+msgid "Vimeo"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:623
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:582
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/header-extensions.php:330
+#@ attitude
+msgid "LinkedIn"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:624
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:583
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/header-extensions.php:331
+#@ attitude
+msgid "Flickr"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:625
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:584
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/header-extensions.php:332
+#@ attitude
+msgid "Tumblr"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:626
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:585
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/header-extensions.php:333
+#@ attitude
+msgid "Myspace"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/admin/theme-options.php:627
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:586
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/structure/header-extensions.php:334
+#@ attitude
+msgid "RSS"
+msgstr ""
+
+#: functions.php:179
+#@ default
+msgid "ganze Breite"
+msgstr ""
+
+#: functions.php:180
+#@ default
+msgid "Vorschaubild"
+msgstr ""
+
+#: functions.php:181
+#@ default
+msgid "rechteckiges Vorschaubild"
+msgstr ""
+
+#: functions.php:182
+#@ default
+msgid "schmal für seitlich"
+msgstr ""
+
+#: functions.php:183
+#@ default
+msgid "für rich snippets"
+msgstr ""
+
+#: functions.php:331
+#@ your_textdomain
+msgid "Weitere Angaben für die Profilseite"
+msgstr ""
+
+#: functions.php:336
+#@ your_textdomain
+msgid "Tätigkeiten"
+msgstr ""
+
+#: functions.php:340
+#@ your_textdomain
+msgid "Sowas wie <b>Autor, Projektmanager, Superstar</b>."
+msgstr ""
+
+#: functions.php:345
+#@ your_textdomain
+msgid "Weitere biographische Angaben"
+msgstr ""
+
+#: functions.php:349
+#@ your_textdomain
+msgid "Erscheinen auf der Profil-Seite, nicht bei den Artikeln. Diese erscheinen direkt unter den Biographischen Angaben, die du weiter oben eingeben kannst. Biographische Angaben erscheinen sowohl unter deinen Artikeln, als auch in deinem Profil - die Angaben hier eben nur als nächster Bereich nach den Biographischen Angaben im Profil."
+msgstr ""
+
+#: functions.php:354
+#@ your_textdomain
+msgid "Zusatzinfos"
+msgstr ""
+
+#: functions.php:358
+#@ your_textdomain
+msgid "Sachen wie <b>Julia bloggt regelmäßig auf hundertwasser-blog.at</b>."
+msgstr ""
+
+#: functions.php:363
+#@ your_textdomain
+msgid "Text eines Links nach der Zusatzinfo"
+msgstr ""
+
+#: functions.php:367
+#@ your_textdomain
+msgid "Wird unterhalb der Zusatzinfo angezeigt. Sowas wie <b>Lies jetzt ihre neuesten Artikel!</b>"
+msgstr ""
+
+#: functions.php:372
+#@ your_textdomain
+msgid "URL des Links"
+msgstr ""
+
+#: functions.php:482
+#, php-format
+#@ wordpress-popular-posts
+msgid "1 comment"
+msgid_plural "%s comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:494
+#, php-format
+#@ wordpress-popular-posts
+msgid "1 view per day"
+msgid_plural "%s views per day"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:500
+#, php-format
+#@ wordpress-popular-posts
+msgid "1 view"
+msgid_plural "%s views"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:510
+#, php-format
+#@ wordpress-popular-posts
+msgid "by %s"
+msgstr ""
+
+#: functions.php:516
+#, php-format
+#@ wordpress-popular-posts
+msgid "posted on %s"
+msgstr ""
+
+#: functions.php:527
+#, php-format
+#@ wordpress-popular-posts
+msgid "under %s"
+msgstr ""
+
+#: library/widgets/attitude_widgets.php:84
+#@ attitude
+msgid "Events Sidebar"
+msgstr ""
+
+#: library/widgets/attitude_widgets.php:86
+#@ attitude
+msgid "Sidebar neben Veranstaltungen."
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:14
+#@ attitude
+msgid "Review Attitude"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:32
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:33
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:706
+#@ attitude
+msgid "Upgrade to Attitude Pro"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:34
+#@ attitude
+msgid "to get more aditional features like (Advanced Slider, Color Options, Typography Options and many more.)"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:76
+#@ attitude
+msgid "Advanced Options"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:82
+#@ attitude
+msgid "Featured Post/ Page Slider"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:88
+#@ attitude
+msgid "What is new on Attitude Pro?"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:101
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:122
+#@ attitude
+msgid "Attitude Upgrade"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:108
+#@ attitude
+msgid "Attitude Support"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:109
+#@ attitude
+msgid "Hey! Buy us a beer and we shall come with new features and update."
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:170
+#@ attitude
+msgid "Display"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:272
+#@ attitude
+msgid "Make sure that you have not set the layout from specific page"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:424
+#@ attitude
+msgid "Only posts that belong to the categories selected here will be displayed on the front page. ( You may select multiple categories by holding down the CTRL key. ) "
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:439
+#@ attitude
+msgid "Front page posts categories"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:487
+#@ attitude
+msgid "Transition Effect"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:492
+#@ attitude
+msgid "Fade"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:493
+#@ attitude
+msgid "Wipe"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:494
+#@ attitude
+msgid "Scroll Up"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:495
+#@ attitude
+msgid "Scroll Down"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:496
+#@ attitude
+msgid "Scroll Left"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:497
+#@ attitude
+msgid "Scroll Right"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:498
+#@ attitude
+msgid "Blind X"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:499
+#@ attitude
+msgid "Blind Y"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:500
+#@ attitude
+msgid "Blind Z"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:501
+#@ attitude
+msgid "Cover"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:502
+#@ attitude
+msgid "Shuffle"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:533
+#@ attitude
+msgid "Featured Post/ Page Slider Options"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:545
+#@ attitude
+msgid "Exclude Slider Post"
+msgstr ""
+
+#: /kunden/354520_7522/webseiten/exsv/wp-content/themes/attitude/library/functions/customizer.php:561
+#@ attitude
+msgid " Featured Slider Post/Page #"
+msgstr ""
+
