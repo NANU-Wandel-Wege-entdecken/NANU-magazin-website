@@ -279,9 +279,6 @@ function mytheme_admin_bar_render() {
 }
 add_action( 'wp_before_admin_bar_render', 'mytheme_admin_bar_render' );
 
-// disable the admin bar
-show_admin_bar(false);
-
 // Nur Kommentare zu eigenen Artikeln anzeigen
 function wps_get_comment_list_by_user($clauses) {
         if (is_admin()) {
