@@ -27,18 +27,18 @@ add_filter( 'wp_title', 'attitude_filter_wp_title' );
 
 function attitude_filter_wp_title( $title ) {
 	global $page, $paged;
-	
+
 	// Get the Site Name
    $site_name = 'Experiment Selbstversorgung';
 
    // Get the Site Description
    $site_description = 'Schritt für Schritt zum frei sein';
 
-   $filtered_title = ''; 
+   $filtered_title = '';
 
 	// For Homepage or Frontpage
-   if(  is_home() || is_front_page() ) {		
-		$filtered_title .= $site_name;	
+   if(  is_home() || is_front_page() ) {
+		$filtered_title .= $site_name;
 		if ( !empty( $site_description ) )  {
         	$filtered_title .= ' &#124; '. $site_description;
 		}
@@ -46,7 +46,7 @@ function attitude_filter_wp_title( $title ) {
 	elseif( is_feed() ) {
 		$filtered_title = '';
 	}
-	else{	
+	else{
 		$filtered_title = $title . $site_name;
 	}
 
@@ -54,7 +54,7 @@ function attitude_filter_wp_title( $title ) {
 	if( $paged >= 2 || $page >= 2 ) {
 		$filtered_title .= ' &#124; ' . sprintf( __( 'Page %s', 'attitude' ), max( $paged, $page ) );
 	}
-	
+
 	// Return the modified title
    return $filtered_title;
 }
@@ -66,7 +66,7 @@ add_action( 'attitude_links', 'attitude_add_links', 10 );
 function attitude_add_links() {
 ?>
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
-	<link rel="pingback" href="https://experimentselbstversorgung.net/xmlrpc.php" />	
+	<link rel="pingback" href="https://experimentselbstversorgung.net/xmlrpc.php" />
 	<link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 <?php }
@@ -81,10 +81,10 @@ add_action( 'admin_head', 'attitude_favicon' );
  * Get the favicon Image from theme options
  * display favicon
  *
- * @uses set_transient and delete_transient 
+ * @uses set_transient and delete_transient
  */
-function attitude_favicon() {	
-	
+function attitude_favicon() {
+
 	$attitude_favicon = '';
 	if( ( !$attitude_favicon = get_transient( 'attitude_favicon' ) ) ) {
 		global $attitude_theme_options_settings;
@@ -95,10 +95,10 @@ function attitude_favicon() {
 				$attitude_favicon .= '<link rel="shortcut icon" href="'.esc_url( $options[ 'favicon' ] ).'" type="image/x-icon" />';
 			}
 		}
-		
-	set_transient( 'attitude_favicon', $attitude_favicon, 86940 );	
-	}	
-	echo $attitude_favicon ;	
+
+	set_transient( 'attitude_favicon', $attitude_favicon, 86940 );
+	}
+	echo $attitude_favicon ;
 }
 
 /****************************************************************************************/
@@ -109,10 +109,10 @@ add_action( 'attitude_links', 'attitude_webpageicon', 20 );
  * Get the webpageicon Image from theme options
  * display webpageicon
  *
- * @uses set_transient and delete_transient 
+ * @uses set_transient and delete_transient
  */
-function attitude_webpageicon() {	
-	
+function attitude_webpageicon() {
+
 	$attitude_webpageicon = '';
 	if( ( !$attitude_webpageicon = get_transient( 'attitude_webpageicon' ) ) ) {
 		global $attitude_theme_options_settings;
@@ -123,10 +123,10 @@ function attitude_webpageicon() {
 				$attitude_webpageicon .= '<link rel="apple-touch-icon-precomposed" href="'.esc_url( $options[ 'webpageicon' ] ).'" />';
 			}
 		}
-		
-	set_transient( 'attitude_webpageicon', $attitude_webpageicon, 86940 );	
-	}	
-	echo $attitude_webpageicon ;	
+
+	set_transient( 'attitude_webpageicon', $attitude_webpageicon, 86940 );
+	}
+	echo $attitude_webpageicon ;
 }
 
 /****************************************************************************************/
@@ -137,14 +137,14 @@ add_action( 'attitude_header', 'attitude_headerdetails', 10 );
  *
  * Shows the site logo, title, description, searchbar, social icons etc.
  */
-function attitude_headerdetails() {	
+function attitude_headerdetails() {
 ?>
 	<?php
 		global $attitude_theme_options_settings;
    	$options = $attitude_theme_options_settings;
 
    	$elements = array();
-		$elements = array( 	$options[ 'social_facebook' ], 
+		$elements = array( 	$options[ 'social_facebook' ],
 									$options[ 'social_twitter' ],
 									$options[ 'social_googleplus' ],
 									$options[ 'social_linkedin' ],
@@ -155,7 +155,7 @@ function attitude_headerdetails() {
 									$options[ 'social_tumblr' ],
 									$options[ 'social_myspace' ],
 									$options[ 'social_rss' ]
-							 	);	
+							 	);
 
 		$flag = 0;
 		if( !empty( $elements ) ) {
@@ -175,68 +175,68 @@ function attitude_headerdetails() {
 
 	<div class="container clearfix">
 		<div class="hgroup-wrap clearfix">
-			<?php 
+			<?php
 				if( 0 == $options[ 'hide_header_searchform' ] || 1 == $flag ) {
 			?>
 					<section class="hgroup-right">
 						<?php attitude_socialnetworks( $flag ); ?>
 						<?php if( 0 == $options[ 'hide_header_searchform' ] ) get_search_form(); ?>
-					</section><!-- .hgroup-right -->	
+					</section><!-- .hgroup-right -->
 			<?php
 				}
 			?>
 				<hgroup id="site-logo" class="clearfix">
-					
+
 					<?php
 					if( is_single() ) { ?>
-							<div id="site-title"> 
-								<a href="https://experimentselbstversorgung.net/" title="Experiment Selbstversorgung" rel="home">
+							<div id="site-title">
+								<a href="<?php echo get_home_url(); ?>" title="Experiment Selbstversorgung" rel="home">
 									Experiment<br />Selbstversorgung
 								</a>
-							</div>					
+							</div>
 					<?php }
 					elseif(  is_home() || is_front_page() ) { ?>
-							<h1 id="site-title"> 
-								<a href="https://experimentselbstversorgung.net/" title="Experiment Selbstversorgung" rel="home">
+							<h1 id="site-title">
+								<a href="<?php echo get_home_url(); ?>" title="Experiment Selbstversorgung" rel="home">
 									Experiment<br />Selbstversorgung
 								</a>
 							</h1>
-						<?php            
+						<?php
                                         }
                                         elseif( is_page() ) { ?>
-							<div id="site-title"> 
-								<a href="https://experimentselbstversorgung.net/" title="Experiment Selbstversorgung" rel="home">
+							<div id="site-title">
+								<a href="<?php echo get_home_url(); ?>" title="Experiment Selbstversorgung" rel="home">
 									Experiment<br />Selbstversorgung
 								</a>
 							</div>
 						<?php
 					}
                                         else { ?>
-							<div id="site-title"> 
-								<a href="https://experimentselbstversorgung.net/" title="Experiment Selbstversorgung" rel="home">
+							<div id="site-title">
+								<a href="<?php echo get_home_url(); ?>" title="Experiment Selbstversorgung" rel="home">
 									Experiment<br />Selbstversorgung
 								</a>
 							</div>
 						<?php
 					}
 						?>
-					
-					
-					
+
+
+
 				</hgroup><!-- #site-logo -->
-			
+
 		</div><!-- .hgroup-wrap -->
-	</div><!-- .container -->	
+	</div><!-- .container -->
 	<?php $header_image = get_header_image();
 			if( !empty( $header_image ) ) :?>
 				<img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="Experiment Selbstversorgung">
-			<?php endif; ?>	
+			<?php endif; ?>
 	<?php
-		if ( has_nav_menu( 'primary' ) ) { 
+		if ( has_nav_menu( 'primary' ) ) {
 			$args = array(
 				'theme_location'    => 'primary',
 				'container'         => '',
-				'items_wrap'        => '<ul class="root">%3$s</ul>' 
+				'items_wrap'        => '<ul class="root">%3$s</ul>'
 			);
 			echo '<nav id="access" class="clearfix">
 					<div class="container clearfix">';
@@ -251,28 +251,28 @@ function attitude_headerdetails() {
 			echo '</div><!-- .container -->
 					</nav><!-- #access -->';
 		}
-	?> 		
-		<?php	
-		if( 'above-slider' == $options[ 'slogan_position' ] &&  ( is_front_page() ) ) 
+	?>
+		<?php
+		if( 'above-slider' == $options[ 'slogan_position' ] &&  ( is_front_page() ) )
 		/* geändert von:
-		 * if( 'above-slider' == $options[ 'slogan_position' ] &&  ( is_home() || is_front_page() ) ) 
+		 * if( 'above-slider' == $options[ 'slogan_position' ] &&  ( is_home() || is_front_page() ) )
 		 */
 			if( function_exists( 'attitude_home_slogan' ) )
-				attitude_home_slogan(); 
+				attitude_home_slogan();
 
 		if( is_front_page() ) {
 		/* geändert von:
 		 * if( is_home() || is_front_page() ) {
 		 */
 			if( "0" == $options[ 'disable_slider' ] ) {
-				if( function_exists( 'attitude_pass_cycle_parameters' ) ) 
+				if( function_exists( 'attitude_pass_cycle_parameters' ) )
    				attitude_pass_cycle_parameters();
-   			if( function_exists( 'attitude_featured_post_slider' ) ) 
+   			if( function_exists( 'attitude_featured_post_slider' ) )
    				attitude_featured_post_slider();
    		}
 		}
-		else { 
-			if( ( '' != attitude_header_title() ) || function_exists( 'bcn_display_list' ) ) { 
+		else {
+			if( ( '' != attitude_header_title() ) || function_exists( 'bcn_display_list' ) ) {
 		?>
 			<div class="page-title-wrap">
 	    		<div class="container clearfix">
@@ -287,15 +287,15 @@ function attitude_headerdetails() {
             // Display optional category description
              if ( category_description() ) : ?>
             <div class="beschreib"><?php echo category_description(); ?></div>
-            <?php endif; 
+            <?php endif;
 	   	}
-		} 
-		if( 'below-slider' == $options[ 'slogan_position' ] && ( is_front_page() ) ) 
+		}
+		if( 'below-slider' == $options[ 'slogan_position' ] && ( is_front_page() ) )
 		/* geändert von:
-		 * if( 'below-slider' == $options[ 'slogan_position' ] && ( is_home() || is_front_page() ) ) 
+		 * if( 'below-slider' == $options[ 'slogan_position' ] && ( is_home() || is_front_page() ) )
 		 */
 			if( function_exists( 'attitude_home_slogan' ) )
-				attitude_home_slogan(); 
+				attitude_home_slogan();
 
 }
 
@@ -308,18 +308,18 @@ if ( ! function_exists( 'attitude_socialnetworks' ) ) :
  * Get links through Theme Options
  */
 function attitude_socialnetworks( $flag ) {
-	
+
 	global $attitude_theme_options_settings;
    $options = $attitude_theme_options_settings;
 
 	$attitude_socialnetworks = '';
 	if ( ( !$attitude_socialnetworks = get_transient( 'attitude_socialnetworks' ) ) && ( 1 == $flag ) )  {
-		
+
 		$attitude_socialnetworks .='
 			<div class="social-profiles clearfix">
 				<ul>';
 
-				$social_links = array(); 
+				$social_links = array();
 				$social_links = array( 	'Facebook' 		=> 'social_facebook',
 												'Twitter' 		=> 'social_twitter',
 												'Google-Plus'	=> 'social_googleplus',
@@ -330,21 +330,21 @@ function attitude_socialnetworks( $flag ) {
 												'Flickr'			=> 'social_flickr',
 												'Tumblr'			=> 'social_tumblr',
 												'My-Space'		=> 'social_myspace',
-												'RSS'				=> 'social_rss'  
+												'RSS'				=> 'social_rss'
 											);
-				
+
 				foreach( $social_links as $key => $value ) {
 					if ( !empty( $options[ $value ] ) ) {
 						$attitude_socialnetworks .=
 							'<li class="'.strtolower($key).'"><a href="'.esc_url( $options[ $value ] ).'" title="'.sprintf( esc_attr__( '%1$s on %2$s', 'attitude' ), get_bloginfo( 'name' ), $key ).'" target="_blank">'.get_bloginfo( 'name' ).$key.'</a></li>';
 					}
-				}		
-		
+				}
+
 				$attitude_socialnetworks .='
 			</ul>
 			</div><!-- .social-profiles -->';
-		
-		set_transient( 'attitude_socialnetworks', $attitude_socialnetworks, 86940 );	 
+
+		set_transient( 'attitude_socialnetworks', $attitude_socialnetworks, 86940 );
 	}
 	echo $attitude_socialnetworks;
 }
@@ -358,13 +358,13 @@ if ( ! function_exists( 'attitude_home_slogan' ) ) :
  *
  * Function that enable/disable the home slogan1 and home slogan2.
  */
-function attitude_home_slogan() {	
+function attitude_home_slogan() {
 	global $attitude_theme_options_settings;
    $options = $attitude_theme_options_settings;
-	
+
 	$attitude_home_slogan = '';
 	if( ( !$attitude_home_slogan = get_transient( 'attitude_home_slogan' ) ) && ( !empty( $options[ 'home_slogan1' ] ) || !empty( $options[ 'home_slogan2' ] ) ) ) {
-      
+
 		if ( "0" == $options[ 'disable_slogan' ] ) {
 			$attitude_home_slogan .= '<section class="slogan-wrap clearfix"><div class="container"><div class="slogan">';
 			if ( !empty( $options[ 'home_slogan1' ] ) ) {
@@ -379,9 +379,9 @@ function attitude_home_slogan() {
 			}
 			$attitude_home_slogan .= '</div><!-- .container --></section><!-- .slogan-wrap -->';
 		}
-		
-	set_transient( 'attitude_home_slogan', $attitude_home_slogan, 86940 );	
-	}	
+
+	set_transient( 'attitude_home_slogan', $attitude_home_slogan, 86940 );
+	}
 	echo $attitude_home_slogan;
 }
 endif;
@@ -394,12 +394,12 @@ if ( ! function_exists( 'attitude_featured_post_slider' ) ) :
  *
  * @uses set_transient and delete_transient
  */
-function attitude_featured_post_slider() {	
+function attitude_featured_post_slider() {
 	global $post;
-		
+
 	global $attitude_theme_options_settings;
    $options = $attitude_theme_options_settings;
-	
+
 	$attitude_featured_post_slider = '';
 	if( ( !$attitude_featured_post_slider = get_transient( 'attitude_featured_post_slider' ) ) && !empty( $options[ 'featured_post_slider' ] ) ) {
 
@@ -409,7 +409,7 @@ function attitude_featured_post_slider() {
 		else {
 			$slider_size = 'slider-narrow';
 		}
-		
+
 		$attitude_featured_post_slider .= '
 		<section class="featured-slider"><div class="slider-cycle">';
 			$get_featured_posts = new WP_Query( array(
@@ -426,9 +426,9 @@ function attitude_featured_post_slider() {
 				$attitude_featured_post_slider .= '
 				<div class="'.$classes.'">';
 						if( has_post_thumbnail() ) {
-	
+
 							$attitude_featured_post_slider .= '<figure><a href="' . get_permalink() . '" title="'.the_title('','',false).'">';
-	
+
 							$attitude_featured_post_slider .= get_the_post_thumbnail( $post->ID, $slider_size, array( 'title' => esc_attr( $title_attribute ), 'alt' => esc_attr( $title_attribute ), 'class'	=> 'pngfix' ) ).'</a></figure>';
 						}
 						if( $title_attribute != '' || $excerpt !='' ) {
@@ -437,7 +437,7 @@ function attitude_featured_post_slider() {
 							if( $title_attribute !='' ) {
 									$attitude_featured_post_slider .= '<div class="featured-title"><a href="' . get_permalink() . '" title="'.the_title('','',false).'">'. get_the_title() . '</a></div><!-- .featured-title -->';
 							}
-							if( $excerpt !='' ) {								
+							if( $excerpt !='' ) {
 								$attitude_featured_post_slider .= '<div class="featured-content">'.$excerpt.'</div><!-- .featured-content -->';
 							}
 						$attitude_featured_post_slider .= '
@@ -446,13 +446,13 @@ function attitude_featured_post_slider() {
 				$attitude_featured_post_slider .= '
 				</div><!-- .slides -->';
 			endwhile; wp_reset_query();
-		$attitude_featured_post_slider .= '</div>				
+		$attitude_featured_post_slider .= '</div>
 		<nav id="controllers" class="clearfix">
 		</nav><!-- #controllers --></section><!-- .featured-slider -->';
-			
+
 	set_transient( 'attitude_featured_post_slider', $attitude_featured_post_slider, 86940 );
 	}
-	echo $attitude_featured_post_slider;	
+	echo $attitude_featured_post_slider;
 }
 endif;
 
@@ -467,10 +467,10 @@ if ( ! function_exists( 'attitude_breadcrumb' ) ) :
  */
 function attitude_breadcrumb() {
 	if( function_exists( 'bcn_display' ) ) {
-		echo '<div class="breadcrumb">';                
-		bcn_display();               
-		echo '</div> <!-- .breadcrumb -->'; 
-	}   
+		echo '<div class="breadcrumb">';
+		bcn_display();
+		echo '</div> <!-- .breadcrumb -->';
+	}
 }
 endif;
 
