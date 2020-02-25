@@ -63,17 +63,8 @@
                endif; ?>
                <?php if(get_the_author_meta('twitter')):  ?>
                <div class="socialauthorbuttons">
-                    <a href="https://twitter.com/#!/<?php the_author_meta('twitter'); ?>" class="twitter no-ext-icon" target="_blanc" rel="nofollow">Twitter</a>
-                    <a href="https://twitter.com/#!/<?php the_author_meta('twitter'); ?>" class="no-ext-icon" target="_blanc" rel="nofollow">/<?php the_author_meta('twitter'); ?></a>
-               </div>
-               <?php
-               else:
-               // do nothing
-               endif; ?>
-               <?php if(get_the_author_meta('googleplus')):  ?>
-               <div class="socialauthorbuttons">
-                    <a href="https://plus.google.com/<?php the_author_meta('googleplus'); ?>" class="googleplus no-ext-icon" target="_blanc" rel="nofollow">Google+</a>
-                    <a href="https://plus.google.com/<?php the_author_meta('googleplus'); ?>?rel=author" class="no-ext-icon" target="_blanc" rel="nofollow">/<?php the_author_meta('googleplus'); ?></a>
+                    <a href="https://twitter.com/<?php the_author_meta('twitter'); ?>" class="twitter no-ext-icon" target="_blanc" rel="nofollow">Twitter</a>
+                    <a href="https://twitter.com/<?php the_author_meta('twitter'); ?>" class="no-ext-icon" target="_blanc" rel="nofollow">/<?php the_author_meta('twitter'); ?></a>
                </div>
                <?php
                else:
