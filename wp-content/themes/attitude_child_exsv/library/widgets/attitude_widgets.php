@@ -123,10 +123,10 @@ function cd_do_sidebar() {
  * $name, Name for this widget which appear on widget bar.
  */
 class attitude_custom_tag_widget extends WP_Widget {
-	function attitude_custom_tag_widget() {
+	function __construct() {
 		$widget_ops = array( 'classname' => 'widget_custom-tagcloud', 'description' => __( 'Displays Custom Tag Cloud', 'attitude' ) );
 		$control_ops = array('width' => 200, 'height' => 250);
-		parent::WP_Widget( false, $name = __( 'Theme Horse: Custom Tag Cloud', 'attitude' ), $widget_ops, $control_ops );
+		parent::__construct( false, $name = __( 'Theme Horse: Custom Tag Cloud', 'attitude' ), $widget_ops, $control_ops );
 	}
 	
 	/** Displays the Widget in the front-end.
@@ -191,10 +191,10 @@ class attitude_custom_tag_widget extends WP_Widget {
  * i.e. Name, description and control options.
  */
  class attitude_service_widget extends WP_Widget {
- 	function attitude_service_widget() {
+ 	function __construct() {
  		$widget_ops = array( 'classname' => 'widget_service', 'description' => __( 'Display Services( Business Layout )', 'attitude' ) );
 		$control_ops = array( 'width' => 200, 'height' =>250 ); 
-		parent::WP_Widget( false, $name = __( 'Theme Horse: Services', 'attitude' ), $widget_ops, $control_ops);
+		parent::__construct( false, $name = __( 'Theme Horse: Services', 'attitude' ), $widget_ops, $control_ops);
  	}
 
  	function form( $instance ) {
@@ -285,10 +285,10 @@ class attitude_custom_tag_widget extends WP_Widget {
  * i.e. Name, description and control options.
  */
  class attitude_recent_work_widget extends WP_Widget {
- 	function attitude_recent_work_widget() {
+ 	function __construct() {
  		$widget_ops = array( 'classname' => 'widget_recent_work', 'description' => __( 'Use this widget to show recent work, portfolio or any pages as your wish ( Business Layout )', 'attitude' ) );
 		$control_ops = array( 'width' => 200, 'height' =>250 ); 
-		parent::WP_Widget( false, $name = __( 'Theme Horse: Featured Widget', 'attitude' ), $widget_ops, $control_ops);
+		parent::__construct( false, $name = __( 'Theme Horse: Featured Widget', 'attitude' ), $widget_ops, $control_ops);
  	}
 
  	function form( $instance ) {
@@ -395,10 +395,10 @@ class attitude_custom_tag_widget extends WP_Widget {
  */
 class attitude_Widget_Testimonial extends WP_Widget {
 
-	function attitude_Widget_Testimonial() {
+	function __construct() {
  		$widget_ops = array( 'classname' => 'widget_testimonial', 'description' => __( 'Display Testimonial( Business Layout )', 'attitude' ) );
 		$control_ops = array( 'width' => 200, 'height' =>250 ); 
-		parent::WP_Widget( false, $name = __( 'Theme Horse: Testimonial', 'attitude' ), $widget_ops, $control_ops);
+		parent::__construct( false, $name = __( 'Theme Horse: Testimonial', 'attitude' ), $widget_ops, $control_ops);
  	}
 
 	function widget( $args, $instance ) {
