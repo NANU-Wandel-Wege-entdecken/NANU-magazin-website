@@ -294,20 +294,26 @@ add_filter('comments_clauses', 'wps_get_comment_list_by_user');
 }
 
 // Nur eigene Artikel anzeigen
-function filter_posts_list($query)
-{
+function filter_posts_list( $query ) {
+
+	if ( ! is_admin() ) {
+		return $query;
+	}
 	//$pagenow holds the name of the current page being viewed
-	 global $pagenow;
+	global $pagenow;
 
 	//$current_user uses the get_currentuserinfo() method to get the currently logged in user's data
 	 global $current_user;
-	 get_currentuserinfo();
+	 // get_currentuserinfo();
 
 		//Shouldn't happen for the admin und nicht für Editor*innen - daher Prüfung nach capability Edit Others Posts, but for any role with the edit_posts capability and only on the posts list page, that is edit.php
-		if(!current_user_can('edit_others_posts') && current_user_can('edit_posts') && ('edit.php' == $pagenow))
-   	 {
-		//global $query's set() method for setting the author as the current user's id
-		$query->set('author', $current_user->ID);
+		if(
+			! current_user_can('edit_others_posts')
+			&& current_user_can('edit_posts')
+			&& ('edit.php' == $pagenow)
+		) {
+			//global $query's set() method for setting the author as the current user's id
+			$query->set('author', $current_user->ID);
 		}
 }
 add_action('pre_get_posts', 'filter_posts_list');
