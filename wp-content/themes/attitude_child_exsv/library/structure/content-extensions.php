@@ -492,7 +492,7 @@ function attitude_theloop_for_single() {
 										if ($tags) {
 											foreach($tags as $tag) {
 												if ($tag->count > 1) {
-													echo '' . $title . '<a href="' . get_term_link( $tag->term_id, 'post_tag' ) . '" title="' . sprintf( __( "Klicke hier, um Dir alle Artikel mit dem Schlagwort %s anzusehen!" ), $tag->name ) . '" ' . '>' . $tag->name.'</a>';
+													echo '<a href="' . get_term_link( $tag->term_id, 'post_tag' ) . '" title="' . sprintf( __( "Klicke hier, um Dir alle Artikel mit dem Schlagwort %s anzusehen!" ), $tag->name ) . '" ' . '>' . $tag->name.'</a>';
 												}
 											}
 										}
