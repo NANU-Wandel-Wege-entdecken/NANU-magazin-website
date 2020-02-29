@@ -338,7 +338,7 @@ function attitude_theloop_for_single() {
 
 			do_action( 'attitude_before_post' );
 ?>
-<?php $author = get_the_author_meta('id'); ?>
+<?php $author = get_the_author_meta( 'ID' ); ?>
 	<section id="post-<?php the_ID(); ?>" <?php post_class('authid-' . $author); ?>>
 		<article>
 
