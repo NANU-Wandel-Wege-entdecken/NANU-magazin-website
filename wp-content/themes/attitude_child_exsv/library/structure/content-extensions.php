@@ -439,7 +439,7 @@ function attitude_theloop_for_single() {
                                    <div class="authorinfo"><?php the_author_meta( 'user_firstname' ); ?> <?php the_author_meta( 'user_lastname' ); ?></div>
                                    <div class="meta-avatar"><?php echo get_avatar( get_the_author_meta('ID'), 100 ); ?></div>
                                    <div class="authorrechts">
-                                       <div class="textwidget"><?php the_author_description() ?></div>
+                                       <div class="textwidget"><?php the_author_meta('description') ?></div>
                                        <div class="authorlink"><a href="<?php echo get_author_posts_url(get_the_author_meta( 'ID' )); ?>" title="Erfahre mehr über <?php the_author_meta('user_firstname'); ?> und finde weitere Artikel von ihr / ihm.">Mehr Informationen zu <?php the_author_meta('user_firstname'); ?>...</a></div>
                                        <div class="authorsocial">
                                            <?php if(get_the_author_meta('facebook')):  ?>
