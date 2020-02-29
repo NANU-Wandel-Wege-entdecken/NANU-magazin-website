@@ -16,15 +16,16 @@
  * Ergänzungen zur functions.php vom Eltern-Theme Attitude
  */
 
-add_action('wp_head','load_parent_style',0);
-function load_parent_style() {
+add_action('wp_enqueue_scripts','enque_scripts',0);
+function enque_scripts() {
 	wp_register_style('attitude',get_bloginfo('template_directory').'/style.css');
 	wp_enqueue_style('attitude');
+
+	wp_register_style('exsv_style', get_stylesheet_directory_uri() . '/css/exsv.css', [ 'attitude' ], '1.14');
+	wp_enqueue_style( 'exsv_style' );
 }
 
-// wp_register_style() CSS
-wp_register_style('exsv_style', get_stylesheet_directory_uri() . '/css/exsv.css', false, '1.14');
-wp_enqueue_style( 'exsv_style' );
+
 
 
 add_action( 'after_setup_theme', 'my_child_theme_setup' );
