@@ -16,12 +16,15 @@
  * Ergänzungen zur functions.php vom Eltern-Theme Attitude
  */
 
-add_action('wp_enqueue_scripts','enque_scripts',0);
-function enque_scripts() {
-	wp_register_style('attitude',get_bloginfo('template_directory').'/style.css');
+add_action('wp_enqueue_scripts', 'enqueue_scripts', 0);
+function enqueue_scripts() {
+	wp_register_style('attitude', get_stylesheet_directory_uri() .'/style.css');
 	wp_enqueue_style('attitude');
 
-	wp_register_style('exsv_style', get_stylesheet_directory_uri() . '/css/exsv.css', [ 'attitude' ], '1.14');
+	wp_register_style('exsv_style-child', get_stylesheet_directory_uri() . '/style-child.css', [ 'attitude' ], '1.14');
+	wp_enqueue_style( 'exsv_style-child' );
+
+	wp_register_style('exsv_style', get_stylesheet_directory_uri() . '/css/exsv.css', [ 'exsv_style-child' ], '1.14');
 	wp_enqueue_style( 'exsv_style' );
 }
 
@@ -48,8 +51,8 @@ add_action( 'attitude_init', 'attitude_constants', 10 );
 function attitude_constants() {
 
 	/** Define Directory Location Constants */
-	define( 'ATTITUDE_PARENT_DIR', get_template_directory() );
-	define( 'ATTITUDE_CHILD_DIR', get_stylesheet_directory() );
+	define( 'ATTITUDE_PARENT_DIR', get_stylesheet_directory() );
+	define( 'ATTITUDE_CHILD_DIR', ATTITUDE_PARENT_DIR );
 	define( 'ATTITUDE_IMAGES_DIR', ATTITUDE_PARENT_DIR . '/images' );
 	define( 'ATTITUDE_LIBRARY_DIR', ATTITUDE_PARENT_DIR. '/library' );
 	/* ergänzt */
@@ -74,7 +77,7 @@ function attitude_constants() {
 	/* ende */
 
 	/** Define URL Location Constants */
-	define( 'ATTITUDE_PARENT_URL', get_template_directory_uri() );
+	define( 'ATTITUDE_PARENT_URL', get_stylesheet_directory_uri() );
 	define( 'ATTITUDE_CHILD_URL', get_stylesheet_directory_uri() );
 	define( 'ATTITUDE_IMAGES_URL', ATTITUDE_PARENT_URL . '/images' );
 	define( 'ATTITUDE_LIBRARY_URL', ATTITUDE_PARENT_URL . '/library' );

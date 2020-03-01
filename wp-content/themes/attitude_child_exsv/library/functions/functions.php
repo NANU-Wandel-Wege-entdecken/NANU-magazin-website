@@ -19,12 +19,7 @@ add_action( 'wp_enqueue_scripts', 'attitude_scripts_styles_method' );
 function attitude_scripts_styles_method() {
 
 	global $attitude_theme_options_settings;
-   $options = $attitude_theme_options_settings;
-
-   /**
-	 * Loads our main stylesheet.
-	 */
-	wp_enqueue_style( 'attitude_style', get_stylesheet_uri() );
+	$options = $attitude_theme_options_settings;
 
 	/**
 	 * Adds JavaScript to pages with the comment form to support
