@@ -561,8 +561,8 @@ function my_custom_popular_posts_html_list( $mostpopular, $instance ){
 		}
 
 		$output .= "<li class=\"postformat-" . get_post_format ( $popular->id ) . "\">";
-		$output .= "<a href=\"" . get_the_permalink( $popular->id ) . "\" title=\"" . esc_attr( $popular->title ) . "\" class=\"wpp-post-title\" target=\"_self\">" . $popular->title . "</a>";
 		$output .= "<a href=\"" . get_the_permalink( $popular->id ) . "\" title=\"" . esc_attr( $popular->title ) . "\" class=\"wpp-thumbnail wpp_featured_stock wp-post-image\" target=\"_self\">" . get_the_post_thumbnail( $popular->id, 'gallery' ) . "</a>";
+		$output .= "<a href=\"" . get_the_permalink( $popular->id ) . "\" title=\"" . esc_attr( $popular->title ) . "\" class=\"wpp-post-title\" target=\"_self\">" . $popular->title . "</a>";
 		$output .= $stats;
 		$output .= $excerpt;
 		$output .= "<a class=\"readmore\" href=\"" . get_the_permalink( $popular->id ) . "\" title=\"" . esc_attr( $popular->title ) . "\">Artikel lesen</a></li>" . "\n";

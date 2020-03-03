@@ -178,6 +178,7 @@ li.postformat-link a.wpp-post-title {
     display: block;
     font: 23px/30px "Raleway",sans-serif;
     min-height: 70px;
+    margin-top: 10px;
     }
 ul.wpp-list li p {
 	margin: 15px 0;
