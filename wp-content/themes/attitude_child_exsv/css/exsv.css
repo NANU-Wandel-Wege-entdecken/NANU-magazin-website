@@ -155,18 +155,24 @@ li.postformat-link a.wpp-post-title {
     }
 #wpp-2 ul {
     margin: 0;
-    }
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #wpp-2 .wpp-list li {
     border-top: 1px solid #e3b0e9;
     clear: none;
-    float: left;
     list-style: none;
-    margin: 0 2.5%;
-    min-height: 568px;
+    margin: 10px 2.5% 0;
     padding-bottom: 10px;
     padding-top: 10px;
-    width: 45%;
-    }
+    width: 95%;
+}
+@media ( min-width: 768px ) {
+    #wpp-2 .wpp-list li {
+        width: 45%;
+     }
+}
 .wpp-post-title {
     color: #276e37;
     display: block;
@@ -175,10 +181,10 @@ li.postformat-link a.wpp-post-title {
     }
 ul.wpp-list li p {
 	margin: 15px 0;
-	}
+}
 #wpp-2 .wpp-list li a.readmore {
     color: #ffffff;
-    }
+}
 .more-articles, ul.default-wp-page li.previous {
 	margin-bottom: 32px;
 	text-align: center;
