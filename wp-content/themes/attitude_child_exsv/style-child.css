@@ -7,7 +7,6 @@ Description: Im Jahr 2013 war es so weit, dass wir für das Experiment Selbstver
 Version: 1.2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: attitude_child_exsv
 Template: attitude
 */
 
@@ -60,9 +59,19 @@ a img:hover {
       -ms-transform: scale(1.02,1.02);
           transform: scale(1.02,1.02);
 }
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
     color: #555555;
     font-family: 'Raleway', 'PT Sans', sans-serif;
+}
+h1 {
+	font-size: 30px;
+	line-height: 36px;
+}
+h2 {
+	font-size: 28px;
+	line-height: 35px;
 }
 h3 {
     font-size: 22px;
@@ -930,14 +939,20 @@ blockquote p {
 /* Slogan */
 .slogan-wrap {
 	background-color: #996633;
-        font-family: 'Raleway', 'PT Sans', sans-serif;
+    font-family: 'Raleway', 'PT Sans', sans-serif;
+    padding: 24px 0;
+	margin-bottom: 4px;	
 }
 .slogan-wrap .slogan {
     width: 75%;
+    font-size: 24px;	
+	line-height: 30px;
+	color: #fff;
+	float: left;
 }
 .slogan-wrap .view-work {
 	color: #494949;
-        background: #b5e6ee;
+    background: #b5e6ee;
 	background: -webkit-linear-gradient(#E9D3BE, #CFA072);
 	background: -moz-linear-gradient(#E9D3BE, #CFA072);
 	background: -ms-linear-gradient(#E9D3BE, #CFA072);
@@ -945,7 +960,7 @@ blockquote p {
 	background: -webkit-gradient(#E9D3BE, #CFA072);
 	background: linear-gradient(#E9D3BE, #CFA072);
     height: 42px;
-        text-decoration: none;
+    text-decoration: none;
 }
 .slogan-wrap .view-work:hover {
 	background: -webkit-linear-gradient(#F2E7D9, #CFA072);
