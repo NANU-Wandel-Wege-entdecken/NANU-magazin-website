@@ -27,7 +27,6 @@ Activiation and Use
 Unless otherwise specified, all the theme files, scripts and images
 are licensed under GNU General Public License version 2, see file license.txt.
 The exceptions to this license are as follows:
-* The script html5.js is licensed under MIT
 * The script jquery.cycle.all.js is dual licensed under GPL & MIT
 * The script jquery.fancybox-1.3.4.js is dual licensed under GPL & MIT
 * The script jquery.cookie.min.js is dual licensed under GPL & MIT

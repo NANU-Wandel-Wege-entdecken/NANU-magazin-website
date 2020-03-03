@@ -46,14 +46,6 @@ function attitude_scripts_styles_method() {
 
    wp_enqueue_style( 'google_fonts' );
 
-   /**
-    * Browser specific queuing i.e
-    */
-	$attitude_user_agent = strtolower($_SERVER['HTTP_USER_AGENT']);
-	if(preg_match('/(?i)msie [1-8]/',$attitude_user_agent)) {
-		wp_enqueue_script( 'html5', ATTITUDE_JS_URL . '/html5.js', true ); 
-	}
-
 } 
 
 /****************************************************************************************/
