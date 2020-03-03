@@ -123,23 +123,7 @@ function attitude_theme_options_do_page() {
 	   
 	<div class="them_option_block clearfix">
 		<div class="theme_option_title"><h2><?php _e( 'Theme Options by', 'attitude' ); ?></h2></div><div class="theme_option_link"><a href="<?php echo esc_url( __( 'http://themehorse.com/', 'attitude' ) ); ?>" title="<?php esc_attr_e( 'Theme Horse', 'attitude' ); ?>" target="_blank"><img src="<?php echo ATTITUDE_ADMIN_IMAGES_URL . '/theme-horse.png'; ?>" alt="'<?php _e( 'Theme Horse', 'attitude' ); ?>" /></a> </div>
-		<div style="margin: 20px 20px 20px 0px; float:right; font-size: 13px; font-weight: bold;">
-			<?php _e( 'Confused about something? See', 'attitude' ); ?> 
-			<a href="<?php echo esc_url( 'http://themehorse.com/theme-instruction/attitude/' ); ?>" title="<?php esc_attr_e( 'Attitude Theme Instructions', 'attitude' ); ?>" target="_blank"><?php _e( 'Theme Instructions', 'attitude' ); ?></a> &nbsp; | &nbsp; 
-			<a class="support" href="<?php echo esc_url( 'http://themehorse.com/support-forum/' ); ?>" title="<?php esc_attr_e( 'Support Forum', 'attitude' ); ?>" target="_blank"><?php _e( 'Support Forum', 'attitude' ); ?></a> &nbsp; | &nbsp;
-			<a class="demo" href="<?php echo esc_url( 'http://themehorse.com/preview/attitude/' ); ?>" title="<?php esc_attr_e( 'Attitude Demo', 'attitude' ); ?>" target="_blank"><?php _e( 'View Demo', 'attitude' ); ?></a>
-		</div>
 	</div><br/><br/><br/>
-	<div class="donate-info">
-		<strong><?php _e( 'Want to add bunch of additional features? Upgrade to Pro version!', 'attitude' ); ?></strong><br/>
-		<a title="<?php esc_attr_e( 'Upgrade to Pro', 'attitude' ); ?>" href="<?php echo esc_url( 'http://themehorse.com/themes/attitude-pro' ); ?>" target="_blank" class="upgrade"><?php _e( 'Upgrade to Pro', 'attitude' ); ?></a>
-		<a title="<?php esc_attr_e( 'Donate', 'attitude' ); ?>" href="<?php echo esc_url( 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=BRLCCUGP2ACYN' ); ?>" target="_blank" class="donate"><?php _e( 'Donate', 'attitude' ); ?></a>
-		<a title="<?php esc_attr_e( 'Review Clean Retina', 'attitude' ); ?>" href="<?php echo esc_url( 'http://wordpress.org/support/view/theme-reviews/attitude' ); ?>" target="_blank" class="review"><?php _e( 'Rate Attitude', 'attitude' ); ?></a>
-		<div id="social-share">
-	    	<div class="fb-like" data-href="https://www.facebook.com/themehorse" data-send="false" data-layout="button_count" data-width="90" data-show-faces="true"></div>
-	    	<div class="tw-follow" ><a href="<?php echo esc_url( 'http://twitter.com/Theme_Horse' ); ?>" class="twitter-follow-button" data-button="grey" data-text-color="#FFFFFF" data-link-color="#00AEFF" data-width="150px" data-show-screen-name="true" data-show-count="false"></a></div>
-		</div>	
-	</div>
    <div id="themehorse" class="wrap">
         
       <form method="post" action="options.php">
