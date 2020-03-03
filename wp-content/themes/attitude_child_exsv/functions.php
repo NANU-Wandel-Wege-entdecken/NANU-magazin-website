@@ -29,13 +29,6 @@ function enqueue_scripts() {
 }
 
 
-
-
-add_action( 'after_setup_theme', 'my_child_theme_setup' );
-function my_child_theme_setup() {
-	load_child_theme_textdomain( 'attitude' );
-}
-
 // Specify favicon for Dashboard
 function favicon4admin() {
  echo '<link rel="Shortcut Icon" type="image/x-icon" href="experimentselbstversorgung.net/wp-content/uploads/images/favicon.ico" />';
