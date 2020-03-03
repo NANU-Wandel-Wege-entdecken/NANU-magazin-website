@@ -12,10 +12,10 @@
  * @since Attitude 1.0
  */
 
- /**
- * Ergänzungen zur functions.php vom Eltern-Theme Attitude
- */
 
+ /**
+ * Enqueue styles
+ */
 add_action('wp_enqueue_scripts', 'enqueue_scripts', 0);
 function enqueue_scripts() {
 	wp_register_style('attitude', get_stylesheet_directory_uri() .'/style.css', false, '1.0');
@@ -173,18 +173,14 @@ function attitude_core_functionality() {
 	add_image_size( 'rich-snippet', 300, 300, true );
 
 	add_filter( 'image_size_names_choose', 'my_custom_sizes' );
+}
+
 function my_custom_sizes( $sizes ) {
 	return array_merge( $sizes, array( 'large' => __('ganze Breite'), ) );
 	return array_merge( $sizes, array( 'yarpp-thumbnail' => __('Vorschaubild'), ) );
 	return array_merge( $sizes, array( 'featured-medium' => __('rechteckiges Vorschaubild'), ) );
 	return array_merge( $sizes, array( 'schmal' => __('schmal für seitlich'), ) );
 	return array_merge( $sizes, array( 'rich-snippet' => __('für rich snippets'), ) );
-}
-
-	/**
-	 * This theme supports custom background color and image
-	 */
-	add_theme_support( 'custom-background' );
 }
 
 /**
@@ -215,12 +211,12 @@ function cng_author_base() {
 }
 
 function is_old_post($days = 365) {
-	   $days = (int) $days;
-	   $offset = $days*60*60*24;
-	   if ( get_post_time() < date('U') - $offset )
-			return true;
-	   return false;
-	}
+	$days = (int) $days;
+	$offset = $days*60*60*24;
+	if ( get_post_time() < date('U') - $offset )
+		return true;
+	return false;
+}
 
 function publish_later_on_feed($where) {
 	global $wpdb;
@@ -278,15 +274,16 @@ add_action( 'wp_before_admin_bar_render', 'mytheme_admin_bar_render' );
 
 // Nur Kommentare zu eigenen Artikeln anzeigen
 function wps_get_comment_list_by_user($clauses) {
-		if (is_admin()) {
-				global $user_ID, $wpdb;
-				$clauses['join'] = ", ".$wpdb->base_prefix."posts";
-				$clauses['where'] .= " AND ".$wpdb->base_prefix."posts.post_author = ".$user_ID." AND ".$wpdb->base_prefix."comments.comment_post_ID = ".$wpdb->base_prefix."posts.ID";
-		};
-		return $clauses;
+	if (is_admin()) {
+		global $user_ID, $wpdb;
+		$clauses['join'] = ", ".$wpdb->base_prefix."posts";
+		$clauses['where'] .= " AND ".$wpdb->base_prefix."posts.post_author = ".$user_ID." AND ".$wpdb->base_prefix."comments.comment_post_ID = ".$wpdb->base_prefix."posts.ID";
+	};
+	return $clauses;
 };
+
 if(!current_user_can('edit_others_posts')) {
-add_filter('comments_clauses', 'wps_get_comment_list_by_user');
+	add_filter('comments_clauses', 'wps_get_comment_list_by_user');
 }
 
 // Nur eigene Artikel anzeigen
@@ -317,8 +314,8 @@ add_action('pre_get_posts', 'filter_posts_list');
 // Zusätzliche Felder im Benutzerprofil
 function contactInfo($user_contactmethods) {
 
-	$user_contactmethods['facebook'] = '<b>Facebook</b> (nur deinen Username, also z.B.: <b>michael.hartl</b> statt https://facebook.com/michael.hartl';
-	$user_contactmethods['twitter'] = '<b>Twitter</b> (nur deinen Username)';
+	$user_contactmethods['facebook']  = '<b>Facebook</b> (nur deinen Username, also z.B.: <b>michael.hartl</b> statt https://facebook.com/michael.hartl';
+	$user_contactmethods['twitter']   = '<b>Twitter</b> (nur deinen Username)';
 	$user_contactmethods['instagram'] = '<b>Instagram</b> (nur deinen Username)';
 
 	// Yahoo, Jabber, AOL entfernen
@@ -345,7 +342,7 @@ function fb_add_custom_user_profile_fields( $user ) {
 				<span class="description"><?php _e('Sowas wie <b>Autor, Projektmanager, Superstar</b>.', 'your_textdomain'); ?></span>
 			</td>
 		</tr>
-				<tr>
+		<tr>
 			<th>
 				<label for="mehrbio"><?php _e('Weitere biographische Angaben', 'your_textdomain'); ?>
 			</label></th>
@@ -354,7 +351,7 @@ function fb_add_custom_user_profile_fields( $user ) {
 								<span class="description"><?php _e('Erscheinen auf der Profil-Seite, nicht bei den Artikeln. Diese erscheinen direkt unter den Biographischen Angaben, die du weiter oben eingeben kannst. Biographische Angaben erscheinen sowohl unter deinen Artikeln, als auch in deinem Profil - die Angaben hier eben nur als nächster Bereich nach den Biographischen Angaben im Profil.', 'your_textdomain'); ?></span>
 			</td>
 		</tr>
-				<tr>
+		<tr>
 			<th>
 				<label for="zusatzinfo"><?php _e('Zusatzinfos', 'your_textdomain'); ?>
 			</label></th>
@@ -363,7 +360,7 @@ function fb_add_custom_user_profile_fields( $user ) {
 								<span class="description"><?php _e('Sachen wie <b>Julia bloggt regelmäßig auf hundertwasser-blog.at</b>.', 'your_textdomain'); ?></span>
 			</td>
 		</tr>
-				<tr>
+		<tr>
 			<th>
 				<label for="linktext"><?php _e('Text eines Links nach der Zusatzinfo', 'your_textdomain'); ?>
 			</label></th>
@@ -372,7 +369,7 @@ function fb_add_custom_user_profile_fields( $user ) {
 								<span class="description"><?php _e('Wird unterhalb der Zusatzinfo angezeigt. Sowas wie <b>Lies jetzt ihre neuesten Artikel!</b>', 'your_textdomain'); ?></span>
 			</td>
 		</tr>
-				<tr>
+		<tr>
 			<th>
 				<label for="linkurl"><?php _e('URL des Links', 'your_textdomain'); ?>
 			</label></th>
@@ -381,18 +378,20 @@ function fb_add_custom_user_profile_fields( $user ) {
 
 			</td>
 		</tr>
-		</table>
+	</table>
 <?php }
 
 function fb_save_custom_user_profile_fields( $user_id ) {
 
-if ( !current_user_can( 'edit_user', $user_id ) ) { return false; }
+	if ( !current_user_can( 'edit_user', $user_id ) ) { 
+		return false; 
+	}
 
-update_user_meta( $user_id, 'mehrbio', $_POST['mehrbio'] );
-update_user_meta( $user_id, 'zusatzinfo', $_POST['zusatzinfo'] );
-update_user_meta( $user_id, 'linktext', $_POST['linktext'] );
-update_user_meta( $user_id, 'linkurl', $_POST['linkurl'] );
-update_user_meta( $user_id, 'taetigkeiten', $_POST['taetigkeiten'] );
+	update_user_meta( $user_id, 'mehrbio', $_POST['mehrbio'] );
+	update_user_meta( $user_id, 'zusatzinfo', $_POST['zusatzinfo'] );
+	update_user_meta( $user_id, 'linktext', $_POST['linktext'] );
+	update_user_meta( $user_id, 'linkurl', $_POST['linkurl'] );
+	update_user_meta( $user_id, 'taetigkeiten', $_POST['taetigkeiten'] );
 }
 
 add_action( 'show_user_profile', 'fb_add_custom_user_profile_fields' );
@@ -412,7 +411,7 @@ add_action('admin_head', 'admin_color_scheme');
 add_action( 'edit_form_after_title', 'myprefix_edit_form_after_title' );
 
 function myprefix_edit_form_after_title() {
-echo '<h2>Ein paar Tipps fürs Schreiben</h2><p>Bitte schau dir folgende Tipps und Anhaltspunkte an, damit dein Artikel möglichst flott für eine Veröffentlichung in Frage kommt: <a href="https://experimentselbstversorgung.net/mitmachen/gastartikel-schreiben/das-format-von-experimentselbstversorgung-net/" target="_blank">So schreiben wir Artikel auf dieser Website!</a>';
+	echo '<h2>Ein paar Tipps fürs Schreiben</h2><p>Bitte schau dir folgende Tipps und Anhaltspunkte an, damit dein Artikel möglichst flott für eine Veröffentlichung in Frage kommt: <a href="https://experimentselbstversorgung.net/mitmachen/gastartikel-schreiben/das-format-von-experimentselbstversorgung-net/" target="_blank">So schreiben wir Artikel auf dieser Website!</a>';
 }
 
 // Email versenden, sobald ein Artikel auf Review geschickt wird
@@ -433,11 +432,12 @@ function send_emails_on_new_event($post)
 
 // SEITEN VON DER WORDPRESS-SUCHE AUSSCHLIESSEN
 function js_search_filter( $query ) {
-		if  ( $query->is_search ) {
+	if ( $query->is_search ) {
 		$query->set('post__not_in', array(115843,111820,110339,111575,111564,111582,110372,110782,110353,111119,113183,114917,114916,114791,115259,115260,110259,3560) );
 	}
 		return $query;
-} add_action( 'pre_get_posts', 'js_search_filter' );
+}
+add_action( 'pre_get_posts', 'js_search_filter' );
 
 // Bilder standardmäßig mit der Mediendatei verlinken
 update_option('image_default_link_type','file');
@@ -469,7 +469,7 @@ add_filter( 'comments_open', 'filter_media_comment_status', 10 , 2 );
  * @return      string
  */
 function get_excerpt_by_id($post_id){
-	$the_post = get_post($post_id); //Gets post ID
+	$the_post    = get_post($post_id); //Gets post ID
 	$the_excerpt = $the_post->post_excerpt; //Gets post_content to be used as a basis for the excerpt
 	return $the_excerpt;
 }
@@ -575,5 +575,3 @@ function my_custom_popular_posts_html_list( $mostpopular, $instance ){
 }
 
 add_filter( 'wpp_custom_html', 'my_custom_popular_posts_html_list', 10, 2 );
-
-?>
