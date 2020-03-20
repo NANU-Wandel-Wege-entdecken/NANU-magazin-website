@@ -2023,11 +2023,11 @@ ul.default-wp-page li a:active {
 	}
 	.one-column-template .wrapper, 
 	.wrapper { 
-		width: 300px; 
+		width: 100%; 
 	}
 	.one-column-template .container, 
 	.container {
-		width: 280px;
+		width: 90%;
 	}
 	.wide-layout .wrapper {
 	   width: 100%;
