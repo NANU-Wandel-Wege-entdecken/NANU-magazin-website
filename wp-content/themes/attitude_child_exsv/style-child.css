@@ -660,7 +660,6 @@ a:hover.yarpp-thumbnail {
 }
 #content ul a, #content ol a {
     color: #276E37;
-    max-height: 70px;
 }
 #content ul a:hover, #content ol a:hover {
     color: #276E37;
