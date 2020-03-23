@@ -66,5 +66,3 @@ add_action( 'attitude_footer', 'attitude_backtotop_html', 40 );
 function attitude_backtotop_html() {
 	echo '<div class="back-to-top"><a href="#branding">'.__( 'Back to Top', 'attitude' ).'</a></div>';
 }
-
-?>

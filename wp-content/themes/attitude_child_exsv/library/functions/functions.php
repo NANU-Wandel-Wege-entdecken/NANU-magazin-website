@@ -19,12 +19,7 @@ add_action( 'wp_enqueue_scripts', 'attitude_scripts_styles_method' );
 function attitude_scripts_styles_method() {
 
 	global $attitude_theme_options_settings;
-   $options = $attitude_theme_options_settings;
-
-   /**
-	 * Loads our main stylesheet.
-	 */
-	wp_enqueue_style( 'attitude_style', get_stylesheet_uri() );
+	$options = $attitude_theme_options_settings;
 
 	/**
 	 * Adds JavaScript to pages with the comment form to support
@@ -50,14 +45,6 @@ function attitude_scripts_styles_method() {
    wp_enqueue_script( 'backtotop', ATTITUDE_JS_URL. '/backtotop.js', array( 'jquery' ) );
 
    wp_enqueue_style( 'google_fonts' );
-
-   /**
-    * Browser specific queuing i.e
-    */
-	$attitude_user_agent = strtolower($_SERVER['HTTP_USER_AGENT']);
-	if(preg_match('/(?i)msie [1-8]/',$attitude_user_agent)) {
-		wp_enqueue_script( 'html5', ATTITUDE_JS_URL . '/html5.js', true ); 
-	}
 
 } 
 

@@ -15,5 +15,3 @@
  * @see http://codex.wordpress.org/Function_Reference/load_theme_textdomain
  */
 load_theme_textdomain( 'attitude', ATTITUDE_LANGUAGES_DIR );
-
-?>
