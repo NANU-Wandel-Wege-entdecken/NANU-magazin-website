@@ -111,14 +111,11 @@ img.lazyloaded {
 /* Header */
 #branding {
     margin-top: 10px;
-    }
+    background-color: #f9f2e8;
+}
 .hgroup-wrap {
     padding-bottom: 8px;
     padding-top: 0;
-}
-#site-title {
-    background: url("images/exsv_logo_header.png") no-repeat scroll -8px -4px rgba(0, 0, 0, 0);
-    font: 50px/45px 'Amatic SC',Helvetica,sans-serif;
 }
 .hgroup-right {
     float: right;
@@ -134,6 +131,9 @@ input.s {
 #site-logo {
     float: left;
     margin-top: 12px;
+}
+#site-logo img {
+    width: 90%;
 }
 
 /* Menü */
@@ -600,21 +600,6 @@ a:active {
 #access ul li:hover > a {
 	color: #276E37;
 	text-decoration: none;
-}
-#site-title a {
-     text-decoration: none;
-     color: #347C0E;
-     padding: 4px 0 4px 100px;
-}
-#site-title a span, #site-title a:hover {
-	color: #CADF9F;
-	text-decoration: none;
-        text-shadow: none;
-}
-#site-title a:focus, #site-title a:active {
-        color: #709041;
-	text-decoration: none;
-        text-shadow: none;
 }
 .widget ul li a {
     color: #276E37;
@@ -1181,13 +1166,6 @@ div.textwidget a.readmore {
     .hgroup-right {
         margin-top: 10px;
     }
-    #site-title {
-    background: url("images/exsv_logo_header_portrait.png") no-repeat scroll -7px -2px transparent;
-    font: 65px/62px 'Amatic SC',Helvetica,sans-serif;
-    }
-    #site-title a {
-    padding: 0px 0px 4px 121px;
-    }
 /* Slogan */
 	.slogan-wrap .slogan {
 		width: 100%;
@@ -1270,13 +1248,6 @@ div.textwidget a.readmore {
 @media only screen and (max-width: 479px) {
     #site-logo {
         margin-top:10px;
-    }
-    #site-title {
-    background: url("images/exsv_logo_header_mobile.png") no-repeat scroll -3px -3px transparent;
-    font: 32px/29px 'Amatic SC',Helvetica,sans-serif;
-    }
-    #site-title a {
-    padding: 0px 0px 4px 67px;
     }
     .mittelspalte {
     width: 280px;
