@@ -111,7 +111,7 @@ img.lazyloaded {
 /* Header */
 #branding {
     margin-top: 10px;
-    background-color: #f9f2e8;
+    background-color: #f8f2e9;
 }
 .hgroup-wrap {
     padding-bottom: 8px;
@@ -119,7 +119,7 @@ img.lazyloaded {
 }
 .hgroup-right {
     float: right;
-    margin-top: 86px;
+    margin-top: 20px;
 }
 input.s {
     color: #474747;
@@ -140,6 +140,7 @@ input.s {
 #access {
     border-bottom: 1px solid #E3B0E9;
     border-top: 1px solid #E3B0E9;
+    background-color: white;
 }
 #access ul li ul li a, #access ul li.current-menu-item ul li a, #access ul li ul li.current-menu-item a, #access ul li.current_page_ancestor ul li a, #access ul li.current-menu-ancestor ul li a, #access ul li.current_page_item ul li a {
 	text-transform: none;
