@@ -186,8 +186,8 @@ function attitude_headerdetails() {
 				}
 			?>
 				<hgroup id="site-logo" class="clearfix">
-					<a href="<?php echo get_home_url(); ?>" title="nanu Magazin - Wandel-Wege entdecken" rel="home">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/nanu-logo.jpg">
+					<a href="<?php echo get_home_url(); ?>" title="NANU Magazin - Wandel-Wege entdecken" rel="home">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/NANU-logo.png">
 					</a>
 				</hgroup><!-- #site-logo -->
 
