@@ -66,7 +66,7 @@ add_action( 'attitude_links', 'attitude_add_links', 10 );
 function attitude_add_links() {
 ?>
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
-	<link rel="pingback" href="https://experimentselbstversorgung.net/xmlrpc.php" />
+	<link rel="pingback" href="https://nanu-magazin.org/xmlrpc.php" />
 	<link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 <?php }

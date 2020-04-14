@@ -358,7 +358,7 @@ function attitude_theloop_for_single() {
 			<?php }
 
 			elseif ( has_post_format( 'link' )) { ?>
-				<div id="guestblog">Anzeige <a title="Dies ist ein bezahlter Artikel - mehr Informationen nach dem Klick!" href="https://experimentselbstversorgung.net/warum-steht-ueber-einzelnen-artikeln-auf-dem-blog-experiment-selbstversorgung-anzeige/" target="_blank" rel="nofollow">(?)</a></div>
+				<div id="guestblog">Anzeige <a title="Dies ist ein bezahlter Artikel - mehr Informationen nach dem Klick!" href="https://nanu-magazin.org/warum-steht-ueber-einzelnen-artikeln-auf-dem-blog-experiment-selbstversorgung-anzeige/" target="_blank" rel="nofollow">(?)</a></div>
 				<header class="entry-header" title="Bezahlter Artikel auf dem Blog vom Experiment Selbstversorgung">
 			<?php }
 

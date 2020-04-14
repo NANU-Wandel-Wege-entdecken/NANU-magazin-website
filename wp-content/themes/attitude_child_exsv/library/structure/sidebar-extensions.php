@@ -31,8 +31,8 @@ function attitude_display_right_sidebar() {
     <div class="yarpp-related">
         <menu>Wusstest Du, dass wir auch B&uuml;cher schreiben?</menu>
             <div class="yarpp-thumbnails-horizontal">
-                <a class="yarpp-thumbnail" href="https://experimentselbstversorgung.net/lisas-buecher-jetzt-bestellen/" title="Jetzt Lisas B&uuml;cher kennenlernen">
-                    <img width="300" height="200" src="https://experimentselbstversorgung.net/wp-content/uploads/2014/04/brennnesselsuppe-veganregionalsaisonal-300x200.jpg" class="attachment-yarpp-thumbnail size-yarpp-thumbnail wp-post-image" alt="Blick ins Buch Vegan Regional Saisonal">
+                <a class="yarpp-thumbnail" href="https://nanu-magazin.org/lisas-buecher-jetzt-bestellen/" title="Jetzt Lisas B&uuml;cher kennenlernen">
+                    <img width="300" height="200" src="https://nanu-magazin.org/wp-content/uploads/2014/04/brennnesselsuppe-veganregionalsaisonal-300x200.jpg" class="attachment-yarpp-thumbnail size-yarpp-thumbnail wp-post-image" alt="Blick ins Buch Vegan Regional Saisonal">
                     <span class="yarpp-thumbnail-title">Blick ins Buch Vegan Regional Saisonal</span>
                     <span class="yarpp-thumbnail-date">- Jetzt alle Bücher kennenlernen! -</span>
                 </a>
