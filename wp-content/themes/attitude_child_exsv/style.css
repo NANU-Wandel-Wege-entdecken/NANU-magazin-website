@@ -258,7 +258,7 @@ textarea:focus {
 	border: 1px solid #ccc;
 }
 input.s {
-	background: url(images/search.png) no-repeat right 6px #fff;
+	background: url(images/search.png) no-repeat right 2.5px #fff;
 	-webkit-transition-duration: 400ms;
 	-webkit-transition-property: width, background;
 	-webkit-transition-timing-function: ease;

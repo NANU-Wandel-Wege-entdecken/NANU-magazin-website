@@ -186,43 +186,9 @@ function attitude_headerdetails() {
 				}
 			?>
 				<hgroup id="site-logo" class="clearfix">
-
-					<?php
-					if( is_single() ) { ?>
-							<div id="site-title">
-								<a href="<?php echo get_home_url(); ?>" title="Experiment Selbstversorgung" rel="home">
-									Experiment<br />Selbstversorgung
-								</a>
-							</div>
-					<?php }
-					elseif(  is_home() || is_front_page() ) { ?>
-							<h1 id="site-title">
-								<a href="<?php echo get_home_url(); ?>" title="Experiment Selbstversorgung" rel="home">
-									Experiment<br />Selbstversorgung
-								</a>
-							</h1>
-						<?php
-                                        }
-                                        elseif( is_page() ) { ?>
-							<div id="site-title">
-								<a href="<?php echo get_home_url(); ?>" title="Experiment Selbstversorgung" rel="home">
-									Experiment<br />Selbstversorgung
-								</a>
-							</div>
-						<?php
-					}
-                                        else { ?>
-							<div id="site-title">
-								<a href="<?php echo get_home_url(); ?>" title="Experiment Selbstversorgung" rel="home">
-									Experiment<br />Selbstversorgung
-								</a>
-							</div>
-						<?php
-					}
-						?>
-
-
-
+					<a href="<?php echo get_home_url(); ?>" title="NANU Magazin - Wandel-Wege entdecken" rel="home">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/NANU-logo.png">
+					</a>
 				</hgroup><!-- #site-logo -->
 
 		</div><!-- .hgroup-wrap -->
