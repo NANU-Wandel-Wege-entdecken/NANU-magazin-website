@@ -343,10 +343,8 @@ function attitude_theloop_for_single() {
 		<article>
 
 			<?php do_action( 'attitude_before_post_header' ); ?>
-			<?php if ($author > '3') { ?>
-				<div id="guestblog">Ein <b>Gastartikel</b> auf <a href="https://experimentselbstversorgung.net/profil/lisa/" target="_blank" title="Link auf Lisa Pflegers Profil auf dem Blog Experiment Selbstversorgung" alt="Link auf Lisa Pflegers Profil auf dem Blog Experiment Selbstversorgung">Lisa</a> und <a href="https://experimentselbstversorgung.nett/profil/michael-hartl-2/" target="_blank" title="Link auf Michael Hartls Profil auf dem Blog Experiment Selbstversorgung" alt="Link auf Michael Hartls Profil auf dem Blog Experiment Selbstversorgung">Michaels</a> Blog:</div>
-			<?php }
 
+			<?php
 			if ( has_post_format( 'gallery' )) { ?>
 				<header class="entry-header" title="Fotos aus unseren Leben">
 			<?php }
@@ -422,10 +420,8 @@ function attitude_theloop_for_single() {
 									</div>
 								<?php endif;
 // Ende Affiliate-Produkte
+			?>
 
-				if ($author > '3') { ?>
-				<div id="infoendarticle"><b>Dieser Artikel ist ein Gastartikel.</b> Vielen Dank an die Gastautorin bzw. den Gastautor. Dieser Blog "Experiment Selbstversorgung" wird von <a href="https://experimentselbstversorgung.net/ueber-uns/" target="_blank" title="Mehr Infomationen über die Betreiber*innen dieses Blogs" alt="Mehr Informationen über die Betreiber*innen dieses Blogs">Lisa Pfleger und Michael Hartl</a> betrieben. Solltest Du auch eine Idee für einen Gastartikel haben, <a href="https://experimentselbstversorgung.nett/mitmachen/gastartikel-schreiben/" target="_blank" title="Lies Dir hier unsere Informationen für Gastautor*innen durch!" alt="Lies Dir hier unsere Informationen für Gastautor*innen durch!">lies Dir gerne unsere Informationen dazu durch!</a></div>
-				<?php } ?>
 			<?php if ( is_old_post(365) ) {
 	  // do something if the post is old ; ?>
 	  <div id="infoendarticle"><b>Dieser Artikel ist mehr als ein Jahr alt.</b> Es muss daher nicht sein, dass wir jedes einzelne Wort immer noch so schreiben würden wie damals. Wenn Fragen sind, kommentiere einfach zum Artikel, dann antworten wir Dir gerne.</div>

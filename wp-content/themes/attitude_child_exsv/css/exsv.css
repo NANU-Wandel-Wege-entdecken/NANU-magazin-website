@@ -64,14 +64,6 @@ li.postformat-link a.wpp-post-title {
     padding-left: 60px;
     }
 
-/* Kennzeichnung Gastartikel */
-#guestblog {
-    color: #555555;
-    font-family: 'Raleway','PT Sans',sans-serif;
-    font-size: 17px;
-    border-bottom: solid 2px #996633;
-    margin-bottom: 20px;
-    }
 
 /* Share-Buttons */
 .shariff .shariff-button a:hover, .shariff .shariff-button a:active {
