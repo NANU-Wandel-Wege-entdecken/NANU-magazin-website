@@ -18,20 +18,20 @@
  */
 add_action('wp_enqueue_scripts', 'enqueue_scripts', 0);
 function enqueue_scripts() {
-	wp_register_style('attitude', get_stylesheet_directory_uri() .'/style.css', false, '1.1');
+	wp_register_style('attitude', get_stylesheet_directory_uri() .'/style.css', false, '1.2');
 	wp_enqueue_style('attitude');
 
-	wp_register_style('exsv_style-child', get_stylesheet_directory_uri() . '/style-child.css', [ 'attitude' ], '1.16');
+	wp_register_style('exsv_style-child', get_stylesheet_directory_uri() . '/style-child.css', [ 'attitude' ], '1.17');
 	wp_enqueue_style( 'exsv_style-child' );
 
-	wp_register_style('exsv_style', get_stylesheet_directory_uri() . '/css/exsv.css', [ 'exsv_style-child' ], '1.15');
+	wp_register_style('exsv_style', get_stylesheet_directory_uri() . '/css/exsv.css', [ 'exsv_style-child' ], '1.16');
 	wp_enqueue_style( 'exsv_style' );
 }
 
 
 // Specify favicon for Dashboard
 function favicon4admin() {
- echo '<link rel="Shortcut Icon" type="image/x-icon" href="experimentselbstversorgung.net/wp-content/uploads/images/favicon.ico" />';
+ echo '<link rel="Shortcut Icon" type="image/x-icon" href="nanu-magazin.org/wp-content/uploads/images/favicon.ico" />';
 }
 add_action( 'admin_head', 'favicon4admin' );
 
@@ -246,7 +246,7 @@ function feedFilter($query) {
 }
 add_filter('pre_get_posts','feedFilter');
 function feedContentFilter($content) {
-	$content .= '<p><hr />Lies weitere Artikel von Lisa und Michael auf der Website zum <a href="https://experimentselbstversorgung.net/?utm_source=rss&utm_medium=rss-feed&utm_campaign=Hinweis_auf_Website">Experiment Selbstversorgung</a>.<hr /></p>';
+	$content .= '<p><hr />Lies weitere Artikel von Lisa und Michael auf der Website zum <a href="https://nanu-magazin.org/?utm_source=rss&utm_medium=rss-feed&utm_campaign=Hinweis_auf_Website">Experiment Selbstversorgung</a>.<hr /></p>';
 
 	return $content;
 }
@@ -331,7 +331,7 @@ add_filter('user_contactmethods','contactInfo');
 function fb_add_custom_user_profile_fields( $user ) {
 ?>
 	<h3><?php _e('Weitere Angaben für die Profilseite', 'your_textdomain'); ?></h3>
-	<p>Was du hier eingibst, erscheint auf deiner Profil-Seite. Der erste lange Absatz der Profilseite ist der Text, den du weiter oben bei "Biographische Angaben" eingegeben hast. Siehe als Beispiel für eine Profilseite die von <a href="https://experimentselbstversorgung.net/profil/lisa/" target="_blanc">Lisa.</a></p>
+	<p>Was du hier eingibst, erscheint auf deiner Profil-Seite. Der erste lange Absatz der Profilseite ist der Text, den du weiter oben bei "Biographische Angaben" eingegeben hast. Siehe als Beispiel für eine Profilseite die von <a href="https://nanu-magazin.org/profil/lisa/" target="_blanc">Lisa.</a></p>
 	<table class="form-table">
 		<tr>
 			<th>
@@ -411,7 +411,7 @@ add_action('admin_head', 'admin_color_scheme');
 add_action( 'edit_form_after_title', 'myprefix_edit_form_after_title' );
 
 function myprefix_edit_form_after_title() {
-	echo '<h2>Ein paar Tipps fürs Schreiben</h2><p>Bitte schau dir folgende Tipps und Anhaltspunkte an, damit dein Artikel möglichst flott für eine Veröffentlichung in Frage kommt: <a href="https://experimentselbstversorgung.net/mitmachen/gastartikel-schreiben/das-format-von-experimentselbstversorgung-net/" target="_blank">So schreiben wir Artikel auf dieser Website!</a>';
+	echo '<h2>Ein paar Tipps fürs Schreiben</h2><p>Bitte schau dir folgende Tipps und Anhaltspunkte an, damit dein Artikel möglichst flott für eine Veröffentlichung in Frage kommt: <a href="https://nanu-magazin.org/mitmachen/gastartikel-schreiben/das-format-von-experimentselbstversorgung-net/" target="_blank">So schreiben wir Artikel auf dieser Website!</a>';
 }
 
 // Email versenden, sobald ein Artikel auf Review geschickt wird
@@ -421,7 +421,7 @@ add_action('draft_to_pending', 'send_emails_on_new_event');
 add_action('auto-draft_to_pending', 'send_emails_on_new_event');
 function send_emails_on_new_event($post)
 {
-	$emails = "michael@experimentselbstversorgung.net";
+	$emails = "michael@nanu-magazin.org";
 	$title = wp_strip_all_tags(get_the_title($post->ID));
 	$url = get_permalink($post->ID);
 	$message = "Bitte prüfen! Link zum Artikel: \n{$url}";

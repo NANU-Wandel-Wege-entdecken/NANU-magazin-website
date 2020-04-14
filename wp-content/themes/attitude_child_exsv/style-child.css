@@ -1,6 +1,6 @@
 /*
 Theme Name: Experiement Selbstversorgung responsive
-Theme URI: https://experimentselbstversorgung.net
+Theme URI: https://nanu-magazin.org
 Author: Michael Hartl
 Author URI: michaelhartl.at
 Description: Im Jahr 2013 war es so weit, dass wir für das Experiment Selbstversorgung ein responsive-Theme wollten. Dieses Theme ist das Ergebnis - ein Child-Theme von Attitude. Es befindet sich seitdem in ständiger Weiterentwicklung. Schwerpunkt liegt auf Optik und Anpassungsfähigkeit an diverse Ausgabegeräte
@@ -111,18 +111,15 @@ img.lazyloaded {
 /* Header */
 #branding {
     margin-top: 10px;
-    }
+    background-color: #f8f2e9;
+}
 .hgroup-wrap {
     padding-bottom: 8px;
     padding-top: 0;
 }
-#site-title {
-    background: url("images/exsv_logo_header.png") no-repeat scroll -8px -4px rgba(0, 0, 0, 0);
-    font: 50px/45px 'Amatic SC',Helvetica,sans-serif;
-}
 .hgroup-right {
     float: right;
-    margin-top: 86px;
+    margin-top: 20px;
 }
 input.s {
     color: #474747;
@@ -135,11 +132,15 @@ input.s {
     float: left;
     margin-top: 12px;
 }
+#site-logo img {
+    width: 90%;
+}
 
 /* Menü */
 #access {
     border-bottom: 1px solid #E3B0E9;
     border-top: 1px solid #E3B0E9;
+    background-color: white;
 }
 #access ul li ul li a, #access ul li.current-menu-item ul li a, #access ul li ul li.current-menu-item a, #access ul li.current_page_ancestor ul li a, #access ul li.current-menu-ancestor ul li a, #access ul li.current_page_item ul li a {
 	text-transform: none;
@@ -600,21 +601,6 @@ a:active {
 #access ul li:hover > a {
 	color: #276E37;
 	text-decoration: none;
-}
-#site-title a {
-     text-decoration: none;
-     color: #347C0E;
-     padding: 4px 0 4px 100px;
-}
-#site-title a span, #site-title a:hover {
-	color: #CADF9F;
-	text-decoration: none;
-        text-shadow: none;
-}
-#site-title a:focus, #site-title a:active {
-        color: #709041;
-	text-decoration: none;
-        text-shadow: none;
 }
 .widget ul li a {
     color: #276E37;
@@ -1181,13 +1167,6 @@ div.textwidget a.readmore {
     .hgroup-right {
         margin-top: 10px;
     }
-    #site-title {
-    background: url("images/exsv_logo_header_portrait.png") no-repeat scroll -7px -2px transparent;
-    font: 65px/62px 'Amatic SC',Helvetica,sans-serif;
-    }
-    #site-title a {
-    padding: 0px 0px 4px 121px;
-    }
 /* Slogan */
 	.slogan-wrap .slogan {
 		width: 100%;
@@ -1270,13 +1249,6 @@ div.textwidget a.readmore {
 @media only screen and (max-width: 479px) {
     #site-logo {
         margin-top:10px;
-    }
-    #site-title {
-    background: url("images/exsv_logo_header_mobile.png") no-repeat scroll -3px -3px transparent;
-    font: 32px/29px 'Amatic SC',Helvetica,sans-serif;
-    }
-    #site-title a {
-    padding: 0px 0px 4px 67px;
     }
     .mittelspalte {
     width: 280px;

@@ -37,7 +37,7 @@ if (have_posts()) {
 		if ( trim($post_thumbnail_html) != '' )
 			$output .= $post_thumbnail_html;
 		else
-			$output .= '<span class="yarpp-thumbnail-default"><img src="https://experimentselbstversorgung.net/wp-content/plugins/yet-another-related-posts-plugin/default.png"/></span>';
+			$output .= '<span class="yarpp-thumbnail-default"><img src="https://nanu-magazin.org/wp-content/plugins/yet-another-related-posts-plugin/default.png"/></span>';
 
 		$output .= '<span class="yarpp-thumbnail-title">' . get_the_title() . '</span>';
         $output .= '<span class="yarpp-thumbnail-date">- ' . get_the_time('F Y') . ' -</span>';

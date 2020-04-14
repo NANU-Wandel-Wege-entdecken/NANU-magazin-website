@@ -59,7 +59,7 @@ if ( post_password_required() )
                 'label_submit'=>'Kommentar absenden',
                 'title_reply'=>'Schreib uns Deine Meinung!',
                 'comment_notes_before' => 'Wir freuen uns darüber, dass du zum Thema beitragen willst.',
-                'comment_notes_after' => 'Mit dem Absenden dieses Kommentars akzeptierst du die <a href="https://experimentselbstversorgung.net/kommentar-richtlinien/" target="_blanc">Kommentar-Richtlinien</a>.',
+                'comment_notes_after' => 'Mit dem Absenden dieses Kommentars akzeptierst du die <a href="https://nanu-magazin.org/kommentar-richtlinien/" target="_blanc">Kommentar-Richtlinien</a>.',
         );
         comment_form($comments_args); ?>
 

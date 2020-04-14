@@ -66,7 +66,7 @@ add_action( 'attitude_links', 'attitude_add_links', 10 );
 function attitude_add_links() {
 ?>
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
-	<link rel="pingback" href="https://experimentselbstversorgung.net/xmlrpc.php" />
+	<link rel="pingback" href="https://nanu-magazin.org/xmlrpc.php" />
 	<link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 <?php }
@@ -186,43 +186,9 @@ function attitude_headerdetails() {
 				}
 			?>
 				<hgroup id="site-logo" class="clearfix">
-
-					<?php
-					if( is_single() ) { ?>
-							<div id="site-title">
-								<a href="<?php echo get_home_url(); ?>" title="Experiment Selbstversorgung" rel="home">
-									Experiment<br />Selbstversorgung
-								</a>
-							</div>
-					<?php }
-					elseif(  is_home() || is_front_page() ) { ?>
-							<h1 id="site-title">
-								<a href="<?php echo get_home_url(); ?>" title="Experiment Selbstversorgung" rel="home">
-									Experiment<br />Selbstversorgung
-								</a>
-							</h1>
-						<?php
-                                        }
-                                        elseif( is_page() ) { ?>
-							<div id="site-title">
-								<a href="<?php echo get_home_url(); ?>" title="Experiment Selbstversorgung" rel="home">
-									Experiment<br />Selbstversorgung
-								</a>
-							</div>
-						<?php
-					}
-                                        else { ?>
-							<div id="site-title">
-								<a href="<?php echo get_home_url(); ?>" title="Experiment Selbstversorgung" rel="home">
-									Experiment<br />Selbstversorgung
-								</a>
-							</div>
-						<?php
-					}
-						?>
-
-
-
+					<a href="<?php echo get_home_url(); ?>" title="NANU Magazin - Wandel-Wege entdecken" rel="home">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/NANU-logo.png">
+					</a>
 				</hgroup><!-- #site-logo -->
 
 		</div><!-- .hgroup-wrap -->
