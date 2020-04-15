@@ -246,7 +246,7 @@ function feedFilter($query) {
 }
 add_filter('pre_get_posts','feedFilter');
 function feedContentFilter($content) {
-	$content .= '<p><hr />Lies weitere Artikel von Lisa und Michael auf der Website zum <a href="https://nanu-magazin.org/?utm_source=rss&utm_medium=rss-feed&utm_campaign=Hinweis_auf_Website">Experiment Selbstversorgung</a>.<hr /></p>';
+	$content .= '<p><hr />Lies weitere Artikel von Lisa und Michael auf der Website des <a href="https://nanu-magazin.org/?utm_source=rss&utm_medium=rss-feed&utm_campaign=Hinweis_auf_Website">NANU Magazins</a>.<hr /></p>';
 
 	return $content;
 }
