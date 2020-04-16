@@ -367,4 +367,4 @@ if ( !function_exists('attitude_wp_page_menu_filter') ) {
 
 /**************************************************************************************/
 
-?>
+add_filter('get_the_author_description', 'wpautop');

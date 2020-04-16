@@ -26,7 +26,7 @@
     <?php } ?>
     <p><?php echo $curauth->user_description; ?></p>
     <?php if( $curauth->mehrbio ) { ?>
-    <p><?php echo $curauth->mehrbio; ?></p>
+    <p><?php echo wpautop( $curauth->mehrbio ); ?></p>
     <?php } ?>
     <?php if( $curauth->zusatzinfo ) { ?>
     <p class="zinfo"><?php echo $curauth->zusatzinfo; ?></p>
