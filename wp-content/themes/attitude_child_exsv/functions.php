@@ -14,7 +14,7 @@
 
 
  /**
- * Enqueue styles
+ * Enqueue styles and scripts
  */
 add_action('wp_enqueue_scripts', 'enqueue_scripts', 0);
 function enqueue_scripts() {
@@ -26,6 +26,8 @@ function enqueue_scripts() {
 
 	wp_register_style('exsv_style', get_stylesheet_directory_uri() . '/css/exsv.css', [ 'exsv_style-child' ], '1.16');
 	wp_enqueue_style( 'exsv_style' );
+
+	wp_enqueue_script('steadyhq', '//steadyhq.com/widget_loader/f0259c6c-f500-4eb7-bb60-a8261f2b7ec2', ['jquery'], null, true);
 }
 
 
@@ -246,7 +248,7 @@ function feedFilter($query) {
 }
 add_filter('pre_get_posts','feedFilter');
 function feedContentFilter($content) {
-	$content .= '<p><hr />Lies weitere Artikel von Lisa und Michael auf der Website des <a href="https://nanu-magazin.org/?utm_source=rss&utm_medium=rss-feed&utm_campaign=Hinweis_auf_Website">NANU Magazins</a>.<hr /></p>';
+	$content .= '<p><hr />Lies weitere Artikel über Wandel-Wege auf der Website des <a href="https://nanu-magazin.org/?utm_source=rss&utm_medium=rss-feed&utm_campaign=Hinweis_auf_Website">NANU Magazins</a>.<hr /></p>';
 
 	return $content;
 }
@@ -383,8 +385,8 @@ function fb_add_custom_user_profile_fields( $user ) {
 
 function fb_save_custom_user_profile_fields( $user_id ) {
 
-	if ( !current_user_can( 'edit_user', $user_id ) ) { 
-		return false; 
+	if ( !current_user_can( 'edit_user', $user_id ) ) {
+		return false;
 	}
 
 	update_user_meta( $user_id, 'mehrbio', $_POST['mehrbio'] );
