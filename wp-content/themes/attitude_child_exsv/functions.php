@@ -161,37 +161,9 @@ function attitude_core_functionality() {
 	 */
 	do_action( 'attitude_add_functionality' );
 
-	// Add default posts and comments RSS feed links to head
-	add_theme_support( 'automatic-feed-links' );
 
-	// This theme uses Featured Images (also known as post thumbnails) for per-post/per-page.
-	add_theme_support( 'post-thumbnails' );
-
-	// This theme uses wp_nav_menu() in header menu location.
-	register_nav_menu( 'primary', __( 'Primary Menu', 'attitude' ) );
-
-	// Add Attitude custom image sizes
-	add_image_size( 'featured', 670, 300, true );
-	add_image_size( 'featured-medium', 230, 230, true );
-	add_image_size( 'slider-narrow', 1038, 460, true );
-	add_image_size( 'large', 642, 9999 );
-	add_image_size( 'gallery', 474, 342, true );
-	add_image_size( 'icon', 80, 80, true );
-	add_image_size( 'mobile', 280, 200, true);
-	add_image_size( 'yarpp-thumbnail', 300, 200, true );
-	add_image_size( 'schmal', 310, 9999, true );
-	add_image_size( 'rich-snippet', 300, 300, true );
-
-	add_filter( 'image_size_names_choose', 'my_custom_sizes' );
 }
 
-function my_custom_sizes( $sizes ) {
-	return array_merge( $sizes, array( 'large' => __('ganze Breite'), ) );
-	return array_merge( $sizes, array( 'yarpp-thumbnail' => __('Vorschaubild'), ) );
-	return array_merge( $sizes, array( 'featured-medium' => __('rechteckiges Vorschaubild'), ) );
-	return array_merge( $sizes, array( 'schmal' => __('schmal für seitlich'), ) );
-	return array_merge( $sizes, array( 'rich-snippet' => __('für rich snippets'), ) );
-}
 
 /**
  * attitude_init hook
@@ -199,12 +171,6 @@ function my_custom_sizes( $sizes ) {
  * Hooking some functions of functions.php file to this action hook.
  */
 do_action( 'attitude_init' );
-
-/* Breite für oEmbed-Inhalte festlegen */
-if ( ! isset( $content_width ) ) $content_width = 642;
-
-// Beitragsformate
-add_theme_support( 'post-formats', array( 'gallery', 'video', 'audio','link',  ) );
 
 remove_action( 'wp_head', 'wp_generator' ) ;
 remove_action( 'wp_head', 'wlwmanifest_link' ) ;

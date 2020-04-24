@@ -21,10 +21,9 @@ final class Init
 		return [
 			// Core\Tags::class,
 			// Core\Sidebar::class,
-			// Setup\Setup::class,
-			// Setup\Menus::class,
+			Setup\Setup::class,
+			Setup\Menus::class,
 			// Setup\Enqueue::class,
-			// Custom\PostTypes::class,
 			// Custom\Extras::class,
 			// Api\Gutenberg::class,
 			// Plugins\Plate::class
