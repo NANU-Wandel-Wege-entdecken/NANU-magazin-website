@@ -172,9 +172,6 @@ function attitude_core_functionality() {
  */
 do_action( 'attitude_init' );
 
-remove_action( 'wp_head', 'wp_generator' ) ;
-remove_action( 'wp_head', 'wlwmanifest_link' ) ;
-remove_action( 'wp_head', 'rsd_link' ) ;
 
 add_action('init', 'cng_author_base');
 function cng_author_base() {

@@ -23,6 +23,7 @@ final class Init
 			// Core\Sidebar::class,
 			Setup\Setup::class,
 			Setup\Menus::class,
+			Setup\CleanUp::class,
 			// Setup\Enqueue::class,
 			// Custom\Extras::class,
 			// Api\Gutenberg::class,
