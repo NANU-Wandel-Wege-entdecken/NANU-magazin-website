@@ -12,6 +12,14 @@
  * @since Attitude 1.0
  */
 
+if ( file_exists( dirname( __FILE__ ) . '/vendor/autoload.php' ) ) :
+	require_once dirname( __FILE__ ) . '/vendor/autoload.php';
+endif;
+
+if ( class_exists( 'Nanu\\Init' ) ) :
+	Nanu\Init::register_services();
+endif;
+
 
  /**
  * Enqueue styles and scripts
@@ -197,9 +205,6 @@ if ( ! isset( $content_width ) ) $content_width = 642;
 
 // Beitragsformate
 add_theme_support( 'post-formats', array( 'gallery', 'video', 'audio','link',  ) );
-
-// Custom Post Types
-require_once( CHILD_LIBRARY_DIR . '/cpt/affiliate-products-cpt.php' );
 
 remove_action( 'wp_head', 'wp_generator' ) ;
 remove_action( 'wp_head', 'wlwmanifest_link' ) ;
