@@ -1,6 +1,6 @@
 <?php
 
-namespace Nanu\Components;
+namespace Nanu\Structure;
 
 class UserProfile
 {
