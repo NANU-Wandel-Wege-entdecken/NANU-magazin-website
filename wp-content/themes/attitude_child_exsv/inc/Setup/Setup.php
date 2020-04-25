@@ -85,11 +85,11 @@ class Setup
         Register custom image sizes for backend use
     */
     public function custom_image_sizes_in_backend( $sizes ) {
-        $sizes['large']           =  __('ganze Breite');
-        $sizes['yarpp-thumbnail'] =  __('Vorschaubild');
-        $sizes['featured-medium'] =  __('rechteckiges Vorschaubild');
-        $sizes['schmal']          =  __('schmal für seitlich');
-        $sizes['rich-snippet']    =  __('für rich snippets');
+        $sizes['large']           =  __( 'ganze Breite', 'attitude' );
+        $sizes['yarpp-thumbnail'] =  __( 'Vorschaubild', 'attitude' );
+        $sizes['featured-medium'] =  __( 'rechteckiges Vorschaubild', 'attitude' );
+        $sizes['schmal']          =  __( 'schmal für seitlich', 'attitude' );
+        $sizes['rich-snippet']    =  __( 'für rich snippets', 'attitude' );
         return $sizes;
     }
 }

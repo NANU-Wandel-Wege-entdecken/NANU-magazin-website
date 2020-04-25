@@ -22,7 +22,7 @@ class Menus
             Register all your menus here
         */
         register_nav_menus(array(
-            'primary' => esc_html__( 'Primary Menu', 'exsv_affpro' ),
+            'primary' => esc_html__( 'Primary Menu', 'attitude' ),
         ));
     }
 }

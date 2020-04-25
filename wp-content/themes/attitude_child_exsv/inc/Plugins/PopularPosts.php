@@ -40,7 +40,7 @@ class PopularPosts
             if ( $instance['stats_tag']['comment_count'] ) {
                 // display text in singular or plural, according to comments count
                 $stats[] = '<span class="wpp-comments">' . sprintf(
-                    _n('1 comment', '%s comments', $popular->comment_count, 'wordpress-popular-posts'),
+                    _n('1 comment', '%s comments', $popular->comment_count, 'attitude'),
                     number_format_i18n($popular->comment_count)
                 ) . '</span>';
             }
@@ -52,13 +52,13 @@ class PopularPosts
                 if ($instance['order_by'] == 'avg') {
                     // display text in singular or plural, according to views count
                     $stats[] = '<span class="wpp-views">' . sprintf(
-                        _n('1 view per day', '%s views per day', intval($popular->pageviews), 'wordpress-popular-posts'),
+                        _n('1 view per day', '%s views per day', intval($popular->pageviews), 'attitude'),
                         number_format_i18n($popular->pageviews, 2)
                     ) . '</span>';
                 } else { // Sorting posts by views
                     // display text in singular or plural, according to views count
                     $stats[] = '<span class="wpp-views">' . sprintf(
-                        _n('1 view', '%s views', intval($popular->pageviews), 'wordpress-popular-posts'),
+                        _n('1 view', '%s views', intval($popular->pageviews), 'attitude'),
                         number_format_i18n($popular->pageviews)
                     ) . '</span>';
                 }
@@ -68,13 +68,13 @@ class PopularPosts
             if ($instance['stats_tag']['author']) {
                 $author = get_the_author_meta('display_name', $popular->uid);
                 $display_name = '<a href="' . get_author_posts_url($popular->uid) . '">' . $author . '</a>';
-                $stats[] = '<i>' . sprintf(__('by %s', 'wordpress-popular-posts'), $display_name). '</i> - ';
+                $stats[] = '<i>' . sprintf(__('by %s', 'attitude'), $display_name). '</i> - ';
             }
 
             // Date option checked
             if ($instance['stats_tag']['date']['active']) {
                 $date = date_i18n($instance['stats_tag']['date']['format'], strtotime($popular->date));
-                $stats[] = '<span class="wpp-date">' . sprintf(__('posted on %s', 'wordpress-popular-posts'), $date) . '</span>';
+                $stats[] = '<span class="wpp-date">' . sprintf(__('posted on %s', 'attitude'), $date) . '</span>';
             }
 
             // Category option checked
@@ -85,7 +85,7 @@ class PopularPosts
                 : '';
 
                 if ($post_cat != '') {
-                    $stats[] = '<span class="wpp-category">' . sprintf(__('under %s', 'wordpress-popular-posts'), $post_cat) . '</span>';
+                    $stats[] = '<span class="wpp-category">' . sprintf(__('under %s', 'attitude'), $post_cat) . '</span>';
                 }
             }
 
