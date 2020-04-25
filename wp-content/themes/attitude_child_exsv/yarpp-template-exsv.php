@@ -51,4 +51,3 @@ if (have_posts()) {
 
 $this->enqueue_thumbnails( $dimensions );
 
-?>
