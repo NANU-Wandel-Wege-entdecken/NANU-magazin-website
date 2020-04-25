@@ -30,6 +30,7 @@ final class Init
 			//Setup\Feed::class,
 			Setup\Language::class,
 			Setup\Search::class,
+			Setup\Attachments::class,
 			// Custom\Extras::class,
 			// Api\Gutenberg::class,
 			// Plugins\Plate::class,
