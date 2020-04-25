@@ -124,3 +124,14 @@ function is_old_post($days = 365) {
 	$offset = $days*60*60*24;
 	return ( get_post_time() < date('U') - $offset );
 }
+
+if ( ! function_exists('the_subtitle') ) {
+	/**
+	 * Show Subtitle
+	 *
+	 * @return void
+	 */
+	function the_subtitle() {
+		return Nanu\Structure\Subtitle::the_subtitle();
+	}
+}

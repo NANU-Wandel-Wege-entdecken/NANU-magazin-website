@@ -31,7 +31,8 @@ final class Init
 			// Api\Gutenberg::class,
 			// Plugins\Plate::class
 			Structure\PostTypeAffiliateProduct::class,
-			Structure\UserProfile::class
+			Structure\UserProfile::class,
+			Structure\Subtitle::class
 		];
 	}
 
