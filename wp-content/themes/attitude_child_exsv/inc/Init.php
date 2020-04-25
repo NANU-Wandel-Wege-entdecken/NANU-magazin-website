@@ -29,7 +29,8 @@ final class Init
 			Setup\Language::class,
 			// Custom\Extras::class,
 			// Api\Gutenberg::class,
-			// Plugins\Plate::class
+			// Plugins\Plate::class,
+			Plugins\PopularPosts::class,
 			Structure\PostTypeAffiliateProduct::class,
 			Structure\UserProfile::class,
 			Structure\Subtitle::class
