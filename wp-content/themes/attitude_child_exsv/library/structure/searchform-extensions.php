@@ -22,4 +22,3 @@ function attitude_display_searchform() {
 	</form><!-- .searchform -->
 <?php
 }
-?>
