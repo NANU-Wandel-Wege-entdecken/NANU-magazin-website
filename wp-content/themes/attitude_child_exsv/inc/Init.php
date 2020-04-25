@@ -25,6 +25,7 @@ final class Init
 			Setup\Menus::class,
 			Setup\CleanUp::class,
 			Admin\CleanUp::class,
+			Admin\EditFlow::class,
 			Setup\Enqueue::class,
 			//Setup\Feed::class,
 			Setup\Language::class,
