@@ -139,21 +139,21 @@ function attitude_headerdetails() {
 ?>
 	<?php
 		global $attitude_theme_options_settings;
-   	$options = $attitude_theme_options_settings;
+		$options = $attitude_theme_options_settings;
 
-   	$elements = array();
-		$elements = array( 	$options[ 'social_facebook' ],
-									$options[ 'social_twitter' ],
-									$options[ 'social_googleplus' ],
-									$options[ 'social_linkedin' ],
-									$options[ 'social_pinterest' ],
-									$options[ 'social_youtube' ],
-									$options[ 'social_vimeo' ],
-									$options[ 'social_flickr' ],
-									$options[ 'social_tumblr' ],
-									$options[ 'social_myspace' ],
-									$options[ 'social_rss' ]
-							 	);
+		$elements = array( 	
+			$options[ 'social_facebook' ],
+			$options[ 'social_twitter' ],
+			$options[ 'social_googleplus' ],
+			$options[ 'social_linkedin' ],
+			$options[ 'social_pinterest' ],
+			$options[ 'social_youtube' ],
+			$options[ 'social_vimeo' ],
+			$options[ 'social_flickr' ],
+			$options[ 'social_tumblr' ],
+			$options[ 'social_myspace' ],
+			$options[ 'social_rss' ]
+		);
 
 		$flag = 0;
 		if( !empty( $elements ) ) {
@@ -283,17 +283,18 @@ function attitude_socialnetworks( $flag ) {
 			<div class="social-profiles clearfix">
 				<ul>';
 
-				$social_links = array( 	'Facebook' 	=> 'social_facebook',
-										'Twitter' 	=> 'social_twitter',
-										'Pinterest' => 'social_pinterest',
-										'You-tube'	=> 'social_youtube',
-										'Vimeo'		=> 'social_vimeo',
-										'Linked'	=> 'social_linkedin',
-										'Flickr'	=> 'social_flickr',
-										'Tumblr'	=> 'social_tumblr',
-										'My-Space'	=> 'social_myspace',
-										'RSS'		=> 'social_rss'
-									);
+				$social_links = array( 	
+					'Facebook' 	=> 'social_facebook',
+					'Twitter' 	=> 'social_twitter',
+					'Pinterest' => 'social_pinterest',
+					'You-tube'	=> 'social_youtube',
+					'Vimeo'		=> 'social_vimeo',
+					'Linked'	=> 'social_linkedin',
+					'Flickr'	=> 'social_flickr',
+					'Tumblr'	=> 'social_tumblr',
+					'My-Space'	=> 'social_myspace',
+					'RSS'		=> 'social_rss'
+				);
 
 				foreach( $social_links as $key => $value ) {
 					if ( !empty( $options[ $value ] ) ) {
@@ -387,24 +388,24 @@ function attitude_featured_post_slider() {
 				if ( 1 == $i ) { $classes = "slides displayblock"; } else { $classes = "slides displaynone"; }
 				$attitude_featured_post_slider .= '
 				<div class="'.$classes.'">';
-						if( has_post_thumbnail() ) {
+					if( has_post_thumbnail() ) {
 
-							$attitude_featured_post_slider .= '<figure><a href="' . get_permalink() . '" title="'.the_title('','',false).'">';
+						$attitude_featured_post_slider .= '<figure><a href="' . get_permalink() . '" title="'.the_title('','',false).'">';
 
-							$attitude_featured_post_slider .= get_the_post_thumbnail( $post->ID, $slider_size, array( 'title' => esc_attr( $title_attribute ), 'alt' => esc_attr( $title_attribute ), 'class'	=> 'pngfix' ) ).'</a></figure>';
+						$attitude_featured_post_slider .= get_the_post_thumbnail( $post->ID, $slider_size, array( 'title' => esc_attr( $title_attribute ), 'alt' => esc_attr( $title_attribute ), 'class'	=> 'pngfix' ) ).'</a></figure>';
+					}
+					if( $title_attribute != '' || $excerpt !='' ) {
+					$attitude_featured_post_slider .= '
+						<article class="featured-text">';
+						if( $title_attribute !='' ) {
+								$attitude_featured_post_slider .= '<div class="featured-title"><a href="' . get_permalink() . '" title="'.the_title('','',false).'">'. get_the_title() . '</a></div><!-- .featured-title -->';
 						}
-						if( $title_attribute != '' || $excerpt !='' ) {
-						$attitude_featured_post_slider .= '
-							<article class="featured-text">';
-							if( $title_attribute !='' ) {
-									$attitude_featured_post_slider .= '<div class="featured-title"><a href="' . get_permalink() . '" title="'.the_title('','',false).'">'. get_the_title() . '</a></div><!-- .featured-title -->';
-							}
-							if( $excerpt !='' ) {
-								$attitude_featured_post_slider .= '<div class="featured-content">'.$excerpt.'</div><!-- .featured-content -->';
-							}
-						$attitude_featured_post_slider .= '
-							</article><!-- .featured-text -->';
+						if( $excerpt !='' ) {
+							$attitude_featured_post_slider .= '<div class="featured-content">'.$excerpt.'</div><!-- .featured-content -->';
 						}
+					$attitude_featured_post_slider .= '
+						</article><!-- .featured-text -->';
+					}
 				$attitude_featured_post_slider .= '
 				</div><!-- .slides -->';
 			endwhile; wp_reset_query();
@@ -465,4 +466,3 @@ function attitude_header_title() {
 
 }
 endif;
-?>
