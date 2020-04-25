@@ -186,38 +186,20 @@ ul.wpp-list li p {
 }
 .more-articles a, ul.default-wp-page li.previous a {
 	background: #996633;
-	background: -webkit-linear-gradient(#B5783C, #996633);
-	background: -moz-linear-gradient(#B5783C, #996633);
-	background: -ms-linear-gradient(#B5783C, #996633);
-	background: -o-linear-gradient(#B5783C, #996633);
-	background: -webkit-gradient(#B5783C, #996633);
-	background: linear-gradient(#B5783C, #996633);
-    border: 3px solid #EAEAEA;
-    border-radius: 10px 10px 10px 10px;
     color: #F8F8F8 !important;
     display: inline-block;
-    font-size: 30px;
+    font-size: 26px;
     line-height: 36px;
     margin: 0 4px 8px 0;
-    padding: 6px 15px;
+    padding: 12px 25px;
     text-decoration: none;
 }
 .more-articles a:hover,
 .more-articles a:active,
 ul.default-wp-page li.previous a:hover,
 ul.default-wp-page li.previous a:active {
-	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
-	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
-	border: 3px solid #7E5429;
 	color: #fff;
-	background: #996633;
-	background: -webkit-linear-gradient(#C08345, #996633);
-	background: -moz-linear-gradient(#C08345, #996633);
-	background: -ms-linear-gradient(#C08345, #996633);
-	background: -o-linear-gradient(#C08345, #996633);
-	background: -webkit-gradient(#C08345, #996633);
-	background: linear-gradient(#C08345, #996633);
+	background: #C08345;
 	text-shadow: none;
 }
 #branding .searchform, .left-sidebar-template #primary, ul.default-wp-page li.next {
