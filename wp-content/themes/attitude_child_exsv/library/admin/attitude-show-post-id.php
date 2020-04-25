@@ -68,4 +68,3 @@ function attitude_post_table_column_css() {
 	</style>
 <?php	
 }
-?>

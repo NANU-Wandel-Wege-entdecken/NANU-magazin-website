@@ -21,6 +21,10 @@ if ( class_exists( 'Nanu\\Init' ) ) :
 endif;
 
 
+
+
+
+
  /**
  * Enqueue styles and scripts
  */
@@ -38,12 +42,6 @@ function enqueue_scripts() {
 	wp_enqueue_script('steadyhq', '//steadyhq.com/widget_loader/f0259c6c-f500-4eb7-bb60-a8261f2b7ec2', ['jquery'], null, true);
 }
 
-
-// Specify favicon for Dashboard
-function favicon4admin() {
- echo '<link rel="Shortcut Icon" type="image/x-icon" href="nanu-magazin.org/wp-content/uploads/images/favicon.ico" />';
-}
-add_action( 'admin_head', 'favicon4admin' );
 
 add_action( 'attitude_init', 'attitude_constants', 10 );
 /**
@@ -122,8 +120,6 @@ function attitude_load_files() {
 	do_action( 'attitude_add_files' );
 
 	/** Load functions */
-	require_once( ATTITUDE_FUNCTIONS_DIR . '/i18n.php' );
-	require_once( ATTITUDE_FUNCTIONS_DIR . '/custom-header.php' );
 	require_once( ATTITUDE_FUNCTIONS_DIR . '/functions.php' );
 
 	require_once( ATTITUDE_ADMIN_DIR . '/attitude-themeoptions-defaults.php' );
@@ -147,22 +143,6 @@ function attitude_load_files() {
 	require_once( ATTITUDE_WIDGETS_DIR . '/attitude_widgets.php' );
 }
 
-add_action( 'attitude_init', 'attitude_core_functionality', 20 );
-/**
- * Adding the core functionality of WordPess.
- *
- * @since 1.0
- */
-function attitude_core_functionality() {
-	/**
-	 * attitude_add_functionality hook
-	 *
-	 * Adding other addtional functionality if needed.
-	 */
-	do_action( 'attitude_add_functionality' );
-
-
-}
 
 
 /**
@@ -173,20 +153,6 @@ function attitude_core_functionality() {
 do_action( 'attitude_init' );
 
 
-add_action('init', 'cng_author_base');
-function cng_author_base() {
-	global $wp_rewrite;
-	$author_slug = 'profil'; // change slug name
-	$wp_rewrite->author_base = $author_slug;
-}
-
-function is_old_post($days = 365) {
-	$days = (int) $days;
-	$offset = $days*60*60*24;
-	if ( get_post_time() < date('U') - $offset )
-		return true;
-	return false;
-}
 
 function publish_later_on_feed($where) {
 	global $wpdb;
@@ -231,16 +197,6 @@ function rss_post_thumbnail($content) {
 add_filter('the_excerpt_rss', 'rss_post_thumbnail');
 add_filter('the_content_feed', 'rss_post_thumbnail');
 
-// Admin Bar gestalten
-function mytheme_admin_bar_render() {
-	global $wp_admin_bar;
-	$wp_admin_bar->remove_menu('wp-logo');
-	$wp_admin_bar->remove_menu('new-link', 'new-content');
-	// if (!current_user_can('Gastautor*in')) {
-	//    $wp_admin_bar->remove_menu('comments');
-	// }
-}
-add_action( 'wp_before_admin_bar_render', 'mytheme_admin_bar_render' );
 
 // Nur Kommentare zu eigenen Artikeln anzeigen
 function wps_get_comment_list_by_user($clauses) {
@@ -267,115 +223,18 @@ function filter_posts_list( $query ) {
 
 	//$current_user uses the get_currentuserinfo() method to get the currently logged in user's data
 	 global $current_user;
-	 // get_currentuserinfo();
 
-		//Shouldn't happen for the admin und nicht für Editor*innen - daher Prüfung nach capability Edit Others Posts, but for any role with the edit_posts capability and only on the posts list page, that is edit.php
-		if(
-			! current_user_can('edit_others_posts')
-			&& current_user_can('edit_posts')
-			&& ('edit.php' == $pagenow)
-		) {
-			//global $query's set() method for setting the author as the current user's id
-			$query->set('author', $current_user->ID);
-		}
+	//Shouldn't happen for the admin und nicht für Editor*innen - daher Prüfung nach capability Edit Others Posts, but for any role with the edit_posts capability and only on the posts list page, that is edit.php
+	if(
+		! current_user_can('edit_others_posts')
+		&& current_user_can('edit_posts')
+		&& ('edit.php' == $pagenow)
+	) {
+		//global $query's set() method for setting the author as the current user's id
+		$query->set('author', $current_user->ID);
+	}
 }
 add_action('pre_get_posts', 'filter_posts_list');
-
-// Zusätzliche Felder im Benutzerprofil
-function contactInfo($user_contactmethods) {
-
-	$user_contactmethods['facebook']  = '<b>Facebook</b> (nur deinen Username, also z.B.: <b>michael.hartl</b> statt https://facebook.com/michael.hartl';
-	$user_contactmethods['twitter']   = '<b>Twitter</b> (nur deinen Username)';
-	$user_contactmethods['instagram'] = '<b>Instagram</b> (nur deinen Username)';
-
-	// Yahoo, Jabber, AOL entfernen
-	unset($user_contactmethods['yim']);
-	unset($user_contactmethods['jabber']);
-	unset($user_contactmethods['aim']);
-
-	return $user_contactmethods;
-}
-add_filter('user_contactmethods','contactInfo');
-
-// Weitere Felder im User-Profil anlegen
-function fb_add_custom_user_profile_fields( $user ) {
-?>
-	<h3><?php _e('Weitere Angaben für die Profilseite', 'your_textdomain'); ?></h3>
-	<p>Was du hier eingibst, erscheint auf deiner Profil-Seite. Der erste lange Absatz der Profilseite ist der Text, den du weiter oben bei "Biographische Angaben" eingegeben hast. Siehe als Beispiel für eine Profilseite die von <a href="https://nanu-magazin.org/profil/lisa/" target="_blanc">Lisa.</a></p>
-	<table class="form-table">
-		<tr>
-			<th>
-				<label for="taetigkeiten"><?php _e('Tätigkeiten', 'your_textdomain'); ?>
-			</label></th>
-			<td>
-				<input type="text" name="taetigkeiten" id="taetigkeiten" value="<?php echo esc_attr( get_the_author_meta( 'taetigkeiten', $user->ID ) ); ?>" class="regular-text" /><br />
-				<span class="description"><?php _e('Sowas wie <b>Autor, Projektmanager, Superstar</b>.', 'your_textdomain'); ?></span>
-			</td>
-		</tr>
-		<tr>
-			<th>
-				<label for="mehrbio"><?php _e('Weitere biographische Angaben', 'your_textdomain'); ?>
-			</label></th>
-			<td>
-				<textarea name="mehrbio" id="mehrbio" rows="8" cols="30" class="regular-text" /><?php echo esc_attr( get_the_author_meta( 'mehrbio', $user->ID ) ); ?></textarea><br />
-								<span class="description"><?php _e('Erscheinen auf der Profil-Seite, nicht bei den Artikeln. Diese erscheinen direkt unter den Biographischen Angaben, die du weiter oben eingeben kannst. Biographische Angaben erscheinen sowohl unter deinen Artikeln, als auch in deinem Profil - die Angaben hier eben nur als nächster Bereich nach den Biographischen Angaben im Profil.', 'your_textdomain'); ?></span>
-			</td>
-		</tr>
-		<tr>
-			<th>
-				<label for="zusatzinfo"><?php _e('Zusatzinfos', 'your_textdomain'); ?>
-			</label></th>
-			<td>
-				<textarea name="zusatzinfo" id="zusatzinfo" rows="2" cols="30" class="regular-text" /><?php echo esc_attr( get_the_author_meta( 'zusatzinfo', $user->ID ) ); ?></textarea><br />
-								<span class="description"><?php _e('Sachen wie <b>Julia bloggt regelmäßig auf hundertwasser-blog.at</b>.', 'your_textdomain'); ?></span>
-			</td>
-		</tr>
-		<tr>
-			<th>
-				<label for="linktext"><?php _e('Text eines Links nach der Zusatzinfo', 'your_textdomain'); ?>
-			</label></th>
-			<td>
-				<textarea name="linktext" id="linktext" rows="1" cols="30" class="regular-text" /><?php echo esc_attr( get_the_author_meta( 'linktext', $user->ID ) ); ?></textarea><br />
-								<span class="description"><?php _e('Wird unterhalb der Zusatzinfo angezeigt. Sowas wie <b>Lies jetzt ihre neuesten Artikel!</b>', 'your_textdomain'); ?></span>
-			</td>
-		</tr>
-		<tr>
-			<th>
-				<label for="linkurl"><?php _e('URL des Links', 'your_textdomain'); ?>
-			</label></th>
-			<td>
-				<input type="text" name="linkurl" id="linkurl" value="<?php echo esc_attr( get_the_author_meta( 'linkurl', $user->ID ) ); ?>" class="regular-text" /><br />
-
-			</td>
-		</tr>
-	</table>
-<?php }
-
-function fb_save_custom_user_profile_fields( $user_id ) {
-
-	if ( !current_user_can( 'edit_user', $user_id ) ) {
-		return false;
-	}
-
-	update_user_meta( $user_id, 'mehrbio', $_POST['mehrbio'] );
-	update_user_meta( $user_id, 'zusatzinfo', $_POST['zusatzinfo'] );
-	update_user_meta( $user_id, 'linktext', $_POST['linktext'] );
-	update_user_meta( $user_id, 'linkurl', $_POST['linkurl'] );
-	update_user_meta( $user_id, 'taetigkeiten', $_POST['taetigkeiten'] );
-}
-
-add_action( 'show_user_profile', 'fb_add_custom_user_profile_fields' );
-add_action( 'edit_user_profile', 'fb_add_custom_user_profile_fields' );
-
-add_action( 'personal_options_update', 'fb_save_custom_user_profile_fields' );
-add_action( 'edit_user_profile_update', 'fb_save_custom_user_profile_fields' );
-
-// Farb-Wähler aus dem Profil entfernen
-function admin_color_scheme() {
-   global $_wp_admin_css_colors;
-   $_wp_admin_css_colors = 0;
-}
-add_action('admin_head', 'admin_color_scheme');
 
 // Nachricht unter den Titel im Editor einfügen
 add_action( 'edit_form_after_title', 'myprefix_edit_form_after_title' );

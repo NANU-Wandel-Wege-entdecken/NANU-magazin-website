@@ -21,7 +21,6 @@ $attitude_theme_options_defaults = array(
  	'exclude_slider_post'				=> '0',
  	'default_layout'						=> 'right-sidebar',
  	'reset_layout'							=> '0',
- 	'custom_css'							=> '',
  	'disable_favicon'						=> '1',
  	'favicon'								=> '',
  	'disable_webpageicon'				=> '1',
@@ -42,8 +41,6 @@ $attitude_theme_options_defaults = array(
  	'social_myspace' 						=> '',
  	'social_rss' 							=> '',
  	'social_youtube'						=> '',
- 	'analytic_header' 					=> '',
- 	'analytic_footer' 					=> '',
  	'feed_url'								=> '',
  	'front_page_category'				=> array(),
  	'header_logo'							=> '',
@@ -51,8 +48,6 @@ $attitude_theme_options_defaults = array(
  	'button_text'							=> '',
  	'redirect_button_link'				=> '',
  	'site_layout'							=> 'narrow-layout'
-
-
  );
 global $attitude_theme_options_settings;
 $attitude_theme_options_settings = attitude_theme_options_set_defaults( $attitude_theme_options_defaults );

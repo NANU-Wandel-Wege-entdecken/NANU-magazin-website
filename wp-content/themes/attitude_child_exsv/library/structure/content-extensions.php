@@ -422,12 +422,16 @@ function attitude_theloop_for_single() {
 // Ende Affiliate-Produkte
 			?>
 
-			<?php if ( is_old_post(365) ) {
-	  // do something if the post is old ; ?>
-	  <div id="infoendarticle"><b>Dieser Artikel ist mehr als ein Jahr alt.</b> Es muss daher nicht sein, dass wir jedes einzelne Wort immer noch so schreiben würden wie damals. Wenn Fragen sind, kommentiere einfach zum Artikel, dann antworten wir Dir gerne.</div>
-	  <?php } else {
-	  // do something if the post is not old
-	} ; ?>
+			<?php if ( is_old_post(365) ) :
+			// do something if the post is old
+			?>
+				<div id="infoendarticle">
+				<b>Dieser Artikel ist mehr als ein Jahr alt.</b> Es muss daher nicht sein, dass wir jedes einzelne Wort immer noch so schreiben würden wie damals. Wenn Fragen sind, kommentiere einfach zum Artikel, dann antworten wir Dir gerne.
+				</div>
+			<?php
+				endif;
+			?>
+			
 			</div>
 			<div class="entry-meta-bar clearfix">
 				<div class="ueberautorin">

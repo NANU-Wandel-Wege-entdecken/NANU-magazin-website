@@ -117,3 +117,10 @@ if ( ! function_exists('svg') ) {
 		echo get_template_part('assets/dist/svg/inline', $path . '.svg');
 	}
 }
+
+
+function is_old_post($days = 365) {
+	$days = (int) $days;
+	$offset = $days*60*60*24;
+	return ( get_post_time() < date('U') - $offset );
+}

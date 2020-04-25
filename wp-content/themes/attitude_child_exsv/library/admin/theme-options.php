@@ -145,7 +145,6 @@ function attitude_theme_options_do_page() {
 					<li><a href="#advancedoptions"><?php _e( 'Advance Options', 'attitude' );?></a></li>
 					<li><a href="#featuredpostslider"><?php _e( 'Featured Post/Page Slider', 'attitude' );?></a></li>
 					<li><a href="#sociallinks"><?php _e( 'Social Links', 'attitude' );?></a></li>
-					<li><a href="#webmastertools"><?php _e( 'Webmaster Tools', 'attitude' );?></a></li>
 				</ul><!-- .tab-navigation #main-navigation -->
                    
 				<!-- Option for Design Options -->
@@ -334,53 +333,6 @@ function attitude_theme_options_do_page() {
 							<p class="submit"><input type="submit" class="button-primary" value="<?php esc_attr_e( 'Save All Changes', 'attitude' ); ?>" /></p> 
 						</div><!-- .option-content -->
 					</div><!-- .option-container -->				
-
-					<div class="option-container">
-						<h3 class="option-toggle"><a href="#"><?php _e( 'Custom Background', 'attitude' ); ?></a></h3>
-						<div class="option-content inside">
-							<table class="form-table">
-								<tbody> 
-									<tr>
-										<th>
-											<?php _e( 'Need to replace default background?', 'attitude' ); ?>
-										</th>
-										<td style="padding-bottom: 64px;">
-											<?php printf(__('<a class="button" href="%s">Click here</a>', 'attitude'), admin_url('themes.php?page=custom-background')); ?>
-										</td>
-										<td style="padding-bottom: 20px;">
-											<p><small><?php _e( 'Note: The custom background change will be reflected in the background if the site layout is set to be narrow layout instead of the wide layout.', 'attitude' ); ?></small></p>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div><!-- .option-content -->
-					</div><!-- .option-container -->
-            
-					<div class="option-container">
-						<h3 class="option-toggle"><a href="#"><?php _e( 'Custom CSS', 'attitude' ); ?></a></h3>
-						<div class="option-content inside"> 
-							<table class="form-table">  
-								<tbody>       
-									<tr>
-										<th scope="row"><label for="custom-css"><?php _e( 'Enter your custom CSS styles.', 'attitude' ); ?></label>										
-											<p><small><?php _e( 'This CSS will overwrite the CSS of style.css file.', 'attitude' ); ?></small></p>
-										</th>
-										<td>
-										<textarea name="attitude_theme_options[custom_css]" id="custom-css" cols="90" rows="12"><?php echo esc_attr( $options[ 'custom_css' ] ); ?></textarea>
-										</td>
-									</tr>
-
-									<tr>
-										<th scope="row"><?php _e( 'CSS Tutorial from W3Schools.', 'attitude' ); ?></th>
-										<td>
-										<a class="button" href="<?php echo esc_url( __( 'http://www.w3schools.com/css/default.asp','attitude' ) ); ?>" title="<?php esc_attr_e( 'CSS Tutorial', 'attitude' ); ?>" target="_blank"><?php _e( 'Click Here to Read', 'attitude' );?></a>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-							<p class="submit"><input type="submit" class="button-primary" value="<?php esc_attr_e( 'Save All Changes', 'attitude' ); ?>" /></p> 
-						</div><!-- .option-content -->
-					</div><!-- .option-container -->                    
 
 				</div> <!-- #designoptions -->  
 
@@ -644,40 +596,6 @@ function attitude_theme_options_do_page() {
 
 
 				</div> <!-- #sociallinks --> 
-
-				<!-- Option for Design Settings -->
-				<div id="webmastertools">        
-					<div class="option-container">
-						<h3 class="option-toggle"><a href="#"><?php _e( 'Analytics', 'attitude' ); ?></a></h3>
-						<div class="option-content inside">
-							<table class="form-table">  
-								<tbody>       
-									<tr>
-										<th scope="row"><?php _e( 'Code to display on Header', 'attitude' ); ?></th>
-										<td>
-										<textarea name="attitude_theme_options[analytic_header]" id="analytics" rows="7" cols="80" ><?php echo esc_html( $options[ 'analytic_header' ] ); ?></textarea>
-										</td>
-									</tr>
-									<tr>
-										<td></td><td><?php _e('Note: Enter your custom header script.', 'attitude' ); ?></td>
-									</tr>
-									<tr>
-										<th scope="row"><?php _e('Code to display on Footer', 'attitude' ); ?></th>
-										<td>
-										<textarea name="attitude_theme_options[analytic_footer]" id="analytics" rows="7" cols="80" ><?php echo esc_html( $options[ 'analytic_footer' ] ); ?></textarea>
-
-										</td>
-									</tr>
-									<tr>
-										<td></td><td><?php _e( 'Note: Enter your custom footer script.', 'attitude' ); ?></td>
-									</tr>
-								</tbody>
-							</table>
-							<p class="submit"><input type="submit" class="button-primary" value="<?php esc_attr_e( 'Save All Changes', 'attitude' ); ?>" /></p> 
-						</div><!-- .option-content -->
-					</div><!-- .option-container -->
-
-				</div> <!-- #webmastertools -->   
                         
          </div><!-- #attitude_tabs -->
             
@@ -833,18 +751,6 @@ function attitude_theme_options_validate( $options ) {
 	if( isset( $input[ 'social_rss' ] ) ) {
 		$input_validated[ 'social_rss' ] = esc_url_raw( $input[ 'social_rss' ] );
 	}   
-    
-	//Custom CSS Style Validation
-	if ( isset( $input['custom_css'] ) ) {
-		$input_validated['custom_css'] = wp_kses_stripslashes($input['custom_css']);
-	}
-	   
-	if( isset( $input[ 'analytic_header' ] ) ) {
-		$input_validated[ 'analytic_header' ] = wp_kses_stripslashes( $input[ 'analytic_header' ] );
-	}
-	if( isset( $input[ 'analytic_footer' ] ) ) {
-		$input_validated[ 'analytic_footer' ] = wp_kses_stripslashes( $input[ 'analytic_footer' ] );    
-	}       
     
 	// Layout settings verification
 	if( isset( $input[ 'reset_layout' ] ) ) {

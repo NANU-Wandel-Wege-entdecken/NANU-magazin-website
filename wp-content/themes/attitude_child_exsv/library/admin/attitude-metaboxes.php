@@ -32,44 +32,44 @@ function attitude_add_custom_box() {
 
 global $sidebar_layout;
 $sidebar_layout = array(
-							'default-sidebar' 		=> array(
-															'id'			=> 'attitude_sidebarlayout',
-															'value' 		=> 'default',
-															'label' 		=> __( 'Default Layout Set in', 'attitude' ).' '.'<a href="'.get_bloginfo('url').'/wp-admin/themes.php?page=theme_options" target="_blank">'.__( 'Theme Settings', 'attitude' ).'</a>',
-															'thumbnail' => ' '
-															),
-							'no-sidebar' 				=> array(
-															'id'			=> 'attitude_sidebarlayout',
-															'value' 		=> 'no-sidebar',
-															'label' 		=> __( 'No sidebar', 'attitude' ),
-															'thumbnail' => ATTITUDE_ADMIN_IMAGES_URL . '/no-sidebar.png'
-															),
-							'no-sidebar-full-width' => array(
-															'id'			=> 'attitude_sidebarlayout',
-															'value' 		=> 'no-sidebar-full-width',
-															'label' 		=> __( 'No sidebar, Full Width', 'attitude' ),
-															'thumbnail' => ATTITUDE_ADMIN_IMAGES_URL . '/no-sidebar-fullwidth.png'
-															),
-							'no-sidebar-one-column' => array(
-															'id'			=> 'attitude_sidebarlayout',
-															'value' 		=> 'no-sidebar-one-column',
-															'label' 		=> __( 'No Sidebar, One Column', 'attitude' ),
-															'thumbnail' => ATTITUDE_ADMIN_IMAGES_URL . '/one-column.png'
-															),		
-							'left-sidebar' => array(
-															'id'			=> 'attitude_sidebarlayout',
-															'value' 		=> 'left-sidebar',
-															'label' 		=> __( 'Left sidebar', 'attitude' ),
-															'thumbnail' => ATTITUDE_ADMIN_IMAGES_URL . '/left-sidebar.png'
-															),
-							'right-sidebar' => array(
-															'id' 			=> 'attitude_sidebarlayout',
-															'value' 		=> 'right-sidebar',
-															'label' 		=> __( 'Right sidebar', 'attitude' ),
-															'thumbnail' => ATTITUDE_ADMIN_IMAGES_URL . '/right-sidebar.png'
-															)
-						);
-	
+	'default-sidebar' => array(
+		'id'			=> 'attitude_sidebarlayout',
+		'value' 		=> 'default',
+		'label' 		=> __( 'Default Layout Set in', 'attitude' ).' '.'<a href="'.get_bloginfo('url').'/wp-admin/themes.php?page=theme_options" target="_blank">'.__( 'Theme Settings', 'attitude' ).'</a>',
+		'thumbnail' => ' '
+		),
+	'no-sidebar' 	=> array(
+		'id'			=> 'attitude_sidebarlayout',
+		'value' 		=> 'no-sidebar',
+		'label' 		=> __( 'No sidebar', 'attitude' ),
+		'thumbnail' => ATTITUDE_ADMIN_IMAGES_URL . '/no-sidebar.png'
+		),
+	'no-sidebar-full-width' => array(
+		'id'			=> 'attitude_sidebarlayout',
+		'value' 		=> 'no-sidebar-full-width',
+		'label' 		=> __( 'No sidebar, Full Width', 'attitude' ),
+		'thumbnail' => ATTITUDE_ADMIN_IMAGES_URL . '/no-sidebar-fullwidth.png'
+		),
+	'no-sidebar-one-column' => array(
+		'id'			=> 'attitude_sidebarlayout',
+		'value' 		=> 'no-sidebar-one-column',
+		'label' 		=> __( 'No Sidebar, One Column', 'attitude' ),
+		'thumbnail' => ATTITUDE_ADMIN_IMAGES_URL . '/one-column.png'
+		),		
+	'left-sidebar' => array(
+		'id'			=> 'attitude_sidebarlayout',
+		'value' 		=> 'left-sidebar',
+		'label' 		=> __( 'Left sidebar', 'attitude' ),
+		'thumbnail' => ATTITUDE_ADMIN_IMAGES_URL . '/left-sidebar.png'
+		),
+	'right-sidebar' => array(
+		'id' 			=> 'attitude_sidebarlayout',
+		'value' 		=> 'right-sidebar',
+		'label' 		=> __( 'Right sidebar', 'attitude' ),
+		'thumbnail' => ATTITUDE_ADMIN_IMAGES_URL . '/right-sidebar.png'
+		)
+	);
+
 /****************************************************************************************/
 
 /**

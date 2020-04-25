@@ -24,11 +24,14 @@ final class Init
 			Setup\Setup::class,
 			Setup\Menus::class,
 			Setup\CleanUp::class,
-			// Setup\Enqueue::class,
+			Admin\CleanUp::class,
+			Setup\Enqueue::class,
+			Setup\Language::class,
 			// Custom\Extras::class,
 			// Api\Gutenberg::class,
 			// Plugins\Plate::class
-			Structure\PostTypeAffiliateProduct::class
+			Structure\PostTypeAffiliateProduct::class,
+			Components\UserProfile::class
 		];
 	}
 

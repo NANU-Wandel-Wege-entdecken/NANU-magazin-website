@@ -66,9 +66,7 @@ add_action( 'attitude_links', 'attitude_add_links', 10 );
 function attitude_add_links() {
 ?>
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
-	<link rel="pingback" href="https://nanu-magazin.org/xmlrpc.php" />
-	<link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 <?php }
 
 /****************************************************************************************/
@@ -285,19 +283,17 @@ function attitude_socialnetworks( $flag ) {
 			<div class="social-profiles clearfix">
 				<ul>';
 
-				$social_links = array();
-				$social_links = array( 	'Facebook' 		=> 'social_facebook',
-												'Twitter' 		=> 'social_twitter',
-												'Google-Plus'	=> 'social_googleplus',
-												'Pinterest' 	=> 'social_pinterest',
-												'You-tube'		=> 'social_youtube',
-												'Vimeo'			=> 'social_vimeo',
-												'Linked'			=> 'social_linkedin',
-												'Flickr'			=> 'social_flickr',
-												'Tumblr'			=> 'social_tumblr',
-												'My-Space'		=> 'social_myspace',
-												'RSS'				=> 'social_rss'
-											);
+				$social_links = array( 	'Facebook' 	=> 'social_facebook',
+										'Twitter' 	=> 'social_twitter',
+										'Pinterest' => 'social_pinterest',
+										'You-tube'	=> 'social_youtube',
+										'Vimeo'		=> 'social_vimeo',
+										'Linked'	=> 'social_linkedin',
+										'Flickr'	=> 'social_flickr',
+										'Tumblr'	=> 'social_tumblr',
+										'My-Space'	=> 'social_myspace',
+										'RSS'		=> 'social_rss'
+									);
 
 				foreach( $social_links as $key => $value ) {
 					if ( !empty( $options[ $value ] ) ) {

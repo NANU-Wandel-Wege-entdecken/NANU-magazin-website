@@ -106,7 +106,7 @@ class PostTypeAffiliateProduct
 
 	}
 
-  /**
+    /**
     * Flush Rewrite on CPT activation
     * @return empty
     */

@@ -85,11 +85,11 @@ return count;
 })(jQuery, this, 0);
 
 // Tinynav
-    jQuery(function () {
+jQuery(function () {
 
-      // TinyNav.js 1
-      jQuery('#access .root').tinyNav({
-        active: 'current-menu-item'
-      });
+  // TinyNav.js 1
+  jQuery('#access .root').tinyNav({
+    active: 'current-menu-item'
+  });
 
-    });
+});
