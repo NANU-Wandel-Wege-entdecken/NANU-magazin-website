@@ -53,12 +53,8 @@ function attitude_constants() {
 
 	/** Define Directory Location Constants */
 	define( 'ATTITUDE_PARENT_DIR', get_stylesheet_directory() );
-	define( 'ATTITUDE_CHILD_DIR', ATTITUDE_PARENT_DIR );
 	define( 'ATTITUDE_IMAGES_DIR', ATTITUDE_PARENT_DIR . '/images' );
 	define( 'ATTITUDE_LIBRARY_DIR', ATTITUDE_PARENT_DIR. '/library' );
-	/* ergänzt */
-	define( 'CHILD_LIBRARY_DIR', ATTITUDE_CHILD_DIR. '/library' );
-	/* ende */
 	define( 'ATTITUDE_ADMIN_DIR', ATTITUDE_LIBRARY_DIR . '/admin' );
 	define( 'ATTITUDE_ADMIN_IMAGES_DIR', ATTITUDE_ADMIN_DIR . '/images' );
 	define( 'ATTITUDE_ADMIN_JS_DIR', ATTITUDE_ADMIN_DIR . '/js' );
@@ -68,23 +64,13 @@ function attitude_constants() {
 	define( 'ATTITUDE_FUNCTIONS_DIR', ATTITUDE_LIBRARY_DIR . '/functions' );
 	define( 'ATTITUDE_SHORTCODES_DIR', ATTITUDE_LIBRARY_DIR . '/shortcodes' );
 	define( 'ATTITUDE_STRUCTURE_DIR', ATTITUDE_LIBRARY_DIR . '/structure' );
-	/* ergänzt */
-	define( 'CHILD_STRUCTURE_DIR', CHILD_LIBRARY_DIR . '/structure' );
-	/* ende */
-	/* if ( ! defined( 'ATTITUDE_LANGUAGES_DIR' ) ) /** So we can define with a child theme */
-		define( 'ATTITUDE_LANGUAGES_DIR', ATTITUDE_LIBRARY_DIR . '/languages' );
-	/* geändert */
-	define( 'ATTITUDE_WIDGETS_DIR', CHILD_LIBRARY_DIR . '/widgets' );
-	/* ende */
+	define( 'ATTITUDE_LANGUAGES_DIR', ATTITUDE_LIBRARY_DIR . '/languages' );
+	define( 'ATTITUDE_WIDGETS_DIR', ATTITUDE_LIBRARY_DIR . '/widgets' );
 
 	/** Define URL Location Constants */
 	define( 'ATTITUDE_PARENT_URL', get_stylesheet_directory_uri() );
-	define( 'ATTITUDE_CHILD_URL', get_stylesheet_directory_uri() );
 	define( 'ATTITUDE_IMAGES_URL', ATTITUDE_PARENT_URL . '/images' );
 	define( 'ATTITUDE_LIBRARY_URL', ATTITUDE_PARENT_URL . '/library' );
-	/* ergänzt */
-	define( 'CHILD_LIBRARY_URL', ATTITUDE_CHILD_URL . '/library' );
-	/* ende */
 	define( 'ATTITUDE_ADMIN_URL', ATTITUDE_LIBRARY_URL . '/admin' );
 	define( 'ATTITUDE_ADMIN_IMAGES_URL', ATTITUDE_ADMIN_URL . '/images' );
 	define( 'ATTITUDE_ADMIN_JS_URL', ATTITUDE_ADMIN_URL . '/js' );
@@ -94,15 +80,7 @@ function attitude_constants() {
 	define( 'ATTITUDE_FUNCTIONS_URL', ATTITUDE_LIBRARY_URL . '/functions' );
 	define( 'ATTITUDE_SHORTCODES_URL', ATTITUDE_LIBRARY_URL . '/shortcodes' );
 	define( 'ATTITUDE_STRUCTURE_URL', ATTITUDE_LIBRARY_URL . '/structure' );
-	/* ergänzt */
-	define( 'CHILD_STRUCTURE_URL', CHILD_LIBRARY_URL . '/structure' );
-	/* ende */
-	if ( ! defined( 'ATTITUDE_LANGUAGES_URL' ) ) /** So we can predefine to child theme */
-		define( 'ATTITUDE_LANGUAGES_URL', ATTITUDE_LIBRARY_URL . '/languages' );
-	/* geändert */
-	define( 'CHILD_WIDGETS_URL', CHILD_LIBRARY_URL . '/widgets' );
-	/* ende */
-
+	define( 'ATTITUDE_LANGUAGES_URL', ATTITUDE_LIBRARY_URL . '/languages' );
 }
 
 add_action( 'attitude_init', 'attitude_load_files', 15 );
@@ -131,12 +109,10 @@ function attitude_load_files() {
 	require_once( ATTITUDE_SHORTCODES_DIR . '/attitude-shortcodes.php' );
 
 	/** Load Structure */
-	/* geändert auf CHILD */
-	require_once( CHILD_STRUCTURE_DIR . '/header-extensions.php' );
-	require_once( CHILD_STRUCTURE_DIR . '/content-extensions.php' );
-	require_once( CHILD_STRUCTURE_DIR . '/sidebar-extensions.php' );
-	require_once( CHILD_STRUCTURE_DIR . '/footer-extensions.php' );
-	/* ende */
+	require_once( ATTITUDE_STRUCTURE_DIR . '/header-extensions.php' );
+	require_once( ATTITUDE_STRUCTURE_DIR . '/content-extensions.php' );
+	require_once( ATTITUDE_STRUCTURE_DIR . '/sidebar-extensions.php' );
+	require_once( ATTITUDE_STRUCTURE_DIR . '/footer-extensions.php' );
 	require_once( ATTITUDE_STRUCTURE_DIR . '/searchform-extensions.php' );
 
 	/** Load Widgets and Widgetized Area */
