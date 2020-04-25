@@ -147,9 +147,6 @@ input.s {
 	}
 
 /* Content */
-#main {
-    padding: 20px 0 10px;
-}
 .entry-meta {
     width: 81.89%;
 }
@@ -569,12 +566,17 @@ a {
 	text-decoration: underline;
 }
 a:focus, a:hover {
-        text-decoration: underline;
+    text-decoration: underline;
 }
+
+#access .root {
+    margin: 0 -10px;
+}
+
 #access a {
     text-decoration: none;
-    height: 29px;
-    padding: 3px 0 0;
+    padding: 5px 10px 0;
+    line-height: 2.4em;
 }
 #access a:hover,
 #access ul li.current-menu-item a,
@@ -681,14 +683,8 @@ input[type="submit"]:hover {
     text-decoration: none;
 }
 .comments-area article header {
-        background: #DCDCDC;
-        background: -webkit-linear-gradient(#FFFFFF, #DCDCDC);
-	background: -moz-linear-gradient(#FFFFFF, #DCDCDC);
-	background: -ms-linear-gradient(#FFFFFF, #DCDCDC);
-	background: -o-linear-gradient(#FFFFFF, #DCDCDC);
-	background: -webkit-gradient(#FFFFFF, #DCDCDC);
-	background: linear-gradient(#FFFFFF, #DCDCDC);
-        margin: 0 0 6px;
+    background: #f3f3f3;
+    margin: 0 0 6px;
 }
 .comments-area li.comment-author-michael-hartl > article header {
         background: #50BC52;
@@ -827,7 +823,7 @@ a.comment-reply-link:active {
 	position: absolute;
 	background-color: #fff;
 	border-top: 4px solid #276E37;
-	top: 29px;
+	top: 2.6em;
 	left: 0px;
 	width: 190px;
 }
