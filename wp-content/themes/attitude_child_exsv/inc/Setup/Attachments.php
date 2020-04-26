@@ -10,13 +10,12 @@ class Attachments
      */
     public function register()
     {
-        add_filter( 'media_view_settings', 'link_images_to_attachment_file');
-        add_filter( 'comments_open', 'disable_comments_for_attachment_pages', 10 , 2 );
+        add_filter( 'media_view_settings', [ $this, 'link_images_to_attachment_file' ] );
+        add_filter( 'comments_open', [ $this, 'disable_comments_for_attachment_pages' ], 10 , 2 );
     }
 
     public function disable_comments_for_attachment_pages( $open, $post_id ) {
-        $post = get_post( $post_id );
-        if ( 'attachment' === $post->post_type ) {
+        if ( 'attachment' === get_post_type( $post_id ) ) {
             return false;
         }
         return $open;
