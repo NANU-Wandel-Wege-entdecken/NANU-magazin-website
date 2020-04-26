@@ -146,7 +146,7 @@ li.postformat-link a.wpp-post-title {
     width: 100%;
     }
 #wpp-2 ul {
-    margin: 0;
+    margin: 0 -2.5%; /* compensate li margins */
     display: flex;
     flex-wrap: wrap;
 }
