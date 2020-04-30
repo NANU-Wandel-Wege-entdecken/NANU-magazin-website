@@ -146,10 +146,6 @@ input.s {
 	text-transform: none;
 	}
 
-/* Content */
-.entry-meta {
-    width: 81.89%;
-}
 .single .entry-meta-bar {
         padding-bottom: 0px;
     }
@@ -158,7 +154,8 @@ input.s {
     margin: 0 0 5px;
     width: 100%;
 }
-.entry-meta a, .entry-meta a:hover {
+.entry-meta a,
+.entry-meta a:hover {
     text-decoration: none;
 }
 .entry-meta a:hover {
@@ -228,7 +225,9 @@ input.s {
     max-width: 474px;
     width: 100%;
     }
-.suchergebnis .entry-header, .suchergebnis .entry-content, .suchergebnis .entry-meta-bar {
+.suchergebnis .entry-header,
+.suchergebnis .entry-content,
+.suchergebnis .entry-meta-bar {
     padding: 0 16px;
     }
 .suchergebnis .entry-meta-bar {
@@ -1082,13 +1081,10 @@ div.textwidget a.readmore {
 	.slogan-wrap .slogan {
 		width: 65%;
 	}
-/* entry meta */
-	.entry-meta {
-    width: 82%;
-	}
+
 /* Suchergebnisse */
     .suchergebnis {
-    margin: 0 6px 30px;
+        margin: 0 6px 30px;
     }
 /* Pinstyle für Tags und Kategorien */
     body.category div#content, body.tag div#content {
@@ -1123,9 +1119,6 @@ div.textwidget a.readmore {
 	.one-fourth {
     margin: 0 0 0 2.5%;
     width: 95%;
-	}
-	.entry-meta {
-    width: 60%;
 	}
 	.entry-meta span.comments {
     display: none;
@@ -1171,9 +1164,7 @@ div.textwidget a.readmore {
     margin: 0 0 0 2.5%;
     width: 95%;
 	}
-	.entry-meta {
-    width: 73.59%;
-	}
+
 	.entry-meta span.by-author {
     display: inline;
 	}
@@ -1209,9 +1200,6 @@ div.textwidget a.readmore {
 	.one-fourth {
     margin: 0 0 0 2.5%;
     width: 95%;
-	}
-	.entry-meta {
-    width: 72.59%;
 	}
 /* Pinstyle für Tags und Kategorien */
     body.category div#content, body.tag div#content {
