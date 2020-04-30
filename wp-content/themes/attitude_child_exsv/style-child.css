@@ -147,8 +147,8 @@ input.s {
 	}
 
 .single .entry-meta-bar {
-        padding-bottom: 0px;
-    }
+    padding-bottom: 0px;
+}
 .metaurl {
     line-height: 18px;
     margin: 0 0 5px;
@@ -190,7 +190,7 @@ input.s {
     text-align: center;
 }
 .entry-meta-bar {
-    border-bottom: 1px solid #E3B0E9;
+    border-bottom: none;
     border-top: 1px solid #E3B0E9;
 }
 #content ul.default-wp-page {
@@ -473,6 +473,10 @@ body.category .entry-meta span.date, body.tag .entry-meta span.date {
 .pinstyleauth {
     margin-left: 72px;
     width:83%;
+}
+
+.pinstyleauth .date {
+    display: block;
 }
 
 

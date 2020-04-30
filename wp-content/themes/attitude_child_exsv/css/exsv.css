@@ -35,9 +35,8 @@ blockquote em, blockquote i, blockquote cite {
 #content .format-standard h1, #content .format-standard h2.entry-title,
 #content .format-link h1, #content .format-link h2.entry-title {
     padding-top: 7px;
-    min-height: 2em;
-    background-size: 1.8em;
-    padding-left: 2.2em;
+    background-size: 40px;
+    padding-left: 55px;
     background-position: 4px center;
     margin-top: 5px;
 }

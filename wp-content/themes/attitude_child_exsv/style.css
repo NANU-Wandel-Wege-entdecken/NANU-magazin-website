@@ -1162,6 +1162,13 @@ li.default-menu {
 .entry-meta {
     padding-bottom: 10px;
 }
+
+.entry-meta > span:not(:last-child):after {
+    content: '';
+    padding-left: 0px;
+    margin-left: 10px;
+    border-left: 1px solid #E3B0E9
+}
 /* Single Page */
 .single .entry-meta {
    float: none;
