@@ -244,9 +244,19 @@ input.s {
     }
 /* Masonry container */
     body.search div#content {
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
-    column-count: 2;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -20px;
+    }
+    body.search div#content section {
+        margin: 20px;
+    }
+
+    @media ( min-width: 1079px ) {
+        body.search div#content section {
+            flex: 0 1 calc( 50% - 40px);
+            margin: 20px;
+        }
     }
 
 /* Profile */
@@ -1156,11 +1166,6 @@ div.textwidget a.readmore {
 /* Suchergebnisse */
     .suchergebnis {
     margin: 0 0 40px;
-    }
-    body.search div#content {
-    -moz-column-count: 1;
-    -webkit-column-count: 1;
-    column-count: 1;
     }
 /* Über uns Seite */
     .ueberuns-avatar-g {

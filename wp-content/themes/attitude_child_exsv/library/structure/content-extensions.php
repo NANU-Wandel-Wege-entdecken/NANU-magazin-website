@@ -947,7 +947,7 @@ endif;
 
 /****************************************************************************************/
 
-add_action( 'attitude_after_loop_content', 'attitude_next_previous', 5 );
+add_action( 'attitude_after_loop_content', 'attitude_next_previous', 25 );
 /**
  * Shows the next or previous posts
  */
