@@ -45,23 +45,23 @@ blockquote em, blockquote i, blockquote cite {
 }
 
 li.postformat-gallery a.wpp-post-title {
-    background: url(../images/icon-image.png) 0 20% no-repeat;
+    background: url(../images/icon-image.png) 0 50% no-repeat;
     padding-left: 60px;
     }
 li.postformat-video a.wpp-post-title {
-    background: url(../images/icon-video.png) 0 20% no-repeat;
+    background: url(../images/icon-video.png) 0 50% no-repeat;
     padding-left: 60px;
     }
 li.postformat-audio a.wpp-post-title {
-    background: url(../images/icon-audio.png) 0 20% no-repeat;
+    background: url(../images/icon-audio.png) 0 50% no-repeat;
     padding-left: 60px;
     }
 li.postformat- a.wpp-post-title {
-    background: url(../images/icon-standard.png) 0 20% no-repeat;
+    background: url(../images/icon-standard.png) 0 50% no-repeat;
     padding-left: 60px;
     }
 li.postformat-link a.wpp-post-title {
-    background: url(../images/icon-sponsored.png) 0 20% no-repeat;
+    background: url(../images/icon-sponsored.png) 0 50% no-repeat;
     padding-left: 60px;
     }
 
@@ -169,7 +169,8 @@ li.postformat-link a.wpp-post-title {
 }
 .wpp-post-title {
     color: #276e37;
-    display: block;
+    display: flex;
+    align-items: center;
     font: 23px/30px "Raleway",sans-serif;
     min-height: 70px;
     margin-top: 10px;
