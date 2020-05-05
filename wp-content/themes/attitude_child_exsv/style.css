@@ -944,7 +944,7 @@ li.default-menu {
 }
 #content .post {
     padding-top: 10px;
-   padding-bottom: 40px;
+    padding-bottom: 40px;
     border-top: 1px solid #eaeaea;
 }
 .page-title-wrap {
@@ -962,12 +962,6 @@ li.default-menu {
 }
 .page-title a {
     color: #555;
-}
-.entry-title,
-.entry-header .entry-meta {
-
-}
-.entry-header {
 }
 .entry-title {
     font: 24px 'Philosopher', sans-serif;
@@ -989,8 +983,6 @@ li.default-menu {
     clear: both;
 }
 .entry-meta {
-    width: 84.89%;
-    float: left;
     padding-top: 2px;
 }
 .entry-meta a {
@@ -1013,12 +1005,9 @@ li.default-menu {
 .tags a:hover {
     color: #05A9C5;
 }
-.single-author .entry-meta .by-author {
-
-}
 .post-featured-image {
     margin-bottom: 30px;
-    max-width: 700px;
+    max-width: 774.55px;
 }
 .post-featured-image a {
     display: block;
@@ -1171,6 +1160,16 @@ li.default-menu {
     margin-bottom: 0;
 }
 
+.entry-meta {
+    padding-bottom: 10px;
+}
+
+.entry-meta > span:not(:last-child):after {
+    content: '';
+    padding-left: 0px;
+    margin-left: 10px;
+    border-left: 1px solid #E3B0E9
+}
 /* Single Page */
 .single .entry-meta {
    float: none;

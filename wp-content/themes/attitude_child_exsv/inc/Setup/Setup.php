@@ -31,7 +31,7 @@ class Setup
         add_theme_support( 'post-thumbnails' );
         add_theme_support( 'customize-selective-refresh-widgets' );
 
-        add_theme_support( 'html5', [ 
+        add_theme_support( 'html5', [
             'comment-list',
             'comment-form',
             'search-form',
@@ -58,9 +58,9 @@ class Setup
 
 
         // Add Attitude custom image sizes
-        add_image_size( 'featured', 670, 300, true );
-        add_image_size( 'featured-medium', 230, 230, true );
-        add_image_size( 'slider-narrow', 1038, 460, true );
+        add_image_size( 'featured', 775, 347, true );
+        add_image_size( 'featured-medium', 363, 363, true );
+        add_image_size( 'slider-narrow', 1240, 460, true );
         add_image_size( 'large', 642, 9999 );
         add_image_size( 'gallery', 474, 342, true );
         add_image_size( 'icon', 80, 80, true );
@@ -78,7 +78,7 @@ class Setup
     */
     public function content_width()
     {
-        $GLOBALS[ 'content_width' ] = apply_filters( 'content_width', 1038 );
+        $GLOBALS[ 'content_width' ] = apply_filters( 'content_width', 1240 );
     }
 
     /*
