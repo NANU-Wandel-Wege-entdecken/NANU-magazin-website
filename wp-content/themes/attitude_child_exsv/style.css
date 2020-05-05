@@ -940,7 +940,7 @@ li.default-menu {
 #primary {
     float: left;
     margin-left: 3.06%;
-    width: 65.64%;
+    width: 66.66%;
 }
 #content .post {
     padding-top: 10px;
@@ -1104,9 +1104,10 @@ li.default-menu {
 
 /* Sidebar */
 #secondary {
-    float: left;
+    float: right;
     margin-left: 3.06%;
     width: 31.28%;
+    max-width: 306px;
 }
 
 /* Left Sidebar Template */
