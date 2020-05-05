@@ -59,7 +59,7 @@ class Setup
 
         // Add Attitude custom image sizes
         add_image_size( 'featured', 775, 347, true );
-        add_image_size( 'featured-medium', 230, 230, true );
+        add_image_size( 'featured-medium', 363, 363, true );
         add_image_size( 'slider-narrow', 1240, 460, true );
         add_image_size( 'large', 642, 9999 );
         add_image_size( 'gallery', 474, 342, true );
