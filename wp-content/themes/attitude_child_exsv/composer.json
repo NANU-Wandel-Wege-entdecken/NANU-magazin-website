@@ -1,0 +1,24 @@
+{
+	"name": "nanu/exsv-website",
+	"description": "Modernize exsv theme",
+	"keywords": [""],
+	"homepage": "https://nanu-magazin.org",
+	"license": "GPL-3.0",
+	"version": "1.9",
+	"authors": [
+		{
+			"name": "Sebastian Gärtner",
+			"email": "mail@gaertner-webentwicklung.de",
+			"homepage": "https://gaertner-webentwicklung.de",
+			"role": "Developer"
+		}
+	],
+	"require": {
+	},
+	"require-dev": {
+	},
+	"autoload": {
+		"psr-4": { "Nanu\\": "./inc" },
+		"files": [ "./inc/Helpers.php" ]
+	}
+}

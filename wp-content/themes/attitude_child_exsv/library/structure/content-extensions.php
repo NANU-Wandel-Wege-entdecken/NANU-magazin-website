@@ -103,73 +103,72 @@ function attitude_theloop_for_catetag() {
 
 	global $post;
 
-	if( have_posts() ) {
+	if ( have_posts() ) {
 		while( have_posts() ) {
 			the_post();
 
 			do_action( 'attitude_before_post' );
-?>
-	<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<article>
+			?>
+			<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<article>
+					<?php
+					if( has_post_thumbnail() ) {
+						$image = '';
+						$title_attribute = apply_filters( 'the_title', get_the_title( $post->ID ) );
+						$image .= '<figure class="pinstyle">';
+						$image .= '<a href="' . get_permalink() . '" title="'.the_title( '', '', false ).'">';
+						$image .= get_the_post_thumbnail( $post->ID, 'featured-medium', array( 'title' => esc_attr( $title_attribute ), 'alt' => esc_attr( $title_attribute ) ) ).'</a>';
+						$image .= '</figure>';
+
+						echo $image;
+					}
+					?>
+
+					<?php do_action( 'attitude_before_post_header' ); ?>
+
+					<header class="entry-header">
+						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><h2 class="entry-title">
+							<?php the_title(); ?>
+						</h2></a><!-- .entry-title -->
+					</header>
+
+					<?php do_action( 'attitude_after_post_header' ); ?>
+
+					<?php do_action( 'attitude_before_post_content' ); ?>
+
+					<div class="entry-content clearfix">
+						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_excerpt(); ?></a>
+					</div>
+
+					<?php do_action( 'attitude_after_post_content' ); ?>
+
+					<?php do_action( 'attitude_before_post_meta' ); ?>
+
+					<div class="entry-meta-bar clearfix">
+						<div class="entry-meta">
+
+							<div class="meta-avatar"><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php echo get_avatar( get_the_author_meta('ID'), 50 ); ?></a></div>
+							<div class="pinstyleauth">
+								<span class="by-author"><?php _e( 'By', 'attitude' ); ?> <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author(); ?></a></span>
+								<span class="date"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_time() ); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a></span>
+							</div><!-- .entry-meta -->
+						</div>
+					</div>
+
+					<?php do_action( 'attitude_after_post_meta' ); ?>
+
+				</article>
+			</section>
 			<?php
-			if( has_post_thumbnail() ) {
-				$image = '';
-		 		$title_attribute = apply_filters( 'the_title', get_the_title( $post->ID ) );
-		 		$image .= '<figure class="pinstyle">';
-	  			$image .= '<a href="' . get_permalink() . '" title="'.the_title( '', '', false ).'">';
-	  			$image .= get_the_post_thumbnail( $post->ID, 'featured-medium', array( 'title' => esc_attr( $title_attribute ), 'alt' => esc_attr( $title_attribute ) ) ).'</a>';
-	  			$image .= '</figure>';
 
-	  			echo $image;
-	  		}
-  			?>
-
-			<?php do_action( 'attitude_before_post_header' ); ?>
-
-			<header class="entry-header">
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><h2 class="entry-title">
-					<?php the_title(); ?>
-				</h2></a><!-- .entry-title -->
-  			</header>
-
-  			<?php do_action( 'attitude_after_post_header' ); ?>
-
-  			<?php do_action( 'attitude_before_post_content' ); ?>
-
-			<div class="entry-content clearfix">
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_excerpt(); ?></a>
-  			</div>
-
-  			<?php do_action( 'attitude_after_post_content' ); ?>
-
-  			<?php do_action( 'attitude_before_post_meta' ); ?>
-
-  			<div class="entry-meta-bar clearfix">
-				<div class="entry-meta">
-
-					<div class="meta-avatar"><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php echo get_avatar( get_the_author_meta('ID'), 50 ); ?></a></div>
-					<div class="pinstyleauth">
-						<span class="by-author"><?php _e( 'By', 'attitude' ); ?> <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author(); ?></a></span>
-						<span class="date"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_time() ); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a></span>
-					</div><!-- .entry-meta -->
-				</div>
-			</div>
-
-			<?php do_action( 'attitude_after_post_meta' ); ?>
-
-		</article>
-	</section>
-<?php
 			do_action( 'attitude_after_post' );
 
 		}
-	}
-
-	else {
+	} else {
 		?>
 		<h1 class="entry-title"><?php _e( 'No Posts Found.', 'attitude' ); ?></h1>
-	  <?php
-   }
+		<?php
+	}
 }
 endif;
 wp_reset_query(); // reset the query
@@ -185,66 +184,66 @@ function attitude_theloop_for_archive() {
 
 	$i = 1; while (have_posts() && $i < 7) : the_post();
 
-			do_action( 'attitude_before_post' );
-?>
-	<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<article>
+		do_action( 'attitude_before_post' );
+		?>
+		<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<article>
 
-			<?php do_action( 'attitude_before_post_header' ); ?>
+				<?php do_action( 'attitude_before_post_header' ); ?>
 
-			<header class="entry-header">
-				<h2 class="entry-title">
-					<?php the_title(); ?>
-				</h2><!-- .entry-title -->
-				<?php if (function_exists('the_subtitle')){ the_subtitle(); }?>
-  			</header>
+				<header class="entry-header">
+					<h2 class="entry-title">
+						<?php the_title(); ?>
+					</h2><!-- .entry-title -->
+					<?php if ( function_exists('the_subtitle') ){ the_subtitle(); } ?>
+				</header>
 
-  			<?php do_action( 'attitude_after_post_header' ); ?>
+				<?php do_action( 'attitude_after_post_header' ); ?>
 
-  			<?php do_action( 'attitude_before_post_content' ); ?>
+				<?php do_action( 'attitude_before_post_content' ); ?>
 
-			<?php
-			if( has_post_thumbnail() ) {
-				$image = '';
-		 		$title_attribute = apply_filters( 'the_title', get_the_title( $post->ID ) );
-		 		$image .= '<figure class="post-featured-image">';
-	  			$image .= '<a href="' . get_permalink() . '" title="'.the_title( '', '', false ).'">';
-	  			$image .= get_the_post_thumbnail( $post->ID, 'featured', array( 'title' => esc_attr( $title_attribute ), 'alt' => esc_attr( $title_attribute ) ) ).'</a>';
-	  			$image .= '</figure>';
-
-	  			echo $image;
-	  		}
-  			?>
-  			<div class="entry-content clearfix">
-				<?php the_excerpt(); ?>
-  			</div>
-
-  			<?php do_action( 'attitude_after_post_content' ); ?>
-
-  			<?php do_action( 'attitude_before_post_meta' ); ?>
-
-  			<div class="entry-meta-bar clearfix">
-				<div class="entry-meta">
-					<span class="by-author"><?php _e( 'By', 'attitude' ); ?> <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author(); ?></a> |</span>
-					<span class="date"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_time() ); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a> |</span>
-					<?php if( has_category() ) { ?>
-			 		<span class="category"><?php the_category(', '); ?> |</span>
-			 	<?php } ?>
-					<?php if ( comments_open() ) { ?>
-			 		<span class="comments"><?php comments_popup_link( __( 'No Comments', 'attitude' ), __( '1 Comment', 'attitude' ), __( '% Comments', 'attitude' ), '', __( 'Comments Off', 'attitude' ) ); ?> |</span>
-			 	<?php } ?>
-				</div><!-- .entry-meta -->
 				<?php
-				echo '<a class="readmore" href="' . get_permalink() . '" title="'.the_title( '', '', false ).'">'.__( 'Read more', 'attitude' ).'</a>';
+				if( has_post_thumbnail() ) {
+					$image = '';
+					$title_attribute = apply_filters( 'the_title', get_the_title( $post->ID ) );
+					$image .= '<figure class="post-featured-image">';
+					$image .= '<a href="' . get_permalink() . '" title="'.the_title( '', '', false ).'">';
+					$image .= get_the_post_thumbnail( $post->ID, 'featured', array( 'title' => esc_attr( $title_attribute ), 'alt' => esc_attr( $title_attribute ) ) ).'</a>';
+					$image .= '</figure>';
+
+					echo $image;
+				}
 				?>
-			</div>
+				<div class="entry-content clearfix">
+					<?php the_excerpt(); ?>
+				</div>
 
-			<?php do_action( 'attitude_after_post_meta' ); ?>
+				<?php do_action( 'attitude_after_post_content' ); ?>
 
-		</article>
-	</section>
-<?php
-			do_action( 'attitude_after_post' );
+				<?php do_action( 'attitude_before_post_meta' ); ?>
+
+				<div class="entry-meta-bar clearfix">
+					<div class="entry-meta">
+						<span class="by-author"><?php _e( 'By', 'attitude' ); ?> <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author(); ?></a></span>
+						<span class="date"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_time() ); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a></span>
+						<?php if( has_category() ) { ?>
+						<span class="category"><?php the_category(', '); ?></span>
+					<?php } ?>
+						<?php if ( comments_open() ) { ?>
+						<span class="comments"><?php comments_popup_link( __( 'No Comments', 'attitude' ), __( '1 Comment', 'attitude' ), __( '% Comments', 'attitude' ), '', __( 'Comments Off', 'attitude' ) ); ?></span>
+					<?php } ?>
+					</div><!-- .entry-meta -->
+					<?php
+					echo '<a class="readmore" href="' . get_permalink() . '" title="'.the_title( '', '', false ).'">'.__( 'Read more', 'attitude' ).'</a>';
+					?>
+				</div>
+
+				<?php do_action( 'attitude_after_post_meta' ); ?>
+
+			</article>
+		</section>
+		<?php
+		do_action( 'attitude_after_post' );
 
 		$i++; endwhile;
 	}
@@ -265,61 +264,60 @@ function attitude_theloop_for_page() {
 			the_post();
 
 			do_action( 'attitude_before_post' );
-?>
-	<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<article>
+			?>
+			<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<article>
 
-			<?php do_action( 'attitude_before_post_header' ); ?>
+					<?php do_action( 'attitude_before_post_header' ); ?>
 
-			<header class="entry-header">
-				<h1 class="entry-title">
-					<?php the_title(); ?>
-				</h1><!-- .entry-title -->
-				<?php if (function_exists('the_subtitle')){ the_subtitle(); }?>
-  			</header>
+					<header class="entry-header">
+						<h1 class="entry-title">
+							<?php the_title(); ?>
+						</h1><!-- .entry-title -->
+						<?php if (function_exists('the_subtitle')){ the_subtitle(); }?>
+					</header>
 
-  			<?php do_action( 'attitude_after_post_header' ); ?>
+					<?php do_action( 'attitude_after_post_header' ); ?>
 
-  			<?php do_action( 'attitude_before_post_content' ); ?>
+					<?php do_action( 'attitude_before_post_content' ); ?>
 
-  			<div class="entry-content clearfix">
-				<?php the_content(); ?>
-				<?php
-					wp_link_pages( array(
-						'before'            => '<div style="clear: both;"></div><div class="pagination clearfix">'.__( 'Pages:', 'attitude' ),
-						'after'             => '</div>',
-						'link_before'       => '<span>',
-						'link_after'        => '</span>',
-						'pagelink'          => '%',
-						'echo'              => 1
-			   ) );
+					<div class="entry-content clearfix">
+						<?php the_content(); ?>
+						<?php
+							wp_link_pages( array(
+								'before'            => '<div style="clear: both;"></div><div class="pagination clearfix">'.__( 'Pages:', 'attitude' ),
+								'after'             => '</div>',
+								'link_before'       => '<span>',
+								'link_after'        => '</span>',
+								'pagelink'          => '%',
+								'echo'              => 1
+					) );
+						?>
+					</div>
+
+					<?php
+
+					do_action( 'attitude_after_post_content' );
+
+					do_action( 'attitude_before_comments_template' );
+
+				comments_template();
+
+				do_action ( 'attitude_after_comments_template' );
+
 				?>
-  			</div>
 
-  			<?php
-
-  			do_action( 'attitude_after_post_content' );
-
-  			do_action( 'attitude_before_comments_template' );
-
-		 comments_template();
-
-		 do_action ( 'attitude_after_comments_template' );
-
-		 ?>
-
-		</article>
-	</section>
-<?php
+				</article>
+			</section>
+			<?php
 			do_action( 'attitude_after_post' );
 
 		}
-	}
-	else {
+	} else {
 		?>
 		<h1 class="entry-title"><?php _e( 'No Posts Found.', 'attitude' ); ?></h1>
-	  <?php
-   }
+	<?php
+	}
 }
 endif;
 
@@ -384,50 +382,54 @@ function attitude_theloop_for_single() {
 
 				<?php the_content();
 
-// Affiliate-Produkte
-								$posts = get_field('affiliate-produkte');
+				// Affiliate-Produkte
+				$posts = get_field('affiliate-produkte');
 
-								if( $posts ): ?>
-									<div id="affiliate-section" class="clearfix widget_service">
-										<h3>Das könnte Dir gefallen</h3>
-										<?php foreach( $posts as $post):
-												setup_postdata($post); ?>
-												<div class="one-third affiliate-box">
-														<h4 class="affiliate-title"><?php the_title(); ?></h4>
-														<div class="affiliate-image">
-															<p>
-																<?php $affiliate_rezension = get_field( "link_zu_rezension" );
-																	if( $affiliate_rezension ) { ?>
-																		<a href="<?php echo $affiliate_rezension; ?>" target="_blank" title="Lies hier unsere Rezension!">
-																			<span class="affiliate-rezension">Unsere<br />Rezension</span>
-																		</a>
-																	<?php } ?>
-																<a href="<?php the_field('affiliate-link'); the_field('affiliate-partner'); ?>" target="_blank" rel="nofollow" title="<?php the_field('beschriftung_button'); ?>">
-																	<?php the_post_thumbnail( 'rich-snippet' ); ?>
-																</a>
-															</p>
-														</div>
-														<p><?php the_field('text'); ?></p>
-														<p class="clearfix"><a href="<?php the_field('affiliate-link'); the_field('affiliate-partner'); ?>" class="readmore" target="_blank" rel="nofollow" title="<?php the_field('beschriftung_button'); ?>">
-															<?php the_field('beschriftung_button'); ?>
-														</a></p>
-														<p class="more-products"><a href="<?php the_field('link_weitere_produkte'); the_field('affiliate-partner'); ?>" class="no-ext-icon" target="_blank" rel="nofollow" title="<?php the_field('text_button_weitere_produkte'); ?>">
-															<?php the_field('text_button_weitere_produkte'); ?>
-														</a></p>
-												</div>
-										<?php endforeach; ?>
-										<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-									</div>
-								<?php endif;
-// Ende Affiliate-Produkte
+				if( $posts ): ?>
+					<div id="affiliate-section" class="clearfix widget_service">
+						<h3>Das könnte Dir gefallen</h3>
+						<?php foreach( $posts as $post):
+								setup_postdata($post); ?>
+								<div class="one-third affiliate-box">
+										<h4 class="affiliate-title"><?php the_title(); ?></h4>
+										<div class="affiliate-image">
+											<p>
+												<?php $affiliate_rezension = get_field( "link_zu_rezension" );
+													if( $affiliate_rezension ) { ?>
+														<a href="<?php echo $affiliate_rezension; ?>" target="_blank" title="Lies hier unsere Rezension!">
+															<span class="affiliate-rezension">Unsere<br />Rezension</span>
+														</a>
+													<?php } ?>
+												<a href="<?php the_field('affiliate-link'); the_field('affiliate-partner'); ?>" target="_blank" rel="nofollow" title="<?php the_field('beschriftung_button'); ?>">
+													<?php the_post_thumbnail( 'rich-snippet' ); ?>
+												</a>
+											</p>
+										</div>
+										<p><?php the_field('text'); ?></p>
+										<p class="clearfix"><a href="<?php the_field('affiliate-link'); the_field('affiliate-partner'); ?>" class="readmore" target="_blank" rel="nofollow" title="<?php the_field('beschriftung_button'); ?>">
+											<?php the_field('beschriftung_button'); ?>
+										</a></p>
+										<p class="more-products"><a href="<?php the_field('link_weitere_produkte'); the_field('affiliate-partner'); ?>" class="no-ext-icon" target="_blank" rel="nofollow" title="<?php the_field('text_button_weitere_produkte'); ?>">
+											<?php the_field('text_button_weitere_produkte'); ?>
+										</a></p>
+								</div>
+						<?php endforeach; ?>
+						<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+					</div>
+				<?php endif;
+				// Ende Affiliate-Produkte
 			?>
 
-			<?php if ( is_old_post(365) ) {
-	  // do something if the post is old ; ?>
-	  <div id="infoendarticle"><b>Dieser Artikel ist mehr als ein Jahr alt.</b> Es muss daher nicht sein, dass wir jedes einzelne Wort immer noch so schreiben würden wie damals. Wenn Fragen sind, kommentiere einfach zum Artikel, dann antworten wir Dir gerne.</div>
-	  <?php } else {
-	  // do something if the post is not old
-	} ; ?>
+			<?php if ( is_old_post(365) ) :
+			// do something if the post is old
+			?>
+				<div id="infoendarticle">
+				<b>Dieser Artikel ist mehr als ein Jahr alt.</b> Es muss daher nicht sein, dass wir jedes einzelne Wort immer noch so schreiben würden wie damals. Wenn Fragen sind, kommentiere einfach zum Artikel, dann antworten wir Dir gerne.
+				</div>
+			<?php
+				endif;
+			?>
+			
 			</div>
 			<div class="entry-meta-bar clearfix">
 				<div class="ueberautorin">
@@ -498,7 +500,7 @@ function attitude_theloop_for_single() {
 							<?php
 						}
 					}
-		?>
+				?>
 				</div><!-- .entry-meta -->
 		</div>
 	<?php	do_action( 'attitude_after_post_content' );
@@ -506,25 +508,24 @@ function attitude_theloop_for_single() {
 	if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar( 'attitude_left_sidebar' ) ):
 	endif;
 
-  			do_action( 'attitude_before_comments_template' );
+		do_action( 'attitude_before_comments_template' );
 
-		 comments_template();
+		comments_template();
 
-		 do_action ( 'attitude_after_comments_template' );
+		do_action ( 'attitude_after_comments_template' );
 
-		 ?>
+		?>
 
 		</article>
 	</section>
-<?php
-			do_action( 'attitude_after_post' );
+	<?php
+		do_action( 'attitude_after_post' );
 
 		}
-	}
-	else {
+	} else {
 		?>
 		<h1 class="entry-title"><?php _e( 'No Posts Found.', 'attitude' ); ?></h1>
-	  <?php
+	<?php
    }
 }
 endif;
@@ -580,13 +581,13 @@ function attitude_theloop_for_search() {
 
 			<div class="entry-meta-bar clearfix">
 				<div class="entry-meta">
-					<span class="by-author"><?php _e( 'By', 'attitude' ); ?> <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author(); ?></a> |</span>
-					<span class="date"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_time() ); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a> |</span>
+					<span class="by-author"><?php _e( 'By', 'attitude' ); ?> <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author(); ?></a></span>
+					<span class="date"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_time() ); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a></span>
 					<?php if( has_category() ) { ?>
-			 		<span class="category"><?php the_category(', '); ?> |</span>
+			 		<span class="category"><?php the_category(', '); ?></span>
 			 	<?php } ?>
 					<?php if ( comments_open() ) { ?>
-			 		<span class="comments"><?php comments_popup_link( __( 'No Comments', 'attitude' ), __( '1 Comment', 'attitude' ), __( '% Comments', 'attitude' ), '', __( 'Comments Off', 'attitude' ) ); ?> |</span>
+			 		<span class="comments"><?php comments_popup_link( __( 'No Comments', 'attitude' ), __( '1 Comment', 'attitude' ), __( '% Comments', 'attitude' ), '', __( 'Comments Off', 'attitude' ) ); ?></span>
 			 	<?php } ?>
 				</div><!-- .entry-meta -->
 				<?php
@@ -616,7 +617,7 @@ if ( ! function_exists( 'attitude_theloop_for_template_blog_image_large' ) ) :
 function attitude_theloop_for_template_blog_image_large() {
 	global $post;
 
-   global $wp_query, $paged;
+	global $wp_query, $paged;
 	if( get_query_var( 'paged' ) ) {
 		$paged = get_query_var( 'paged' );
 	}
@@ -646,27 +647,27 @@ function attitude_theloop_for_template_blog_image_large() {
 				<h2 class="entry-title">
 					<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"><?php the_title(); ?></a>
 				</h2><!-- .entry-title -->
-  			</header>
+			</header>
 
-  			<?php do_action( 'attitude_after_post_header' ); ?>
+			<?php do_action( 'attitude_after_post_header' ); ?>
 
-  			<?php do_action( 'attitude_before_post_content' ); ?>
+			<?php do_action( 'attitude_before_post_content' ); ?>
 
 			<?php
 			if( has_post_thumbnail() ) {
 				$image = '';
 		 		$title_attribute = apply_filters( 'the_title', get_the_title( $post->ID ) );
 		 		$image .= '<figure class="post-featured-image">';
-	  			$image .= '<a href="' . get_permalink() . '" title="'.the_title( '', '', false ).'">';
-	  			$image .= get_the_post_thumbnail( $post->ID, 'featured', array( 'title' => esc_attr( $title_attribute ), 'alt' => esc_attr( $title_attribute ) ) ).'</a>';
-	  			$image .= '</figure>';
+				$image .= '<a href="' . get_permalink() . '" title="'.the_title( '', '', false ).'">';
+				$image .= get_the_post_thumbnail( $post->ID, 'featured', array( 'title' => esc_attr( $title_attribute ), 'alt' => esc_attr( $title_attribute ) ) ).'</a>';
+				$image .= '</figure>';
 
-	  			echo $image;
-	  		}
-  			?>
-  			<div class="entry-content clearfix">
+				echo $image;
+			}
+			?>
+			<div class="entry-content clearfix">
 				<?php the_excerpt(); ?>
-  			</div>
+			</div>
 
   			<?php do_action( 'attitude_after_post_content' ); ?>
 
@@ -674,13 +675,13 @@ function attitude_theloop_for_template_blog_image_large() {
 
   			<div class="entry-meta-bar clearfix">
 				<div class="entry-meta">
-					<span class="by-author"><?php _e( 'By', 'attitude' ); ?> <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author(); ?></a> |</span>
-					<span class="date"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_time() ); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a> |</span>
+					<span class="by-author"><?php _e( 'By', 'attitude' ); ?> <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author(); ?></a></span>
+					<span class="date"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_time() ); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a></span>
 					<?php if( has_category() ) { ?>
-			 		<span class="category"><?php the_category(', '); ?> |</span>
+			 		<span class="category"><?php the_category(', '); ?></span>
 			 	<?php } ?>
 					<?php if ( comments_open() ) { ?>
-			 		<span class="comments"><?php comments_popup_link( __( 'No Comments', 'attitude' ), __( '1 Comment', 'attitude' ), __( '% Comments', 'attitude' ), '', __( 'Comments Off', 'attitude' ) ); ?> |</span>
+			 		<span class="comments"><?php comments_popup_link( __( 'No Comments', 'attitude' ), __( '1 Comment', 'attitude' ), __( '% Comments', 'attitude' ), '', __( 'Comments Off', 'attitude' ) ); ?></span>
 			 	<?php } ?>
 				</div><!-- .entry-meta -->
 				<?php
@@ -713,9 +714,9 @@ function attitude_theloop_for_template_blog_image_large() {
 	else {
 		?>
 		<h1 class="entry-title"><?php _e( 'No Posts Found.', 'attitude' ); ?></h1>
-	  <?php
-   }
-   $wp_query = $temp_query;
+		<?php
+	}
+	$wp_query = $temp_query;
 	wp_reset_postdata();
 }
 endif;
@@ -759,41 +760,40 @@ function attitude_theloop_for_template_blog_image_medium() {
 				<h2 class="entry-title">
 					<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"><?php the_title(); ?></a>
 				</h2><!-- .entry-title -->
-  			</header>
+			</header>
 
-  			<?php do_action( 'attitude_after_post_header' ); ?>
+			<?php do_action( 'attitude_after_post_header' ); ?>
 
-  			<?php do_action( 'attitude_before_post_content' ); ?>
+			<?php do_action( 'attitude_before_post_content' ); ?>
 
 			<?php
 			if( has_post_thumbnail() ) {
 				$image = '';
-		 		$title_attribute = apply_filters( 'the_title', get_the_title( $post->ID ) );
-		 		$image .= '<figure class="post-featured-image">';
-	  			$image .= '<a href="' . get_permalink() . '" title="'.the_title( '', '', false ).'">';
-	  			$image .= get_the_post_thumbnail( $post->ID, 'featured-medium', array( 'title' => esc_attr( $title_attribute ), 'alt' => esc_attr( $title_attribute ) ) ).'</a>';
-	  			$image .= '</figure>';
+				$title_attribute = apply_filters( 'the_title', get_the_title( $post->ID ) );
+				$image .= '<figure class="post-featured-image">';
+				$image .= '<a href="' . get_permalink() . '" title="'.the_title( '', '', false ).'">';
+				$image .= get_the_post_thumbnail( $post->ID, 'featured-medium', array( 'title' => esc_attr( $title_attribute ), 'alt' => esc_attr( $title_attribute ) ) ).'</a>';
+				$image .= '</figure>';
 
-	  			echo $image;
-	  		}
-  			?>
+				echo $image;
+			}
+			?>
 
 			<?php the_excerpt(); ?>
 
+			<?php do_action( 'attitude_after_post_content' ); ?>
 
-  			<?php do_action( 'attitude_after_post_content' ); ?>
+			<?php do_action( 'attitude_before_post_meta' ); ?>
 
-  			<?php do_action( 'attitude_before_post_meta' ); ?>
-
-  			<div class="entry-meta-bar clearfix">
+			<div class="entry-meta-bar clearfix">
 				<div class="entry-meta">
-					<span class="by-author"><?php _e( 'By', 'attitude' ); ?> <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author(); ?></a> |</span>
-					<span class="date"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_time() ); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a> |</span>
+					<span class="by-author"><?php _e( 'By', 'attitude' ); ?> <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author(); ?></a></span>
+					<span class="date"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_time() ); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a></span>
 					<?php if( has_category() ) { ?>
-			 		<span class="category"><?php the_category(', '); ?> |</span>
+			 		<span class="category"><?php the_category(', '); ?></span>
 			 	<?php } ?>
 					<?php if ( comments_open() ) { ?>
-			 		<span class="comments"><?php comments_popup_link( __( 'No Comments', 'attitude' ), __( '1 Comment', 'attitude' ), __( '% Comments', 'attitude' ), '', __( 'Comments Off', 'attitude' ) ); ?> |</span>
+			 		<span class="comments"><?php comments_popup_link( __( 'No Comments', 'attitude' ), __( '1 Comment', 'attitude' ), __( '% Comments', 'attitude' ), '', __( 'Comments Off', 'attitude' ) ); ?></span>
 			 	<?php } ?>
 				</div><!-- .entry-meta -->
 				<?php
@@ -826,9 +826,9 @@ function attitude_theloop_for_template_blog_image_medium() {
 	else {
 		?>
 		<h1 class="entry-title"><?php _e( 'No Posts Found.', 'attitude' ); ?></h1>
-	  <?php
-   }
-   $wp_query = $temp_query;
+	<?php
+	}
+	$wp_query = $temp_query;
 	wp_reset_postdata();
 }
 endif;
@@ -873,13 +873,13 @@ function attitude_theloop_for_template_blog_full_content() {
 				<h2 class="entry-title">
 					<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"><?php the_title(); ?></a>
 				</h2><!-- .entry-title -->
-  			</header>
+			</header>
 
-  			<?php do_action( 'attitude_after_post_header' ); ?>
+			<?php do_action( 'attitude_after_post_header' ); ?>
 
-  			<?php do_action( 'attitude_before_post_content' ); ?>
+			<?php do_action( 'attitude_before_post_content' ); ?>
 
-  			<div class="entry-content clearfix">
+			<div class="entry-content clearfix">
 				<?php
 					$more = 0;       // Set (inside the loop) to display content above the more tag.
 
@@ -892,23 +892,23 @@ function attitude_theloop_for_template_blog_full_content() {
 						'link_after'        => '</span>',
 						'pagelink'          => '%',
 						'echo'              => 1
-			   ) );
+			 ) );
 				 ?>
-  			</div>
+			</div>
 
-  			<?php do_action( 'attitude_after_post_content' ); ?>
+			<?php do_action( 'attitude_after_post_content' ); ?>
 
-  			<?php do_action( 'attitude_before_post_meta' ); ?>
+			<?php do_action( 'attitude_before_post_meta' ); ?>
 
-  			<div class="entry-meta-bar clearfix">
+			<div class="entry-meta-bar clearfix">
 				<div class="entry-meta">
-					<span class="by-author"><?php _e( 'By', 'attitude' ); ?> <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author(); ?></a> |</span>
-					<span class="date"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_time() ); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a> |</span>
+					<span class="by-author"><?php _e( 'By', 'attitude' ); ?> <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author(); ?></a></span>
+					<span class="date"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_time() ); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a></span>
 					<?php if( has_category() ) { ?>
-			 		<span class="category"><?php the_category(', '); ?> |</span>
+			 		<span class="category"><?php the_category(', '); ?></span>
 			 	<?php } ?>
 					<?php if ( comments_open() ) { ?>
-			 		<span class="comments"><?php comments_popup_link( __( 'No Comments', 'attitude' ), __( '1 Comment', 'attitude' ), __( '% Comments', 'attitude' ), '', __( 'Comments Off', 'attitude' ) ); ?> |</span>
+			 		<span class="comments"><?php comments_popup_link( __( 'No Comments', 'attitude' ), __( '1 Comment', 'attitude' ), __( '% Comments', 'attitude' ), '', __( 'Comments Off', 'attitude' ) ); ?></span>
 			 	<?php } ?>
 				</div><!-- .entry-meta -->
 			</div>
@@ -947,7 +947,7 @@ endif;
 
 /****************************************************************************************/
 
-add_action( 'attitude_after_loop_content', 'attitude_next_previous', 5 );
+add_action( 'attitude_after_loop_content', 'attitude_next_previous', 25 );
 /**
  * Shows the next or previous posts
  */
@@ -1124,9 +1124,9 @@ function attitude_display_contact_page_template_content() {
 			else {
 				?>
 				<h1 class="entry-title"><?php _e( 'No Posts Found.', 'attitude' ); ?></h1>
-			  <?php
-		   }
-		   ?>
+				<?php
+			}
+			?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
 

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Attitude v1.2.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-03 16:05+0100\n"
-"PO-Revision-Date: 2020-03-03 16:07+0100\n"
+"POT-Creation-Date: 2020-04-26 01:38+0200\n"
+"PO-Revision-Date: 2020-04-26 01:42+0200\n"
 "Last-Translator: \n"
 "Language-Team: Giuseppe Costabile\n"
 "Language: de_DE\n"
@@ -21,68 +21,68 @@ msgstr ""
 
 # @ attitude
 #: author.php:123 library/structure/content-extensions.php:152
-#: library/structure/content-extensions.php:228
-#: library/structure/content-extensions.php:587
-#: library/structure/content-extensions.php:681
-#: library/structure/content-extensions.php:794
-#: library/structure/content-extensions.php:909
+#: library/structure/content-extensions.php:227
+#: library/structure/content-extensions.php:584
+#: library/structure/content-extensions.php:678
+#: library/structure/content-extensions.php:790
+#: library/structure/content-extensions.php:905
 msgid "By"
 msgstr "Von"
 
 # @ attitude
-#: author.php:129 library/structure/content-extensions.php:234
-#: library/structure/content-extensions.php:593
-#: library/structure/content-extensions.php:687
-#: library/structure/content-extensions.php:800
-#: library/structure/content-extensions.php:915
+#: author.php:129 library/structure/content-extensions.php:233
+#: library/structure/content-extensions.php:590
+#: library/structure/content-extensions.php:684
+#: library/structure/content-extensions.php:796
+#: library/structure/content-extensions.php:911
 msgid "No Comments"
 msgstr "Kein Kommentar"
 
 # @ attitude
-#: author.php:129 library/structure/content-extensions.php:234
-#: library/structure/content-extensions.php:593
-#: library/structure/content-extensions.php:687
-#: library/structure/content-extensions.php:800
-#: library/structure/content-extensions.php:915
+#: author.php:129 library/structure/content-extensions.php:233
+#: library/structure/content-extensions.php:590
+#: library/structure/content-extensions.php:684
+#: library/structure/content-extensions.php:796
+#: library/structure/content-extensions.php:911
 msgid "1 Comment"
 msgstr "1 Kommentar"
 
 # @ attitude
-#: author.php:129 library/structure/content-extensions.php:234
-#: library/structure/content-extensions.php:593
-#: library/structure/content-extensions.php:687
-#: library/structure/content-extensions.php:800
-#: library/structure/content-extensions.php:915
+#: author.php:129 library/structure/content-extensions.php:233
+#: library/structure/content-extensions.php:590
+#: library/structure/content-extensions.php:684
+#: library/structure/content-extensions.php:796
+#: library/structure/content-extensions.php:911
 msgid "% Comments"
 msgstr "% Kommentare"
 
 # @ attitude
-#: author.php:129 library/structure/content-extensions.php:234
-#: library/structure/content-extensions.php:593
-#: library/structure/content-extensions.php:687
-#: library/structure/content-extensions.php:800
-#: library/structure/content-extensions.php:915
+#: author.php:129 library/structure/content-extensions.php:233
+#: library/structure/content-extensions.php:590
+#: library/structure/content-extensions.php:684
+#: library/structure/content-extensions.php:796
+#: library/structure/content-extensions.php:911
 msgid "Comments Off"
 msgstr "Kommentare geschlossen"
 
 # @ attitude
-#: author.php:133 library/structure/content-extensions.php:238
-#: library/structure/content-extensions.php:597
-#: library/structure/content-extensions.php:691
-#: library/structure/content-extensions.php:804
-#: library/structure/content-extensions.php:890
+#: author.php:133 library/structure/content-extensions.php:237
+#: library/structure/content-extensions.php:594
+#: library/structure/content-extensions.php:688
+#: library/structure/content-extensions.php:800
+#: library/structure/content-extensions.php:886
 #: library/widgets/attitude_widgets.php:269
 msgid "Read more"
 msgstr "Weiterlesen"
 
 # @ attitude
-#: author.php:148 library/structure/content-extensions.php:170
-#: library/structure/content-extensions.php:320
-#: library/structure/content-extensions.php:530
-#: library/structure/content-extensions.php:719
-#: library/structure/content-extensions.php:832
-#: library/structure/content-extensions.php:944
-#: library/structure/content-extensions.php:1130
+#: author.php:148 library/structure/content-extensions.php:169
+#: library/structure/content-extensions.php:318
+#: library/structure/content-extensions.php:527
+#: library/structure/content-extensions.php:716
+#: library/structure/content-extensions.php:828
+#: library/structure/content-extensions.php:940
+#: library/structure/content-extensions.php:1126
 msgid "No Posts Found."
 msgstr "Keine Beiträge gefunden."
 
@@ -118,47 +118,252 @@ msgstr "Neuere Kommentare &rarr;"
 msgid "Comments are closed."
 msgstr "Kommentare sind geschlossen."
 
-#: functions.php:168
-msgid "Primary Menu"
-msgstr "Hauptmenü"
+#: inc/Api/Gutenberg.php:48
+msgid "White"
+msgstr ""
 
-#: functions.php:184
+#: inc/Api/Gutenberg.php:53
+msgid "Black"
+msgstr ""
+
+#: inc/Api/Gutenberg.php:58
+msgid "Gold"
+msgstr ""
+
+#: inc/Api/Gutenberg.php:63
+msgid "Pink"
+msgstr ""
+
+#: inc/Api/Gutenberg.php:68
+msgid "Grey"
+msgstr ""
+
+#: inc/Core/Tags.php:62
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+# @ attitude
+#: inc/Plugins/PopularPosts.php:43
+#, php-format
+msgid "1 comment"
+msgid_plural "%s comments"
+msgstr[0] "1 Kommentar"
+msgstr[1] "%s Kommentare"
+
+#: inc/Plugins/PopularPosts.php:55
+#, php-format
+msgid "1 view per day"
+msgid_plural "%s views per day"
+msgstr[0] "1 Ansicht pro Tag"
+msgstr[1] "%s Ansichten pro Tag"
+
+# @ attitude
+#: inc/Plugins/PopularPosts.php:61
+#, php-format
+msgid "1 view"
+msgid_plural "%s views"
+msgstr[0] "1 Ansicht"
+msgstr[1] "%s Ansichten"
+
+#: inc/Plugins/PopularPosts.php:71
+#, php-format
+msgid "by %s"
+msgstr "von %s"
+
+#: inc/Plugins/PopularPosts.php:77
+#, php-format
+msgid "posted on %s"
+msgstr "veröffentlicht am %s"
+
+#: inc/Plugins/PopularPosts.php:88
+#, php-format
+msgid "under %s"
+msgstr "unter %s"
+
+#: inc/Setup/Setup.php:88
 msgid "ganze Breite"
 msgstr ""
 
-#: functions.php:185
+#: inc/Setup/Setup.php:89
 msgid "Vorschaubild"
 msgstr ""
 
-#: functions.php:186
+#: inc/Setup/Setup.php:90
 msgid "rechteckiges Vorschaubild"
 msgstr ""
 
-#: functions.php:187
+#: inc/Setup/Setup.php:91
 msgid "schmal für seitlich"
 msgstr ""
 
-#: functions.php:188
+#: inc/Setup/Setup.php:92
 msgid "für rich snippets"
 msgstr ""
 
-#: functions.php:343
+#: inc/Structure/PostTypeAffiliateProduct.php:26
+#: inc/Structure/PostTypeAffiliateProduct.php:28
+msgid "Affiliate Produkte"
+msgstr "Affiliate Produkte"
+
+#: inc/Structure/PostTypeAffiliateProduct.php:27
+#: inc/Structure/PostTypeAffiliateProduct.php:29
+#: inc/Structure/PostTypeAffiliateProduct.php:56
+msgid "Affiliate Produkt"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:30
+msgid "Affiliate Produkt Archive"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:31
+msgid "Affiliate Produkt Attribute"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:32
+msgid "Eltern Affiliate Produkt:"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:33
+msgid "Alle Affiliate Produkte"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:34
+#: inc/Structure/PostTypeAffiliateProduct.php:36
+msgid "Affiliate Produkt erstellen"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:35
+msgid "Erstellen"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:37
+msgid "Bearbeite Affiliate Produkt"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:38
+msgid "Aktualisiere Affiliate Produkt"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:39
+msgid "Affiliate Produkt anschauen"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:40
+msgid "Affiliate Produkte anschauen"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:41
+msgid "Suche Affiliate Produkt"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:42
+msgid "Keine Affiliate Produkte gefunden."
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:43
+msgid "Keine Affiliate Produkte im Papierkorb gefunden."
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:44
+msgid "Beitragsbild"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:45
+msgid "Beitragsbild festlegen"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:46
+msgid "Beitragsbild entfernen"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:47
+msgid "Als Beitragsbild verwenden"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:48
+msgid "In Affiliate Produkt einfügen"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:49
+msgid "Zu diesem Affiliate Produkt hochgeladen"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:50
+msgid "Affiliate Produkte Liste"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:51
+msgid "Affiliate Produkte Liste Navigation"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:52
+msgid "Filter Affiliate Produkte Liste"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:79
+msgctxt "taxonomy general name"
+msgid "Affiliate Partner"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:80
+msgctxt "taxonomy singular name"
+msgid "Affiliate Partner"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:81
+msgid "Suche Affiliate Partner"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:82
+msgid "Alle Affiliate Partner"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:83
+msgid "Eltern Affiliate Partner"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:84
+msgid "Eltern Affiliate Partner:"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:85
+msgid "Bearbeite Affiliate Partner"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:86
+msgid "Aktualisiere Affiliate Partner"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:87
+msgid "Affiliate Partner hinzufügen"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:88
+msgid "Neuer Affiliate Partner Name"
+msgstr ""
+
+#: inc/Structure/PostTypeAffiliateProduct.php:89
+msgid "Affiliate Partner"
+msgstr ""
+
+#: inc/Structure/UserProfile.php:62
 msgid "Weitere Angaben für die Profilseite"
 msgstr ""
 
-#: functions.php:348
+#: inc/Structure/UserProfile.php:67
 msgid "Tätigkeiten"
 msgstr ""
 
-#: functions.php:352
+#: inc/Structure/UserProfile.php:71
 msgid "Sowas wie <b>Autor, Projektmanager, Superstar</b>."
 msgstr ""
 
-#: functions.php:357
+#: inc/Structure/UserProfile.php:76
 msgid "Weitere biographische Angaben"
 msgstr ""
 
-#: functions.php:361
+#: inc/Structure/UserProfile.php:80
 msgid ""
 "Erscheinen auf der Profil-Seite, nicht bei den Artikeln. Diese erscheinen "
 "direkt unter den Biographischen Angaben, die du weiter oben eingeben kannst. "
@@ -167,67 +372,27 @@ msgid ""
 "Biographischen Angaben im Profil."
 msgstr ""
 
-#: functions.php:366
+#: inc/Structure/UserProfile.php:85
 msgid "Zusatzinfos"
 msgstr ""
 
-#: functions.php:370
+#: inc/Structure/UserProfile.php:89
 msgid "Sachen wie <b>Julia bloggt regelmäßig auf hundertwasser-blog.at</b>."
 msgstr ""
 
-#: functions.php:375
+#: inc/Structure/UserProfile.php:94
 msgid "Text eines Links nach der Zusatzinfo"
 msgstr ""
 
-#: functions.php:379
+#: inc/Structure/UserProfile.php:98
 msgid ""
 "Wird unterhalb der Zusatzinfo angezeigt. Sowas wie <b>Lies jetzt ihre "
 "neuesten Artikel!</b>"
 msgstr ""
 
-#: functions.php:384
+#: inc/Structure/UserProfile.php:103
 msgid "URL des Links"
 msgstr ""
-
-# @ attitude
-#: functions.php:512
-#, fuzzy, php-format
-#| msgid "1 Comment"
-msgid "1 comment"
-msgid_plural "%s comments"
-msgstr[0] "1 Kommentar"
-msgstr[1] "1 Kommentar"
-
-#: functions.php:524
-#, php-format
-msgid "1 view per day"
-msgid_plural "%s views per day"
-msgstr[0] "1 Ansicht pro Tag"
-msgstr[1] "%s Ansichten pro Tag"
-
-# @ attitude
-#: functions.php:530
-#, fuzzy, php-format
-#| msgid "Preview"
-msgid "1 view"
-msgid_plural "%s views"
-msgstr[0] "Vorschau"
-msgstr[1] "Vorschau"
-
-#: functions.php:540
-#, php-format
-msgid "by %s"
-msgstr "von %s"
-
-#: functions.php:546
-#, php-format
-msgid "posted on %s"
-msgstr "veröffentlicht am %s"
-
-#: functions.php:557
-#, php-format
-msgid "under %s"
-msgstr "unter %s"
 
 # @ attitude
 #: library/admin/attitude-metaboxes.php:19
@@ -265,8 +430,8 @@ msgid "No sidebar, Full Width"
 msgstr "Keine Seitenleiste, volle Breite"
 
 # @ attitude
-#: library/admin/attitude-metaboxes.php:56 library/admin/theme-options.php:328
-#: library/functions/customizer.php:292
+#: library/admin/attitude-metaboxes.php:56 library/admin/theme-options.php:311
+#: library/functions/customizer.php:221
 msgid "No Sidebar, One Column"
 msgstr "Keine Seitenleiste, eine Spalte"
 
@@ -297,389 +462,290 @@ msgstr "http://themehorse.com/"
 
 # @ attitude
 #: library/admin/theme-options.php:125
-#: library/footer_info/attitude-footer_info.php:41
-#: library/shortcodes/attitude-shortcodes.php:61
 msgid "Theme Horse"
 msgstr "Theme Horse"
 
 # @ attitude
-#: library/admin/theme-options.php:127
-msgid "Confused about something? See"
-msgstr "Verwirrt über etwas? Siehe"
-
-# @ attitude
-#: library/admin/theme-options.php:128 library/functions/customizer.php:18
-msgid "Theme Instructions"
-msgstr "Theme Anleitung"
-
-# @ attitude
-#: library/admin/theme-options.php:129 library/functions/customizer.php:21
-msgid "Support Forum"
-msgstr "Support Forum"
-
-# @ attitude
-#: library/admin/theme-options.php:130 library/functions/customizer.php:24
-msgid "View Demo"
-msgstr "Siehe Demo"
-
-# @ attitude
-#: library/admin/theme-options.php:134
-msgid "Want to add bunch of additional features? Upgrade to Pro version!"
-msgstr ""
-"Möchten Sie ein Haufen von zusätzlichen Funktionen hinzufügen? Aktualisieren "
-"Sie auf die Pro-Version!"
-
-# @ attitude
-#: library/admin/theme-options.php:135
-msgid "Upgrade to Pro"
-msgstr "Upgrade auf Pro"
-
-# @ attitude
-#: library/admin/theme-options.php:136 library/functions/customizer.php:12
-msgid "Donate"
-msgstr "Spende"
-
-# @ attitude
-#: library/admin/theme-options.php:137 library/functions/customizer.php:15
-msgid "Rate Attitude"
-msgstr "Bewerte Attitude"
-
-# @ attitude
-#: library/admin/theme-options.php:154
+#: library/admin/theme-options.php:138
 msgid "Settings saved."
 msgstr "Settings saved."
 
 # @ attitude
-#: library/admin/theme-options.php:160 library/functions/customizer.php:70
+#: library/admin/theme-options.php:144 library/functions/customizer.php:40
 msgid "Design Options"
 msgstr "Designanpassungen"
 
 # @ attitude
-#: library/admin/theme-options.php:161
+#: library/admin/theme-options.php:145
 msgid "Advance Options"
 msgstr "Erweiterte Optionen"
 
 # @ attitude
-#: library/admin/theme-options.php:162
+#: library/admin/theme-options.php:146
 msgid "Featured Post/Page Slider"
 msgstr "Vorgestellter Beitrags/Seiten Slider"
 
 # @ attitude
-#: library/admin/theme-options.php:163 library/functions/customizer.php:571
+#: library/admin/theme-options.php:147 library/functions/customizer.php:482
 msgid "Social Links"
 msgstr "Social Links"
 
 # @ attitude
-#: library/admin/theme-options.php:164 library/functions/customizer.php:620
-msgid "Webmaster Tools"
-msgstr "Webmaster Werkzeuge"
-
-# @ attitude
-#: library/admin/theme-options.php:170 library/functions/customizer.php:131
+#: library/admin/theme-options.php:153 library/functions/customizer.php:60
 msgid "Custom Header"
 msgstr "Benutzerdefinierte Kopfzeile"
 
 # @ attitude
-#: library/admin/theme-options.php:175 library/admin/theme-options.php:185
-#: library/functions/customizer.php:157
+#: library/admin/theme-options.php:158 library/admin/theme-options.php:168
+#: library/functions/customizer.php:86
 msgid "Header Logo"
 msgstr "Kopfzeilen Logo"
 
 # @ attitude
-#: library/admin/theme-options.php:182 library/admin/theme-options.php:239
-#: library/admin/theme-options.php:270
+#: library/admin/theme-options.php:165 library/admin/theme-options.php:222
+#: library/admin/theme-options.php:253
 msgid "Preview"
 msgstr "Vorschau"
 
 # @ attitude
-#: library/admin/theme-options.php:190
+#: library/admin/theme-options.php:173
 msgid "Show"
 msgstr "Zeige"
 
 # @ attitude
-#: library/admin/theme-options.php:193 library/functions/customizer.php:176
+#: library/admin/theme-options.php:176 library/functions/customizer.php:105
 msgid "Header Logo Only"
 msgstr "Nur Kopfzeilen Logo"
 
 # @ attitude
-#: library/admin/theme-options.php:196 library/functions/customizer.php:177
+#: library/admin/theme-options.php:179 library/functions/customizer.php:106
 msgid "Header Text Only"
 msgstr "Nur Kopfzeilentext"
 
 # @ attitude
-#: library/admin/theme-options.php:199 library/functions/customizer.php:178
+#: library/admin/theme-options.php:182 library/functions/customizer.php:107
 msgid "Disable"
 msgstr "Deaktivieren"
 
 # @ attitude
-#: library/admin/theme-options.php:204
+#: library/admin/theme-options.php:187
 msgid "Need to replace Header Image?"
 msgstr "Müssen Sie das Kopfzeilen Bild ersezten?"
 
 # @ attitude
-#: library/admin/theme-options.php:207 library/admin/theme-options.php:364
+#: library/admin/theme-options.php:190
 #, php-format
 msgid "<a class=\"button\" href=\"%s\">Click here</a>"
 msgstr "<a class=\"button\" href=\"%s\">Hier Klicken</a>"
 
 # @ attitude
-#: library/admin/theme-options.php:211 library/functions/customizer.php:142
+#: library/admin/theme-options.php:194 library/functions/customizer.php:71
 msgid "Hide Searchform from Header"
 msgstr "Ausblenden der Suche im Kopfbereich"
 
 # @ attitude
-#: library/admin/theme-options.php:213
+#: library/admin/theme-options.php:196
 msgid "Check to hide"
 msgstr "Verstecken"
 
 # @ attitude
-#: library/admin/theme-options.php:222 library/functions/customizer.php:183
+#: library/admin/theme-options.php:205 library/functions/customizer.php:112
 msgid "Fav Icon Options"
 msgstr "Favicon Optionen"
 
 # @ attitude
-#: library/admin/theme-options.php:227 library/functions/customizer.php:194
+#: library/admin/theme-options.php:210 library/functions/customizer.php:123
 msgid "Disable Favicon"
 msgstr "Deaktiviere Favicon"
 
 # @ attitude
-#: library/admin/theme-options.php:229 library/admin/theme-options.php:260
-#: library/admin/theme-options.php:416 library/admin/theme-options.php:530
+#: library/admin/theme-options.php:212 library/admin/theme-options.php:243
+#: library/admin/theme-options.php:352 library/admin/theme-options.php:466
 msgid "Check to disable"
 msgstr "Deaktivieren"
 
 # @ attitude
-#: library/admin/theme-options.php:232
+#: library/admin/theme-options.php:215
 msgid "Fav Icon URL"
 msgstr "Favicon URL"
 
 # @ attitude
-#: library/admin/theme-options.php:242
+#: library/admin/theme-options.php:225
 msgid "favicon"
 msgstr "favicon"
 
 # @ attitude
-#: library/admin/theme-options.php:253 library/functions/customizer.php:216
+#: library/admin/theme-options.php:236 library/functions/customizer.php:145
 msgid "Web Clip Icon Options"
 msgstr "Web Clip Icon Optionen"
 
 # @ attitude
-#: library/admin/theme-options.php:258 library/functions/customizer.php:227
+#: library/admin/theme-options.php:241 library/functions/customizer.php:156
 msgid "Disable Web Clip Icon"
 msgstr "Deaktiviere Web Clip Icon"
 
 # @ attitude
-#: library/admin/theme-options.php:263
+#: library/admin/theme-options.php:246
 msgid "Web Clip Icon URL"
 msgstr "Web Clip Icon URL"
 
 # @ attitude
-#: library/admin/theme-options.php:273
+#: library/admin/theme-options.php:256
 msgid "webpage icon"
 msgstr "Homepage icon"
 
 # @ attitude
-#: library/admin/theme-options.php:284 library/functions/customizer.php:249
+#: library/admin/theme-options.php:267 library/functions/customizer.php:178
 msgid "Site Layout Options"
 msgstr "Seiten Layout Optionen"
 
 # @ attitude
-#: library/admin/theme-options.php:289
+#: library/admin/theme-options.php:272
 msgid "Site Layout"
 msgstr "Seiten Layout"
 
 # @ attitude
-#: library/admin/theme-options.php:290
+#: library/admin/theme-options.php:273
 msgid "This change is reflected in whole website"
 msgstr "Diese Einstellung gilt für die ganze Webseite"
 
 # @ attitude
-#: library/admin/theme-options.php:295 library/functions/customizer.php:266
+#: library/admin/theme-options.php:278 library/functions/customizer.php:195
 msgid "Narrow Layout"
 msgstr "Schmales Layout"
 
 # @ attitude
-#: library/admin/theme-options.php:300 library/functions/customizer.php:265
+#: library/admin/theme-options.php:283 library/functions/customizer.php:194
 msgid "Wide Layout"
 msgstr "Breites Layout"
 
 # @ attitude
-#: library/admin/theme-options.php:311 library/functions/customizer.php:271
+#: library/admin/theme-options.php:294 library/functions/customizer.php:200
 msgid "Default Layout Options"
 msgstr "Standard Layout Optionen"
 
 # @ attitude
-#: library/admin/theme-options.php:316
+#: library/admin/theme-options.php:299
 msgid "Default Layout"
 msgstr "Standard Layout"
 
 # @ attitude
-#: library/admin/theme-options.php:320 library/functions/customizer.php:290
+#: library/admin/theme-options.php:303 library/functions/customizer.php:219
 msgid "No Sidebar"
 msgstr "Keine Seitenleiste"
 
 # @ attitude
-#: library/admin/theme-options.php:324 library/functions/customizer.php:291
+#: library/admin/theme-options.php:307 library/functions/customizer.php:220
 msgid "No Sidebar, Full Width"
 msgstr "Keine Seitenleiste, volle Breite"
 
 # @ attitude
-#: library/admin/theme-options.php:332 library/functions/customizer.php:289
+#: library/admin/theme-options.php:315 library/functions/customizer.php:218
 #: library/widgets/attitude_widgets.php:18
 msgid "Left Sidebar"
 msgstr "Linke Seitenleiste"
 
 # @ attitude
-#: library/admin/theme-options.php:336 library/functions/customizer.php:288
+#: library/admin/theme-options.php:319 library/functions/customizer.php:217
 #: library/widgets/attitude_widgets.php:29
 msgid "Right Sidebar"
 msgstr "Rechten Seitenleiste"
 
 # @ attitude
-#: library/admin/theme-options.php:342
+#: library/admin/theme-options.php:325
 msgid "Reset Layout"
 msgstr "Layout zurücksetzen"
 
 # @ attitude
-#: library/admin/theme-options.php:345
+#: library/admin/theme-options.php:328
 msgid "Check to reset"
 msgstr "Zürücksetzen"
 
 # @ attitude
-#: library/admin/theme-options.php:355
-msgid "Custom Background"
-msgstr "Benutzerdefinierter Hintergrund"
-
-# @ attitude
-#: library/admin/theme-options.php:361
-msgid "Need to replace default background?"
-msgstr "Möchten Sie den Standard Hintergrund ersetzen?"
-
-# @ attitude
-#: library/admin/theme-options.php:367
-msgid ""
-"Note: The custom background change will be reflected in the background if "
-"the site layout is set to be narrow layout instead of the wide layout."
-msgstr ""
-"Hinweis: Die benutzerdefinierte Hintergrunds-Änderung wird im Hintergrund "
-"angezeigt, wenn das Layout der Seite auf das schmalen Layout anstelle des "
-"breiten Layouts eingestellt ist."
-
-# @ attitude
-#: library/admin/theme-options.php:376 library/functions/customizer.php:297
-msgid "Custom CSS"
-msgstr "Benutzerdefiniertes CSS"
-
-# @ attitude
-#: library/admin/theme-options.php:381
-msgid "Enter your custom CSS styles."
-msgstr "Tragen Sie Ihre benutzerdefinierte CSS-Stile ein."
-
-# @ attitude
-#: library/admin/theme-options.php:382 library/functions/customizer.php:298
-msgid "This CSS will overwrite the CSS of style.css file."
-msgstr "Dieses CSS überschreibt die CSS-Datei style.css."
-
-# @ attitude
-#: library/admin/theme-options.php:390
-msgid "CSS Tutorial from W3Schools."
-msgstr "CSS Lernprogramm von W3Schools."
-
-# @ attitude
-#: library/admin/theme-options.php:392
-msgid "http://www.w3schools.com/css/default.asp"
-msgstr "http://www.w3schools.com/css/default.asp"
-
-# @ attitude
-#: library/admin/theme-options.php:392
-msgid "Click Here to Read"
-msgstr "Klicken Sie hier um zu lesen"
-
-# @ attitude
-#: library/admin/theme-options.php:407 library/functions/customizer.php:316
+#: library/admin/theme-options.php:343 library/functions/customizer.php:227
 msgid "Home Slogan Options"
 msgstr "Home Slogan Optionen"
 
 # @ attitude
-#: library/admin/theme-options.php:413 library/functions/customizer.php:327
+#: library/admin/theme-options.php:349 library/functions/customizer.php:238
 msgid "Disable Slogan Part"
 msgstr "Deaktivieren den Slogan Teil"
 
 # @ attitude
-#: library/admin/theme-options.php:419 library/functions/customizer.php:339
+#: library/admin/theme-options.php:355 library/functions/customizer.php:250
 msgid "Slogan Position"
 msgstr "Slogan Position"
 
 # @ attitude
-#: library/admin/theme-options.php:423 library/functions/customizer.php:346
+#: library/admin/theme-options.php:359 library/functions/customizer.php:257
 msgid "Above Slider"
 msgstr "Oberhalb des Sliders"
 
 # @ attitude
-#: library/admin/theme-options.php:427 library/functions/customizer.php:345
+#: library/admin/theme-options.php:363 library/functions/customizer.php:256
 msgid "Below Slider"
 msgstr "Unterhalb des Sliders"
 
 # @ attitude
-#: library/admin/theme-options.php:432 library/functions/customizer.php:356
+#: library/admin/theme-options.php:368 library/functions/customizer.php:267
 msgid "Home Page Slogan1"
 msgstr "Home Page Slogan1"
 
 # @ attitude
-#: library/admin/theme-options.php:433 library/admin/theme-options.php:441
-#: library/functions/customizer.php:357 library/functions/customizer.php:370
+#: library/admin/theme-options.php:369 library/admin/theme-options.php:377
+#: library/functions/customizer.php:268 library/functions/customizer.php:281
 msgid "The appropriate length of the slogan is around 10 words."
 msgstr "Die geeignete Länge für den Slogan ist etwa 10 Worte."
 
 # @ attitude
-#: library/admin/theme-options.php:440 library/functions/customizer.php:369
+#: library/admin/theme-options.php:376 library/functions/customizer.php:280
 msgid "Home Page Slogan2"
 msgstr "Home Page Slogan2"
 
 # @ attitude
-#: library/admin/theme-options.php:448 library/functions/customizer.php:382
+#: library/admin/theme-options.php:384 library/functions/customizer.php:293
 msgid "Redirect Button Text"
 msgstr "Weiterleiten Schaltfläche Text"
 
 # @ attitude
-#: library/admin/theme-options.php:449 library/functions/customizer.php:383
+#: library/admin/theme-options.php:385 library/functions/customizer.php:294
 msgid "Text to show in Button"
 msgstr "Text in Button zeigen"
 
 # @ attitude
-#: library/admin/theme-options.php:455 library/functions/customizer.php:395
+#: library/admin/theme-options.php:391 library/functions/customizer.php:306
 msgid "Redirect Button Link"
 msgstr "Weiterleiten Schaltfläche Link"
 
 # @ attitude
-#: library/admin/theme-options.php:456 library/functions/customizer.php:396
+#: library/admin/theme-options.php:392 library/functions/customizer.php:307
 msgid "Link this button to show your special work, portfolio"
 msgstr ""
 "Verknüpfen Sie diese Schaltfläche, um Ihre spezielle Arbeit oder Portfolio "
 "anzuzeigen"
 
 # @ attitude
-#: library/admin/theme-options.php:468 library/functions/customizer.php:403
+#: library/admin/theme-options.php:404 library/functions/customizer.php:314
 msgid "Feed Redirect"
 msgstr "Feed Weiterleitung"
 
 # @ attitude
-#: library/admin/theme-options.php:474 library/functions/customizer.php:415
+#: library/admin/theme-options.php:410 library/functions/customizer.php:326
 msgid "Feed Redirect URL"
 msgstr "Feed Weiterleitungs URL"
 
 # @ attitude
-#: library/admin/theme-options.php:486 library/functions/customizer.php:423
+#: library/admin/theme-options.php:422 library/functions/customizer.php:334
 msgid "Homepage / Frontpage Category Setting"
 msgstr "Homepage / Titelseite Kategorie Einstellungen"
 
 # @ attitude
-#: library/admin/theme-options.php:492
+#: library/admin/theme-options.php:428
 msgid "Front page posts categories:"
 msgstr "Titelseite Beiträge Kategorien:"
 
 # @ attitude
-#: library/admin/theme-options.php:494
+#: library/admin/theme-options.php:430
 msgid ""
 "Only posts that belong to the categories selected here will be displayed on "
 "the front page."
@@ -688,84 +754,84 @@ msgstr ""
 "der Titelseite angezeigt."
 
 # @ attitude
-#: library/admin/theme-options.php:499 library/functions/customizer.php:53
+#: library/admin/theme-options.php:435 library/functions/customizer.php:23
 msgid "--Disabled--"
 msgstr "--Inaktiv--"
 
 # @ attitude
-#: library/admin/theme-options.php:509
+#: library/admin/theme-options.php:445
 msgid "You may select multiple categories by holding down the CTRL key."
 msgstr "Sie können mehrere Kategorien mit gedrückter STRG-Taste auswählen."
 
 # @ attitude
-#: library/admin/theme-options.php:524 library/functions/customizer.php:449
+#: library/admin/theme-options.php:460 library/functions/customizer.php:360
 msgid "Slider Options"
 msgstr "Slider Optionen"
 
 # @ attitude
-#: library/admin/theme-options.php:528 library/functions/customizer.php:461
+#: library/admin/theme-options.php:464 library/functions/customizer.php:372
 msgid "Disable Slider"
 msgstr "Deaktiviere Slider"
 
 # @ attitude
-#: library/admin/theme-options.php:533 library/functions/customizer.php:474
+#: library/admin/theme-options.php:469 library/functions/customizer.php:385
 msgid "Number of Slides"
 msgstr "Anzahl Slides"
 
 # @ attitude
-#: library/admin/theme-options.php:538
+#: library/admin/theme-options.php:474
 msgid "Transition Effect:"
 msgstr "Übergangseffekt:"
 
 # @ attitude
-#: library/admin/theme-options.php:558 library/admin/theme-options.php:649
+#: library/admin/theme-options.php:494 library/admin/theme-options.php:585
 #, php-format
 msgid "%s"
 msgstr "%s"
 
 # @ attitude
-#: library/admin/theme-options.php:566 library/functions/customizer.php:513
+#: library/admin/theme-options.php:502 library/functions/customizer.php:424
 msgid "Transition Delay"
 msgstr "Verzögerung des Übergangs"
 
 # @ attitude
-#: library/admin/theme-options.php:569 library/admin/theme-options.php:576
+#: library/admin/theme-options.php:505 library/admin/theme-options.php:512
 msgid "second(s)"
 msgstr "sekunde(n)"
 
 # @ attitude
-#: library/admin/theme-options.php:573 library/functions/customizer.php:526
+#: library/admin/theme-options.php:509 library/functions/customizer.php:437
 msgid "Transition Length"
 msgstr "Dauer des Übergangs"
 
 # @ attitude
-#: library/admin/theme-options.php:585
+#: library/admin/theme-options.php:521
 msgid "Featured Post/Page Slider Options"
 msgstr "Vorgestellter Beitrags/Seiten Slider Optionen"
 
 # @ attitude
-#: library/admin/theme-options.php:589 library/functions/customizer.php:546
+#: library/admin/theme-options.php:525 library/functions/customizer.php:457
 msgid "Exclude Slider post from Homepage posts?"
 msgstr "Ausschließen des Slider Beitrags von den Homepage Beiträgen?"
 
 # @ attitude
-#: library/admin/theme-options.php:591
+#: library/admin/theme-options.php:527
 msgid "Check to exclude"
 msgstr "Ausschliessen"
 
 # @ attitude
-#: library/admin/theme-options.php:596
+#: library/admin/theme-options.php:532
 msgid "Featured Slider Post/Page #"
 msgstr "Vorgestellter Slider Beitrags/Seiten #"
 
 # @ default
 # @ attitude
-#: library/admin/theme-options.php:598
+#: library/admin/theme-options.php:534
 msgid "Click Here To Edit"
 msgstr "Klicken Sie hier, um zu editieren"
 
 # @ attitude
-#: library/admin/theme-options.php:604
+#: library/admin/theme-options.php:540
 msgid ""
 "<strong>Following are the steps on how to use the featured slider.</"
 "strong><br />* Create Post, Add featured image to the Post.<br />* Add all "
@@ -783,7 +849,7 @@ msgstr ""
 "Bilder, Titel und den Auszug der aufgenommenen Beiträge an."
 
 # @ attitude
-#: library/admin/theme-options.php:605
+#: library/admin/theme-options.php:541
 msgid ""
 "<strong>Note:</strong> You can now add Pages ID too. (You can now see the "
 "Pages' respective ID in the All Pages' table in last column.) ."
@@ -793,292 +859,82 @@ msgstr ""
 "Seitentabelle.)."
 
 # @ attitude
-#: library/admin/theme-options.php:617 library/functions/customizer.php:576
+#: library/admin/theme-options.php:553 library/functions/customizer.php:487
 msgid "Facebook"
 msgstr "Facebook"
 
 # @ attitude
-#: library/admin/theme-options.php:618 library/functions/customizer.php:577
+#: library/admin/theme-options.php:554 library/functions/customizer.php:488
 msgid "Twitter"
 msgstr "Twitter"
 
 # @ attitude
-#: library/admin/theme-options.php:619 library/functions/customizer.php:578
+#: library/admin/theme-options.php:555 library/functions/customizer.php:489
 msgid "Google Plus"
 msgstr "Google Plus"
 
 # @ attitude
-#: library/admin/theme-options.php:620 library/functions/customizer.php:579
+#: library/admin/theme-options.php:556 library/functions/customizer.php:490
 msgid "Pinterest"
 msgstr "Pinterest"
 
 # @ attitude
-#: library/admin/theme-options.php:621 library/functions/customizer.php:580
+#: library/admin/theme-options.php:557 library/functions/customizer.php:491
 msgid "Youtube"
 msgstr "Youtube"
 
 # @ attitude
-#: library/admin/theme-options.php:622 library/functions/customizer.php:581
+#: library/admin/theme-options.php:558 library/functions/customizer.php:492
 msgid "Vimeo"
 msgstr "Vimeo"
 
 # @ attitude
-#: library/admin/theme-options.php:623 library/functions/customizer.php:582
+#: library/admin/theme-options.php:559 library/functions/customizer.php:493
 msgid "LinkedIn"
 msgstr "LinkedIn"
 
 # @ attitude
-#: library/admin/theme-options.php:624 library/functions/customizer.php:583
+#: library/admin/theme-options.php:560 library/functions/customizer.php:494
 msgid "Flickr"
 msgstr "Flickr"
 
 # @ attitude
-#: library/admin/theme-options.php:625 library/functions/customizer.php:584
+#: library/admin/theme-options.php:561 library/functions/customizer.php:495
 msgid "Tumblr"
 msgstr "Tumblr"
 
 # @ attitude
-#: library/admin/theme-options.php:626 library/functions/customizer.php:585
+#: library/admin/theme-options.php:562 library/functions/customizer.php:496
 msgid "Myspace"
 msgstr "Myspace"
 
 # @ attitude
-#: library/admin/theme-options.php:627 library/functions/customizer.php:586
+#: library/admin/theme-options.php:563 library/functions/customizer.php:497
 msgid "RSS"
 msgstr "RSS"
 
 # @ attitude
-#: library/admin/theme-options.php:667
-msgid "Analytics"
-msgstr "Analytics"
-
-# @ attitude
-#: library/admin/theme-options.php:672 library/functions/customizer.php:630
-msgid "Code to display on Header"
-msgstr "Code um in dem Kopfbereich anzuzeigen"
-
-# @ attitude
-#: library/admin/theme-options.php:678 library/functions/customizer.php:631
-msgid "Note: Enter your custom header script."
-msgstr ""
-"Hinweis: Geben Sie hier Ihre benutzerdefinierten Kopfzeilen Skript ein."
-
-# @ attitude
-#: library/admin/theme-options.php:681 library/functions/customizer.php:643
-msgid "Code to display on Footer"
-msgstr "Code um in dem Fussbereich anzuzeigen"
-
-# @ attitude
-#: library/admin/theme-options.php:688 library/functions/customizer.php:644
-msgid "Note: Enter your custom footer script."
-msgstr "Hinweis: Geben Sie hier Ihre benutzerdefinierten Fußzeilen Skript ein."
-
-#: library/cpt/affiliate-products-cpt.php:8
-#: library/cpt/affiliate-products-cpt.php:10
-msgid "Affiliate Produkte"
-msgstr "Affiliate Produkte"
-
-#: library/cpt/affiliate-products-cpt.php:9
-#: library/cpt/affiliate-products-cpt.php:11
-#: library/cpt/affiliate-products-cpt.php:37
-msgid "Affiliate Produkt"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:12
-msgid "Affiliate Produkt Archive"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:13
-msgid "Affiliate Produkt Attribute"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:14
-msgid "Eltern Affiliate Produkt:"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:15
-msgid "Alle Affiliate Produkte"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:16
-#: library/cpt/affiliate-products-cpt.php:18
-msgid "Affiliate Produkt erstellen"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:17
-msgid "Erstellen"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:19
-msgid "Bearbeite Affiliate Produkt"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:20
-msgid "Aktualisiere Affiliate Produkt"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:21
-msgid "Affiliate Produkt anschauen"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:22
-msgid "Affiliate Produkte anschauen"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:23
-msgid "Suche Affiliate Produkt"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:24
-msgid "Keine Affiliate Produkte gefunden."
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:25
-msgid "Keine Affiliate Produkte im Papierkorb gefunden."
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:26
-msgid "Beitragsbild"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:27
-msgid "Beitragsbild festlegen"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:28
-msgid "Beitragsbild entfernen"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:29
-msgid "Als Beitragsbild verwenden"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:30
-msgid "In Affiliate Produkt einfügen"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:31
-msgid "Zu diesem Affiliate Produkt hochgeladen"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:32
-msgid "Affiliate Produkte Liste"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:33
-msgid "Affiliate Produkte Liste Navigation"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:34
-msgid "Filter Affiliate Produkte Liste"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:67
-msgctxt "taxonomy general name"
-msgid "Affiliate Partner"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:68
-msgctxt "taxonomy singular name"
-msgid "Affiliate Partner"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:69
-msgid "Suche Affiliate Partner"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:70
-msgid "Alle Affiliate Partner"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:71
-msgid "Eltern Affiliate Partner"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:72
-msgid "Eltern Affiliate Partner:"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:73
-msgid "Bearbeite Affiliate Partner"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:74
-msgid "Aktualisiere Affiliate Partner"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:75
-msgid "Affiliate Partner hinzufügen"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:76
-msgid "Neuer Affiliate Partner Name"
-msgstr ""
-
-#: library/cpt/affiliate-products-cpt.php:77
-msgid "Affiliate Partner"
-msgstr ""
-
-# @ attitude
-#: library/footer_info/attitude-footer_info.php:33
-#: library/shortcodes/attitude-shortcodes.php:52
-msgid "WordPress"
-msgstr "WordPress"
-
-# @ attitude
-#: library/functions/customizer.php:33 library/functions/customizer.php:706
-msgid "Upgrade to Attitude Pro"
-msgstr ""
-
-# @ attitude
-#: library/functions/customizer.php:34
-msgid ""
-"to get more aditional features like (Advanced Slider, Color Options, "
-"Typography Options and many more.)"
-msgstr ""
-
-# @ attitude
-#: library/functions/customizer.php:76
+#: library/functions/customizer.php:46
 msgid "Advanced Options"
 msgstr ""
 
 # @ attitude
-#: library/functions/customizer.php:82
+#: library/functions/customizer.php:52
 msgid "Featured Post/ Page Slider"
 msgstr ""
 
 # @ attitude
-#: library/functions/customizer.php:88
-msgid "What is new on Attitude Pro?"
-msgstr ""
-
-# @ attitude
-#: library/functions/customizer.php:101 library/functions/customizer.php:122
-msgid "Attitude Upgrade"
-msgstr ""
-
-# @ attitude
-#: library/functions/customizer.php:108
-msgid "Attitude Support"
-msgstr ""
-
-# @ attitude
-#: library/functions/customizer.php:109
-msgid "Hey! Buy us a beer and we shall come with new features and update."
-msgstr ""
-
-# @ attitude
-#: library/functions/customizer.php:170
+#: library/functions/customizer.php:99
 msgid "Display"
 msgstr ""
 
 # @ attitude
-#: library/functions/customizer.php:272
+#: library/functions/customizer.php:201
 msgid "Make sure that you have not set the layout from specific page"
 msgstr ""
 
 # @ attitude
-#: library/functions/customizer.php:424
+#: library/functions/customizer.php:335
 msgid ""
 "Only posts that belong to the categories selected here will be displayed on "
 "the front page. ( You may select multiple categories by holding down the "
@@ -1086,186 +942,186 @@ msgid ""
 msgstr ""
 
 # @ attitude
-#: library/functions/customizer.php:439
+#: library/functions/customizer.php:350
 msgid "Front page posts categories"
 msgstr ""
 
 # @ attitude
-#: library/functions/customizer.php:487
+#: library/functions/customizer.php:398
 msgid "Transition Effect"
 msgstr ""
 
 # @ attitude
-#: library/functions/customizer.php:492
+#: library/functions/customizer.php:403
 msgid "Fade"
 msgstr ""
 
 # @ attitude
-#: library/functions/customizer.php:493
+#: library/functions/customizer.php:404
 msgid "Wipe"
 msgstr ""
 
 # @ attitude
-#: library/functions/customizer.php:494
+#: library/functions/customizer.php:405
 msgid "Scroll Up"
 msgstr ""
 
 # @ attitude
-#: library/functions/customizer.php:495
+#: library/functions/customizer.php:406
 msgid "Scroll Down"
 msgstr ""
 
 # @ attitude
-#: library/functions/customizer.php:496
+#: library/functions/customizer.php:407
 msgid "Scroll Left"
 msgstr ""
 
 # @ attitude
-#: library/functions/customizer.php:497
+#: library/functions/customizer.php:408
 msgid "Scroll Right"
 msgstr ""
 
 # @ attitude
-#: library/functions/customizer.php:498
+#: library/functions/customizer.php:409
 msgid "Blind X"
 msgstr ""
 
 # @ attitude
-#: library/functions/customizer.php:499
+#: library/functions/customizer.php:410
 msgid "Blind Y"
 msgstr ""
 
 # @ attitude
-#: library/functions/customizer.php:500
+#: library/functions/customizer.php:411
 msgid "Blind Z"
 msgstr ""
 
 # @ attitude
-#: library/functions/customizer.php:501
+#: library/functions/customizer.php:412
 msgid "Cover"
 msgstr ""
 
 # @ attitude
-#: library/functions/customizer.php:502
+#: library/functions/customizer.php:413
 msgid "Shuffle"
 msgstr ""
 
 # @ attitude
-#: library/functions/customizer.php:533
+#: library/functions/customizer.php:444
 msgid "Featured Post/ Page Slider Options"
 msgstr ""
 
 # @ attitude
-#: library/functions/customizer.php:545
+#: library/functions/customizer.php:456
 msgid "Exclude Slider Post"
 msgstr ""
 
 # @ attitude
-#: library/functions/customizer.php:561
+#: library/functions/customizer.php:472
 msgid " Featured Slider Post/Page #"
 msgstr ""
 
 # @ attitude
-#: library/functions/functions.php:340 library/functions/functions.php:354
+#: library/functions/functions.php:212 library/functions/functions.php:226
 msgid "Navigation"
 msgstr "Navigation"
 
 # @ attitude
-#: library/structure/content-extensions.php:289
-#: library/structure/content-extensions.php:893
-#: library/structure/content-extensions.php:1104
+#: library/structure/content-extensions.php:288
+#: library/structure/content-extensions.php:889
+#: library/structure/content-extensions.php:1100
 msgid "Pages:"
 msgstr "Seiten:"
 
 # @ attitude
-#: library/structure/content-extensions.php:483
+#: library/structure/content-extensions.php:481
 msgid ", "
 msgstr ", "
 
-#: library/structure/content-extensions.php:495
+#: library/structure/content-extensions.php:493
 #, php-format
 msgid "Klicke hier, um Dir alle Artikel mit dem Schlagwort %s anzusehen!"
 msgstr ""
 
 # @ attitude
-#: library/structure/content-extensions.php:710
-#: library/structure/content-extensions.php:823
-#: library/structure/content-extensions.php:935
-#: library/structure/content-extensions.php:971
+#: library/structure/content-extensions.php:707
+#: library/structure/content-extensions.php:819
+#: library/structure/content-extensions.php:931
+#: library/structure/content-extensions.php:967
 msgid "&laquo; Previous"
 msgstr "&laquo; Frühere Artikel"
 
 # @ attitude
-#: library/structure/content-extensions.php:711
-#: library/structure/content-extensions.php:824
-#: library/structure/content-extensions.php:936
-#: library/structure/content-extensions.php:972
+#: library/structure/content-extensions.php:708
+#: library/structure/content-extensions.php:820
+#: library/structure/content-extensions.php:932
+#: library/structure/content-extensions.php:968
 msgid "Next &raquo;"
 msgstr "Neuere Artikel &raquo;"
 
 # @ attitude
-#: library/structure/content-extensions.php:991
+#: library/structure/content-extensions.php:987
 msgid "&larr; Previous"
 msgstr "&larr; Vorheriger"
 
 # @ attitude
-#: library/structure/content-extensions.php:992
+#: library/structure/content-extensions.php:988
 msgid "Next &rarr;"
 msgstr "Nächster &rarr;"
 
 # @ attitude
-#: library/structure/content-extensions.php:1035
+#: library/structure/content-extensions.php:1031
 msgid "Pingback:"
 msgstr "Pingback:"
 
 # @ attitude
-#: library/structure/content-extensions.php:1035
+#: library/structure/content-extensions.php:1031
 msgid "(Edit)"
 msgstr "(bearbeiten)"
 
 # @ attitude
-#: library/structure/content-extensions.php:1050
+#: library/structure/content-extensions.php:1046
 msgid "Post author"
 msgstr "Beitrags Autor"
 
 # @ attitude
-#: library/structure/content-extensions.php:1056
+#: library/structure/content-extensions.php:1052
 #, php-format
 msgid "%1$s at %2$s"
-msgstr "%1$s auf %2$s"
+msgstr "%1$s um %2$s"
 
 # @ attitude
-#: library/structure/content-extensions.php:1062
+#: library/structure/content-extensions.php:1058
 msgid "Your comment is awaiting moderation."
 msgstr "Ihr Kommentar wartet auf Moderation."
 
 # @ attitude
-#: library/structure/content-extensions.php:1067
+#: library/structure/content-extensions.php:1063
 msgid "Edit"
 msgstr "Editiere"
 
 # @ attitude
-#: library/structure/content-extensions.php:1071
+#: library/structure/content-extensions.php:1067
 msgid "Reply <span>&darr;</span>"
 msgstr "Antworten <span>&darr;</span>"
 
 # @ attitude
-#: library/structure/content-extensions.php:1153
+#: library/structure/content-extensions.php:1149
 msgid "Error 404-Page NOT Found"
 msgstr "Error 404-Seite nicht gefunden"
 
 # @ attitude
-#: library/structure/content-extensions.php:1156
+#: library/structure/content-extensions.php:1152
 msgid "It seems we can't find what you're looking for."
 msgstr "Es scheint, dass wir nichts gefunden haben."
 
 # @ attitude
-#: library/structure/content-extensions.php:1157
+#: library/structure/content-extensions.php:1153
 msgid "This might be because:"
 msgstr "Dies könnte folgende Ursachen haben:"
 
 # @ attitude
-#: library/structure/content-extensions.php:1158
+#: library/structure/content-extensions.php:1154
 msgid ""
 "You have typed the web address incorrectly, or the page you were looking for "
 "may have been moved, updated or deleted."
@@ -1274,12 +1130,12 @@ msgstr ""
 "verschoben, aktualisiert oder gelöscht."
 
 # @ attitude
-#: library/structure/content-extensions.php:1159
+#: library/structure/content-extensions.php:1155
 msgid "Please try the following instead:"
 msgstr "Statt desen versuchen Sie bitte Folgendes:"
 
 # @ attitude
-#: library/structure/content-extensions.php:1160
+#: library/structure/content-extensions.php:1156
 msgid ""
 "Check for a mis-typed URL error, then press the refresh button on your "
 "browser."
@@ -1299,12 +1155,12 @@ msgid "Page %s"
 msgstr "Seite %s"
 
 # @ attitude
-#: library/structure/header-extensions.php:490
+#: library/structure/header-extensions.php:453
 msgid "Page NOT Found"
 msgstr "Seite NICHT gefunden"
 
 # @ attitude
-#: library/structure/header-extensions.php:493
+#: library/structure/header-extensions.php:456
 msgid "Search Results"
 msgstr "Suchresultate"
 
@@ -1456,6 +1312,114 @@ msgstr "Name:"
 #: library/widgets/attitude_widgets.php:451
 msgid "Byline:"
 msgstr "Name des Autors:"
+
+#~ msgid "Primary Menu"
+#~ msgstr "Hauptmenü"
+
+# @ attitude
+#~ msgid "Confused about something? See"
+#~ msgstr "Verwirrt über etwas? Siehe"
+
+# @ attitude
+#~ msgid "Theme Instructions"
+#~ msgstr "Theme Anleitung"
+
+# @ attitude
+#~ msgid "Support Forum"
+#~ msgstr "Support Forum"
+
+# @ attitude
+#~ msgid "View Demo"
+#~ msgstr "Siehe Demo"
+
+# @ attitude
+#~ msgid "Want to add bunch of additional features? Upgrade to Pro version!"
+#~ msgstr ""
+#~ "Möchten Sie ein Haufen von zusätzlichen Funktionen hinzufügen? "
+#~ "Aktualisieren Sie auf die Pro-Version!"
+
+# @ attitude
+#~ msgid "Upgrade to Pro"
+#~ msgstr "Upgrade auf Pro"
+
+# @ attitude
+#~ msgid "Donate"
+#~ msgstr "Spende"
+
+# @ attitude
+#~ msgid "Rate Attitude"
+#~ msgstr "Bewerte Attitude"
+
+# @ attitude
+#~ msgid "Webmaster Tools"
+#~ msgstr "Webmaster Werkzeuge"
+
+# @ attitude
+#~ msgid "Custom Background"
+#~ msgstr "Benutzerdefinierter Hintergrund"
+
+# @ attitude
+#~ msgid "Need to replace default background?"
+#~ msgstr "Möchten Sie den Standard Hintergrund ersetzen?"
+
+# @ attitude
+#~ msgid ""
+#~ "Note: The custom background change will be reflected in the background if "
+#~ "the site layout is set to be narrow layout instead of the wide layout."
+#~ msgstr ""
+#~ "Hinweis: Die benutzerdefinierte Hintergrunds-Änderung wird im Hintergrund "
+#~ "angezeigt, wenn das Layout der Seite auf das schmalen Layout anstelle des "
+#~ "breiten Layouts eingestellt ist."
+
+# @ attitude
+#~ msgid "Custom CSS"
+#~ msgstr "Benutzerdefiniertes CSS"
+
+# @ attitude
+#~ msgid "Enter your custom CSS styles."
+#~ msgstr "Tragen Sie Ihre benutzerdefinierte CSS-Stile ein."
+
+# @ attitude
+#~ msgid "This CSS will overwrite the CSS of style.css file."
+#~ msgstr "Dieses CSS überschreibt die CSS-Datei style.css."
+
+# @ attitude
+#~ msgid "CSS Tutorial from W3Schools."
+#~ msgstr "CSS Lernprogramm von W3Schools."
+
+# @ attitude
+#~ msgid "http://www.w3schools.com/css/default.asp"
+#~ msgstr "http://www.w3schools.com/css/default.asp"
+
+# @ attitude
+#~ msgid "Click Here to Read"
+#~ msgstr "Klicken Sie hier um zu lesen"
+
+# @ attitude
+#~ msgid "Analytics"
+#~ msgstr "Analytics"
+
+# @ attitude
+#~ msgid "Code to display on Header"
+#~ msgstr "Code um in dem Kopfbereich anzuzeigen"
+
+# @ attitude
+#~ msgid "Note: Enter your custom header script."
+#~ msgstr ""
+#~ "Hinweis: Geben Sie hier Ihre benutzerdefinierten Kopfzeilen Skript ein."
+
+# @ attitude
+#~ msgid "Code to display on Footer"
+#~ msgstr "Code um in dem Fussbereich anzuzeigen"
+
+# @ attitude
+#~ msgid "Note: Enter your custom footer script."
+#~ msgstr ""
+#~ "Hinweis: Geben Sie hier Ihre benutzerdefinierten Fußzeilen Skript ein."
+
+# @ attitude
+#~ msgid "WordPress"
+#~ msgstr "WordPress"
 
 # @ attitude
 #~ msgid "Attitude Theme Instructions"

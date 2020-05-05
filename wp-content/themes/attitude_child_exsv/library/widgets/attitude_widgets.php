@@ -454,4 +454,4 @@ class attitude_Widget_Testimonial extends WP_Widget {
 <?php
 	}
 }
- ?>
+

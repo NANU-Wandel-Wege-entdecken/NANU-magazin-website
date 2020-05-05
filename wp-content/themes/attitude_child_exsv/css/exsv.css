@@ -16,51 +16,52 @@ blockquote em, blockquote i, blockquote cite {
 /* Styles für Beitragsformate */
 #content .format-gallery h1, #content .format-gallery h2.entry-title {
     background: url(../images/icon-image.png) 0 35% no-repeat;
-    padding-top: 7px;
-    padding-left: 60px;
-    }
+}
 #content .format-video h1, #content .format-video h2.entry-title {
     background: url(../images/icon-video.png) 0 35% no-repeat;
-    padding-top: 7px;
-    padding-left: 60px;
-    }
+}
 #content .format-audio h1, #content .format-audio h2.entry-title {
     background: url(../images/icon-audio.png) 0 35% no-repeat;
-    padding-top: 7px;
-    padding-left: 60px;
-    }
+}
 #content .format-standard h1, #content .format-standard h2.entry-title {
     background: url(../images/icon-standard.png) 0 35% no-repeat;
-    padding-top: 7px;
-    padding-left: 60px;
-    }
+}
 #content .format-link h1, #content .format-link h2.entry-title {
     background: url(../images/icon-sponsored.png) 0 35% no-repeat;
+}
+#content .format-gallery h1, #content .format-gallery h2.entry-title,
+#content .format-video h1, #content .format-video h2.entry-title,
+#content .format-audio h1, #content .format-audio h2.entry-title,
+#content .format-standard h1, #content .format-standard h2.entry-title,
+#content .format-link h1, #content .format-link h2.entry-title {
     padding-top: 7px;
-    padding-left: 60px;
-    }
+    background-size: 40px;
+    padding-left: 55px;
+    background-position: 4px center;
+    margin-top: 5px;
+}
 #content .format-link .adsingle {
     visibility: hidden;
 }
 
 li.postformat-gallery a.wpp-post-title {
-    background: url(../images/icon-image.png) 0 20% no-repeat;
+    background: url(../images/icon-image.png) 0 50% no-repeat;
     padding-left: 60px;
     }
 li.postformat-video a.wpp-post-title {
-    background: url(../images/icon-video.png) 0 20% no-repeat;
+    background: url(../images/icon-video.png) 0 50% no-repeat;
     padding-left: 60px;
     }
 li.postformat-audio a.wpp-post-title {
-    background: url(../images/icon-audio.png) 0 20% no-repeat;
+    background: url(../images/icon-audio.png) 0 50% no-repeat;
     padding-left: 60px;
     }
 li.postformat- a.wpp-post-title {
-    background: url(../images/icon-standard.png) 0 20% no-repeat;
+    background: url(../images/icon-standard.png) 0 50% no-repeat;
     padding-left: 60px;
     }
 li.postformat-link a.wpp-post-title {
-    background: url(../images/icon-sponsored.png) 0 20% no-repeat;
+    background: url(../images/icon-sponsored.png) 0 50% no-repeat;
     padding-left: 60px;
     }
 
@@ -98,9 +99,10 @@ li.postformat-link a.wpp-post-title {
 /* Blog-Vorschau auf Startseite */
 
 #content .post {
-    border-top: 1px solid #E3B0E9;
     padding-bottom: 10px;
     padding-top: 10px;
+    margin-bottom: 40px;
+    border-top: none;
 }
 
 .bns-featured-category h2 {
@@ -146,7 +148,7 @@ li.postformat-link a.wpp-post-title {
     width: 100%;
     }
 #wpp-2 ul {
-    margin: 0;
+    margin: 0 -2.5%; /* compensate li margins */
     display: flex;
     flex-wrap: wrap;
 }
@@ -167,7 +169,8 @@ li.postformat-link a.wpp-post-title {
 }
 .wpp-post-title {
     color: #276e37;
-    display: block;
+    display: flex;
+    align-items: center;
     font: 23px/30px "Raleway",sans-serif;
     min-height: 70px;
     margin-top: 10px;
@@ -557,7 +560,27 @@ input#em_wp-submit {
 /* All Tablet Portrait size smaller than standard 1079 (devices and browsers) */
 @media only screen and (max-width: 1078px) {
     li.postformat- a.wpp-post-title {
-    background: url(../images/icon-standard.png) 0 30% no-repeat;
+    background: url(../images/icon-standard.png) 0 50% no-repeat;
+    padding-left: 45px;
+    background-size: 38px;
+    }
+    li.postformat-gallery a.wpp-post-title {
+    background: url(../images/icon-image.png) 0 50% no-repeat;
+    padding-left: 45px;
+    background-size: 38px;
+    }
+    li.postformat-video a.wpp-post-title {
+    background: url(../images/icon-video.png) 0 50% no-repeat;
+    padding-left: 45px;
+    background-size: 38px;
+    }
+    li.postformat-audio a.wpp-post-title {
+    background: url(../images/icon-audio.png) 0 50% no-repeat;
+    padding-left: 45px;
+    background-size: 38px;
+    }
+    li.postformat-link a.wpp-post-title {
+    background: url(../images/icon-sponsored.png) 0 50% no-repeat;
     padding-left: 45px;
     background-size: 38px;
     }
@@ -577,6 +600,22 @@ input#em_wp-submit {
     padding-left: 60px;
     background-size: 52px;
     }
+    li.postformat-gallery a.wpp-post-title {
+    background-size: 52px;
+    padding-left: 60px;
+    }
+    li.postformat-video a.wpp-post-title {
+    background-size: 52px;
+    padding-left: 60px;
+    }
+    li.postformat-audio a.wpp-post-title {
+    background-size: 52px;
+    padding-left: 60px;
+    }
+    li.postformat-link a.wpp-post-title {
+    background-size: 52px;
+    padding-left: 60px;
+    }
     .wpp-post-title {
     font: 23px/30px "Raleway",sans-serif;
     min-height: 90px;
@@ -586,6 +625,22 @@ input#em_wp-submit {
 /* All Mobile size smaller than standard 320 (devices and browsers) */
 @media only screen and (max-width: 479px) {
     li.postformat- a.wpp-post-title {
+    padding-left: 42px;
+    background-size: 36px;
+    }
+    li.postformat-gallery a.wpp-post-title {
+    padding-left: 42px;
+    background-size: 36px;
+    }
+    li.postformat-video a.wpp-post-title {
+    padding-left: 42px;
+    background-size: 36px;
+    }
+    li.postformat-audio a.wpp-post-title {
+    padding-left: 42px;
+    background-size: 36px;
+    }
+    li.postformat-link a.wpp-post-title {
     padding-left: 42px;
     background-size: 36px;
     }

@@ -221,24 +221,6 @@ function attitude_customize_register($wp_customize){
 			'no-sidebar-one-column'	=> __('No Sidebar, One Column','attitude'),
 		),
 	));
-	/********************Custom Css ******************************************/
-	$wp_customize->add_section( 'attitude_custom_css', array(
-		'title'					=> __('Custom CSS', 'attitude'),
-		'description'			=> __('This CSS will overwrite the CSS of style.css file.','attitude'),
-		'priority'				=> 250,
-		'panel'					=>'attitude_design_options_panel'
-	));
-	$wp_customize->add_setting( 'attitude_theme_options[custom_css]', array(
-		'default'				=> '',
-		'type' 					=> 'option',
-		'capability' 			=> 'manage_options',
-		'sanitize_callback'	=> 'wp_filter_nohtml_kses'
-	));
-	$wp_customize->add_control( 'custom_css', array(
-		'section'				=> 'attitude_custom_css',
-				'settings'				=> 'attitude_theme_options[custom_css]',
-				'type'					=> 'textarea'
-	));
 	/******************** Advanced Options ******************************************/
 	/******************** Home Slogan Options ******************************************/
 	$wp_customize->add_section('home_slogan_options', array(
@@ -271,8 +253,8 @@ function attitude_customize_register($wp_customize){
 		'type'					=> 'radio',
 		'checked'				=> 'checked',
 		'choices'				=> array(
-			'below-slider'					=> __('Below Slider','attitude'),
-			'above-slider'					=> __('Above Slider','attitude'),
+			'below-slider'	=> __('Below Slider','attitude'),
+			'above-slider'	=> __('Above Slider','attitude'),
 		),
 	));
 	$wp_customize->add_setting( 'attitude_theme_options[home_slogan1]', array(
@@ -321,7 +303,7 @@ function attitude_customize_register($wp_customize){
 		'capability' 				=> 'manage_options'
 	));
 	$wp_customize->add_control('redirect_button_link', array(
-		'label'						=> __('Redirect Button Link', 'attitude'),
+		'label'				=> __('Redirect Button Link', 'attitude'),
 		'description'			=> __('Link this button to show your special work, portfolio','attitude'),
 		'section'					=> 'home_slogan_options',
 		'settings'					=> 'attitude_theme_options[redirect_button_link]',
@@ -544,37 +526,7 @@ function attitude_customize_register($wp_customize){
 			$i++;
 		}
 	/********************************************************************************/
-	/******************** Webmaster Tools ******************************************/
-	$wp_customize->add_section('webmaster_analytics_tools', array(
-		'title'					=> __('Webmaster Tools', 'attitude'),
-		'priority'				=> 600,
-	));
-	$wp_customize->add_setting( 'attitude_theme_options[analytic_header]', array(
-		'default'				=> '',
-		'type' 					=> 'option',
-		'capability' 			=> 'manage_options',
-		'sanitize_callback'	=> 'esc_html'
-	));
-	$wp_customize->add_control( 'analytic_header', array(
-		'label'					=> __('Code to display on Header','attitude'),
-		'description'			=> __('Note: Enter your custom header script.','attitude'),
-		'section'				=> 'webmaster_analytics_tools',
-		'settings'				=> 'attitude_theme_options[analytic_header]',
-		'type'					=> 'textarea'
-	));
-	$wp_customize->add_setting( 'attitude_theme_options[analytic_footer]', array(
-		'default'				=> '',
-		'type' 					=> 'option',
-		'capability' 			=> 'manage_options',
-		'sanitize_callback'	=> 'esc_html'
-	));
-	$wp_customize->add_control( 'analytic_footer', array(
-		'label'					=> __('Code to display on Footer','attitude'),
-		'description'			=> __('Note: Enter your custom footer script.','attitude'),
-		'section'				=> 'webmaster_analytics_tools',
-		'settings'				=> 'attitude_theme_options[analytic_footer]',
-		'type'					=> 'textarea'
-	));
+
 
 }
 /********************Sanitize the values ******************************************/
