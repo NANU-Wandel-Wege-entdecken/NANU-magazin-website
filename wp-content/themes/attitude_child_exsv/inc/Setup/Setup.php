@@ -62,7 +62,7 @@ class Setup
         add_image_size( 'featured-medium', 363, 363, true );
         add_image_size( 'slider-narrow', 1240, 460, true );
         add_image_size( 'large', 642, 9999 );
-        add_image_size( 'gallery', 474, 342, true );
+        add_image_size( 'gallery', 558, 403, true );
         add_image_size( 'icon', 80, 80, true );
         add_image_size( 'mobile', 280, 200, true);
         add_image_size( 'yarpp-thumbnail', 300, 200, true );
