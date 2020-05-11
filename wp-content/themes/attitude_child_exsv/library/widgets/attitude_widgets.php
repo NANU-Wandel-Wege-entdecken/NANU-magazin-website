@@ -79,30 +79,6 @@ function attitude_widgets_init() {
 		'after_title'   	=> '</menu>'
 	) );
     
-    // registriere events sidebar - michael
-	register_sidebar( array(
-		'name' 				=> __( 'Events Sidebar', 'attitude' ),
-		'id' 					=> 'attitude_events_sidebar',
-		'description'   	=> __( 'Sidebar neben Veranstaltungen.', 'attitude' ),
-		'before_widget' 	=> '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  	=> '</aside>',
-		'before_title'  	=> '<menu>',
-		'after_title'   	=> '</menu>'
-	) );
-    
-    add_action('get_header','cd_change_genesis_sidebar');
-function cd_change_genesis_sidebar() {
-    if ( is_singular('event')) {
-        remove_action( 'attitude_right_sidebar', 'attitude_display_right_sidebar', 10 );
-        add_action( 'attitude_right_sidebar', 'cd_do_sidebar' );
-    }
-}
-
-//Function to output my custom sidebar
-function cd_do_sidebar() {
-    if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar( 'attitude_events_sidebar' ) ):
-	endif;
-}
     
 	// Registering widgets
 	register_widget( "attitude_custom_tag_widget" );
