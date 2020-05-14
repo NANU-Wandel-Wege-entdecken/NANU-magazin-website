@@ -6,5 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'WordPlate\\Acf\\' => array($vendorDir . '/wordplate/acf/src'),
     'Nanu\\' => array($baseDir . '/inc'),
 );

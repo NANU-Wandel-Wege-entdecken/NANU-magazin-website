@@ -27,7 +27,7 @@ final class Init
 			Admin\CleanUp::class,
 			Admin\EditFlow::class,
 			Setup\Enqueue::class,
-			//Setup\Feed::class,
+			Setup\Feed::class,
 			Setup\Language::class,
 			Setup\Search::class,
 			Setup\Attachments::class,
@@ -37,7 +37,8 @@ final class Init
 			Plugins\PopularPosts::class,
 			Structure\PostTypeAffiliateProduct::class,
 			Structure\UserProfile::class,
-			Structure\Subtitle::class
+			Structure\Subtitle::class,
+			Structure\CategoryLeadAuthor::class
 		];
 	}
 

@@ -7,10 +7,15 @@ namespace Composer\Autoload;
 class ComposerStaticInit721b4d9fead4dc46f7281940d3abad31
 {
     public static $files = array (
+        '413614dbc06bade22a685c0ebe14027c' => __DIR__ . '/..' . '/wordplate/acf/src/helpers.php',
         '9c95751f608974ecf91956497ba108e9' => __DIR__ . '/../..' . '/inc/Helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'W' => 
+        array (
+            'WordPlate\\Acf\\' => 14,
+        ),
         'N' => 
         array (
             'Nanu\\' => 5,
@@ -18,6 +23,10 @@ class ComposerStaticInit721b4d9fead4dc46f7281940d3abad31
     );
 
     public static $prefixDirsPsr4 = array (
+        'WordPlate\\Acf\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/wordplate/acf/src',
+        ),
         'Nanu\\' => 
         array (
             0 => __DIR__ . '/../..' . '/inc',

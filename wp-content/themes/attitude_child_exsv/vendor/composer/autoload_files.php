@@ -6,5 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    '413614dbc06bade22a685c0ebe14027c' => $vendorDir . '/wordplate/acf/src/helpers.php',
     '9c95751f608974ecf91956497ba108e9' => $baseDir . '/inc/Helpers.php',
 );
