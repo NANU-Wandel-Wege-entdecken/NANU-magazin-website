@@ -251,7 +251,18 @@ function attitude_headerdetails() {
             // Display optional category description
              if ( category_description() ) : ?>
             <div class="beschreib"><?php echo category_description(); ?></div>
-            <?php endif;
+            <?php endif; ?>
+			<?php if ( get_category_lead_author() ) : 
+				$category_lead_author = get_category_lead_author(); ?>
+				<div class="category-lead-author">
+					<h3>Redaktionelle Verantwortung für <?= single_cat_title( '', false ) ?></h3>
+					<a href="<?php echo get_author_posts_url( $category_lead_author->ID ); ?>">
+						<div><?php echo get_avatar( $category_lead_author->ID, 100 ); ?></div>
+						<div><?php the_author_meta( 'user_firstname', $category_lead_author->ID ); ?> <?php the_author_meta( 'user_lastname', $category_lead_author->ID ); ?></div>
+					</a>
+				</div>
+			<?php
+				endif;
 	   	}
 		}
 		if( 'below-slider' == $options[ 'slogan_position' ] && ( is_front_page() ) )

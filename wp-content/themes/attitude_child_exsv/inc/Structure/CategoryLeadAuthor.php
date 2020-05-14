@@ -38,5 +38,20 @@ class CategoryLeadAuthor
         ]);
     }
 
+    public static function get_category_lead_author( $term = false ) {
+
+        if ( $term ) {
+            $term = get_term( $term );
+        } else if ( is_category() ) {
+            $term = get_queried_object();
+        } else {
+            return '';
+        }
+
+        $category_lead_author = get_field( 'category_lead_author', $term );
+        return is_wp_error( $category_lead_author ) ? '' : $category_lead_author;
+    }
+    
 }
+
 

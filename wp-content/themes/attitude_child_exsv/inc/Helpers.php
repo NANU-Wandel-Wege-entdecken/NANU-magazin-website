@@ -135,3 +135,7 @@ if ( ! function_exists('the_subtitle') ) {
 		return Nanu\Structure\Subtitle::the_subtitle();
 	}
 }
+
+function get_category_lead_author( $term = false ) {
+	return Nanu\Structure\CategoryLeadAuthor::get_category_lead_author();
+}
