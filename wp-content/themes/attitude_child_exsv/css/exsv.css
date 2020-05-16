@@ -66,9 +66,18 @@ li.postformat-link a.wpp-post-title {
     }
 
 
-/* Share-Buttons */
+/* Share-Buttons und click to tweet block */
 .shariff .shariff-button a:hover, .shariff .shariff-button a:active {
     text-shadow: 0 0 0 transparent !important;
+}
+.ub_click_tweet {
+    padding-top: 0;
+}
+.ub_click_tweet i {
+    top: 5px;
+}
+.ub_click_tweet a {
+    font-size: 80%;
 }
 
 /* Hinweis "Artikel vom" */
