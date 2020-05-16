@@ -25,7 +25,7 @@ class Enqueue
 		wp_register_style('exsv_style-child', get_stylesheet_directory_uri() . '/style-child.css', [ 'attitude' ], '1.19');
 		wp_enqueue_style( 'exsv_style-child' );
 
-		wp_register_style('exsv_style', get_stylesheet_directory_uri() . '/css/exsv.css', [ 'exsv_style-child' ], '1.18');
+		wp_register_style('exsv_style', get_stylesheet_directory_uri() . '/css/exsv.css', [ 'exsv_style-child' ], '1.19');
 		wp_enqueue_style( 'exsv_style' );
 
 		wp_enqueue_script('steadyhq', '//steadyhq.com/widget_loader/f0259c6c-f500-4eb7-bb60-a8261f2b7ec2', ['jquery'], null, true);
