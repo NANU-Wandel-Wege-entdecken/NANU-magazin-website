@@ -233,6 +233,7 @@ input[type="text"],
 input[type="email"],
 input[type="search"],
 input[type="password"],
+input[type="url"],
 textarea {
     -moz-appearance: none !important;
     -webkit-appearance: none !important;
@@ -241,6 +242,7 @@ textarea {
 input[type="text"],
 input[type="email"],
 input[type="password"],
+input[type="url"],
 textarea {
     padding: 10px;
     border: 1px solid #eaeaea;
@@ -256,6 +258,7 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="search"]:focus,
 input[type="password"]:focus,
+input[type="url"]:focus,
 textarea:focus {
     border: 1px solid #ccc;
 }
@@ -1367,7 +1370,6 @@ a.comment-reply-link:hover {
     margin-bottom: 1.714285714rem;
 }
 #respond form label {
-    display: block;
     line-height: 1.714285714;
 }
 #respond form input[type="text"],

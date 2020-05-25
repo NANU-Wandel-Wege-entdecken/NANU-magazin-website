@@ -792,6 +792,7 @@ a.comment-reply-link:active {
 #commentform input[type="text"],
 #commentform input[type="email"],
 #commentform input[type="password"],
+#commentform input[type="url"],
 #commentform textarea {
 	margin: 0 0 8px;
 }
