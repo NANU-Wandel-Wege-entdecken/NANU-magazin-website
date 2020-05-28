@@ -22,7 +22,7 @@ class Enqueue
 		wp_register_style('attitude', get_stylesheet_directory_uri() .'/style.css', false, '1.5');
 		wp_enqueue_style('attitude');
 
-		wp_register_style('exsv_style-child', get_stylesheet_directory_uri() . '/style-child.css', [ 'attitude' ], '1.20');
+		wp_register_style('exsv_style-child', get_stylesheet_directory_uri() . '/style-child.css', [ 'attitude' ], '1.21');
 		wp_enqueue_style( 'exsv_style-child' );
 
 		wp_register_style('exsv_style', get_stylesheet_directory_uri() . '/css/exsv.css', [ 'exsv_style-child' ], '1.19');
