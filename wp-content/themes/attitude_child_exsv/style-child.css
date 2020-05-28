@@ -1174,6 +1174,10 @@ div.textwidget a.readmore {
     .mittelspalte {
     width: 420px;
     }
+    .entry-content .wp-block-image figure {
+        float: none;
+        margin: 2em auto;
+    }
 /* Slogan */
 	.slogan-wrap .slogan {
 		width: 100%;
@@ -1210,6 +1214,10 @@ div.textwidget a.readmore {
     }
     .mittelspalte {
     width: 280px;
+    }
+    .entry-content .wp-block-image figure {
+        float: none;
+        margin: 2em auto;
     }
 /* Slogan */
 	.slogan-wrap .slogan {
