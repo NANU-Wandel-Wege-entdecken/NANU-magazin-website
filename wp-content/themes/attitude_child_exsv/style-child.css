@@ -189,6 +189,14 @@ input.s {
     border-bottom: 1px solid #E3B0E9;
     text-align: center;
 }
+.wp-block-image figcaption {
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 85%;
+    color: #555;
+    background-color: #f8f2e9;
+    padding: 0.5em 0.4em;
+}
 .entry-meta-bar {
     border-bottom: none;
     border-top: 1px solid #E3B0E9;
