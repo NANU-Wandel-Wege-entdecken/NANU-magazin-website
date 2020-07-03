@@ -2205,6 +2205,10 @@ ul.default-wp-page li a:active {
    .container {
        width: 95%;
    }
+   .container {
+       padding-left: 10px;
+       padding-right: 10px;
+   }
 }
 
 /* =Retina Ready Structure
