@@ -28,7 +28,12 @@ class Enqueue
 		wp_register_style('exsv_style', get_stylesheet_directory_uri() . '/css/exsv.css', [ 'exsv_style-child' ], '1.19');
 		wp_enqueue_style( 'exsv_style' );
 
+		wp_register_style('jquerymodal_style', '//cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css', [ 'exsv_style-child' ], '0.9.1');
+		wp_enqueue_style( 'jquerymodal_style' );
+
 		wp_enqueue_script('steadyhq', '//steadyhq.com/widget_loader/f0259c6c-f500-4eb7-bb60-a8261f2b7ec2', ['jquery'], null, true);
+
+		wp_enqueue_script('jquerymodal', '//cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js', ['jquery'], null, true);
 
 		// Extra
 		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

@@ -80,6 +80,14 @@ li.postformat-link a.wpp-post-title {
     font-size: 80%;
 }
 
+/* book-modal */
+#buch-modal {
+    max-width: 750px;
+    }
+#buch-modal em {
+    font-size: 80%;
+    }
+
 /* Hinweis "Artikel vom" */
 #zeitangabe {
     font-weight: bold;
