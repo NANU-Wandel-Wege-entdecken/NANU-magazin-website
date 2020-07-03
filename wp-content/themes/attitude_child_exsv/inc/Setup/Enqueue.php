@@ -19,13 +19,13 @@ class Enqueue
 	public function enqueue_scripts()
 	{
 
-		wp_register_style('attitude', get_stylesheet_directory_uri() .'/style.css', false, '1.5');
+		wp_register_style('attitude', get_stylesheet_directory_uri() .'/style.css', false, '1.6');
 		wp_enqueue_style('attitude');
 
 		wp_register_style('exsv_style-child', get_stylesheet_directory_uri() . '/style-child.css', [ 'attitude' ], '1.21');
 		wp_enqueue_style( 'exsv_style-child' );
 
-		wp_register_style('exsv_style', get_stylesheet_directory_uri() . '/css/exsv.css', [ 'exsv_style-child' ], '1.20');
+		wp_register_style('exsv_style', get_stylesheet_directory_uri() . '/css/exsv.css', [ 'exsv_style-child' ], '1.21');
 		wp_enqueue_style( 'exsv_style' );
 
 		wp_register_style('jquerymodal_style', '//cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css', [ 'exsv_style-child' ], '0.9.1');

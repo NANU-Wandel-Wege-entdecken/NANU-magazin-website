@@ -84,8 +84,16 @@ li.postformat-link a.wpp-post-title {
 #buch-modal {
     max-width: 750px;
     }
+#buch-modal .wp-block-columns {
+    margin-bottom: 0;
+}
 #buch-modal em {
     font-size: 80%;
+    }
+#buch-cta {
+    padding: 2em;
+    margin: 2em 1em 8em;
+    border: 1px solid #d9cab3;
     }
 
 /* Hinweis "Artikel vom" */
@@ -606,9 +614,16 @@ input#em_wp-submit {
     min-height: 85px;
     }
 }
-/* All Mobile Portrait size smaller than 768 (devices and browsers) */
-@media only screen and (max-width: 767px) {
-
+/* All Mobile Portrait size smaller than 785 (devices and browsers) */
+@media only screen and (max-width: 785px) {
+    #buch-modal .wp-block-column {
+        flex-basis: 100% !important;
+        }
+    #buch-modal .wp-block-image img {
+        }
+    #buch-modal h3 {
+        padding-top: 0.5em;
+        }
 }
 
 /* All Mobile landscape size and All Mini Tablet Portrait size smaller than standard 768 and larger than 480 (devices and browsers) */
@@ -637,6 +652,9 @@ input#em_wp-submit {
     font: 23px/30px "Raleway",sans-serif;
     min-height: 90px;
     }
+    #buch-cta {
+        margin: 2em 0 8em;
+        }
 }
 
 /* All Mobile size smaller than standard 320 (devices and browsers) */
@@ -668,4 +686,6 @@ input#em_wp-submit {
     .affiliate-box {
       margin-left: 0px !important;
     }
+    #buch-cta {
+        padding: 2em 1em;
 }
