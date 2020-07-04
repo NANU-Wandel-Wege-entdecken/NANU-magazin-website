@@ -81,6 +81,9 @@ li.postformat-link a.wpp-post-title {
 }
 
 /* book-modal */
+body .blocker {
+    z-index: 9999999999 !important;
+}
 #buch-modal {
     max-width: 750px;
     }
