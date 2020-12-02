@@ -73,7 +73,7 @@
                <div class="clear"></div>
            </div>
 
-    <h2>Die neuesten Artikel von <?php echo $curauth->user_firstname; ?> <?php echo $curauth->user_lastname; ?> auf dem Blog des Experiment Selbstversorgung:</h2>
+    <h2>Die neuesten Artikel von <?php echo $curauth->user_firstname; ?> <?php echo $curauth->user_lastname; ?> im NANU Magazin:</h2>
 
 <?php	global $post;
 
