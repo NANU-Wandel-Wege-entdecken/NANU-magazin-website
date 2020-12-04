@@ -189,13 +189,14 @@ input.s {
     border-bottom: 1px solid #E3B0E9;
     text-align: center;
 }
-.wp-block-image figcaption {
+.wp-block-image figcaption, .blocks-gallery-caption {
     margin-top: 0;
-    margin-bottom: 1em;
+    margin-bottom: 4em;
     font-size: 85%;
     color: #555;
     background-color: #f8f2e9;
     padding: 0.5em 0.4em;
+    width: 100%;
 }
 .entry-meta-bar {
     border-bottom: none;
