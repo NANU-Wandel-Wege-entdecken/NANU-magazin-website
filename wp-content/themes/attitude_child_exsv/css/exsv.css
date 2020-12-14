@@ -99,6 +99,19 @@ body .blocker {
     border: 1px solid #d9cab3;
     }
 
+/* fundraising */
+.energieausgleich {
+    margin: 3rem auto;
+    width: 100%;
+    background: #f8f2e9;
+    padding: 2rem;
+    border-top: 1px solid #E3B0E9;
+    border-bottom: 1px solid #E3B0E9;
+    }
+.energieausgleich span {
+    font-size: x-large;
+    }
+
 /* Hinweis "Artikel vom" */
 #zeitangabe {
     font-weight: bold;
