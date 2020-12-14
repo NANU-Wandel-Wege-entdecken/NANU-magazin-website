@@ -100,3 +100,40 @@ function attitude_load_files() {
  * Hooking some functions of functions.php file to this action hook.
  */
 do_action( 'attitude_init' );
+
+
+/**
+ * inject fundraising box
+*/
+add_filter( 'the_content', 'prefix_insert_post_ads' );
+
+function prefix_insert_post_ads( $content ) {
+	$ad_code = '<div class="energieausgleich">
+		<p><span>Jetzt NANU-Mitglied werden!</span></p>
+		<p>Du unterstütz damit dieses auf positive Ansätze ausgerichtete Projekt einer Gruppe von Akteur*innen des Wandels, die es lieben, Artikel, Podcasts und Videos rund um Wandel-Themen zu produzieren. Lasst uns gemeinsam ein Sprachrohr aufbauen für Ideen, Projekte und Menschen, die den Wandel vorwärtsbringen.</p>
+		<p><a class="readmore" href="https://steadyhq.com/de/nanu" target="_blank">Mehr erfahren</a></p>
+	</div>';
+
+    if ( is_single() && ! is_admin() ) {
+        return prefix_insert_after_paragraph( $ad_code, 11, $content );
+    }
+
+    return $content;
+}
+
+function prefix_insert_after_paragraph( $insertion, $paragraph_id, $content ) {
+    $closing_p = '</p>';
+    $paragraphs = explode( $closing_p, $content );
+    foreach ($paragraphs as $index => $paragraph) {
+
+        if ( trim( $paragraph ) ) {
+            $paragraphs[$index] .= $closing_p;
+        }
+
+        if ( $paragraph_id == $index + 1 ) {
+            $paragraphs[$index] .= $insertion;
+        }
+    }
+
+    return implode( '', $paragraphs );
+}
