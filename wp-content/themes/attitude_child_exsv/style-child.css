@@ -108,6 +108,16 @@ img.lazyloaded {
    opacity: 1;
 }
 
+/* Gutenberg Text Colors */
+.has-pink-color {
+	color: #CF89B4;
+}
+
+/* Gutenberg Background Colors */
+.has-pink-background-color {
+	background-color: #CF89B4;
+}
+
 /* Header */
 #branding {
     margin-top: 10px;
