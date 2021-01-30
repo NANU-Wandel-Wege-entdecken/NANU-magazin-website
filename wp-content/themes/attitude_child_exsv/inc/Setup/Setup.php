@@ -92,24 +92,23 @@ class Setup
         $sizes['rich-snippet']    =  __( 'für rich snippets', 'attitude' );
         return $sizes;
     }
+
+    /**
+     * Registers support for Gutenberg features.
+     */
+    public function theme_slug_gutenberg_support() {
+
+        // Add theme support for custom color palette.
+        add_theme_support( 'editor-color-palette', array(
+            array(
+                'name'  => esc_html__( 'Pink', 'theme-slug' ),
+                'slug'  => 'pink',
+                'color' => '#CF89B4',
+            ),
+
+        ) );
+
+        // Disable theme support for custom colors.
+        add_theme_support( 'disable-custom-colors' );
+    }
 }
-
-/**
- * Registers support for Gutenberg features.
- */
-function theme_slug_gutenberg_support() {
-
-	// Add theme support for custom color palette.
-	add_theme_support( 'editor-color-palette', array(
-		array(
-			'name'  => esc_html__( 'Pink', 'theme-slug' ),
-			'slug'  => 'pink',
-			'color' => '#CF89B4',
-		),
-
-	) );
-
-	// Disable theme support for custom colors.
-	add_theme_support( 'disable-custom-colors' );
-}
-add_action( 'after_setup_theme', 'theme_slug_gutenberg_support' );
