@@ -19,7 +19,7 @@ class Enqueue
 	public function enqueue_scripts()
 	{
 
-		wp_register_style('attitude', get_stylesheet_directory_uri() .'/style.css', false, '1.6');
+		wp_register_style('attitude', get_stylesheet_directory_uri() .'/style.css', false, '1.7');
 		wp_enqueue_style('attitude');
 
 		wp_register_style('exsv_style-child', get_stylesheet_directory_uri() . '/style-child.css', [ 'attitude' ], '1.24');
