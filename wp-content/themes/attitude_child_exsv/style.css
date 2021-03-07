@@ -173,7 +173,7 @@ ins {
 
 /* Superscript and Subscript */
 sup, sub {
-    font-size: 10px;
+    font-size: 12px;
     height: 0;
     line-height: 1;
     position: relative;
