@@ -75,24 +75,11 @@ function attitude_display_footer_sidebar() {
 		<div class="widget-wrap">
 			<div class="container">
 				<div class="widget-area clearfix">
-					
-					<?php if ( is_front_page() ) { ?> 
-						<div class="adfooter">
-							<ins data-revive-zoneid="5" data-revive-target="_blank" data-revive-ct0="{clickurl_enc}" data-revive-block="1" data-revive-id="a476a6839abba5db5c2dc4f89714f5bc"></ins>
-							<script async src="//img.digitalfellow.eu/www/delivery/asyncjs.php"></script>
-						</div>
-					<?php } if ( ! is_front_page() ) { ?>
-						<div class="adfooter">
-							<ins data-revive-zoneid="6" data-revive-target="_blank" data-revive-ct0="{clickurl_enc}" data-revive-block="1" data-revive-id="a476a6839abba5db5c2dc4f89714f5bc"></ins>
-							<script async src="//img.digitalfellow.eu/www/delivery/asyncjs.php"></script>
-						</div>                        
-					<?php } ; ?>                    
-					
-				<?php
-					// Calling the footer sidebar if it exists.
-					if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar( 'attitude_footer_sidebar' ) ):
-					endif;
-				?>
+					<?php
+						// Calling the footer sidebar if it exists.
+						if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar( 'attitude_footer_sidebar' ) ):
+						endif;
+					?>
 				</div><!-- .widget-area -->
 			</div><!-- .container -->
 		</div><!-- .widget-wrap -->
