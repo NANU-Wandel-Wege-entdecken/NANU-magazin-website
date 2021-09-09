@@ -1012,24 +1012,8 @@ aside#em_widget-2 li {
     margin-bottom: 8px;
     }
 
-/* Ads */
-.adfooter, .adsingle {
-    text-align: center;
-    width: 100%;
-	}
-.adsingle {
-    margin: 50px auto 30px;
-    }
-.adfooter a, .adsingle a {
-    background: url("/wp-content/uploads/images/anzeige_single.png") no-repeat scroll 0 5px rgba(0, 0, 0, 0);
-    padding-bottom: 40px;
-    padding-left: 13px;
-	}
-#custom_html-5, .widget_adrotate_widgets {
-    margin: 0 auto 40px;
-    max-width: 735px;
-	}
-#custom_html-3 menu, #custom_html-4 menu, #custom_html-5 menu, .widget_adrotate_widgets menu, .simple_ads_manager_widget menu, #text-18 menu, #text-19 menu, #text-21 menu, span menu {
+
+#custom_html-3 menu, #custom_html-4 menu, #custom_html-5 menu, #text-18 menu, #text-19 menu, #text-21 menu, span menu {
 	font-size: 13px;
     max-width: 728px;
     margin: 0 0 -7px 2px;
@@ -1043,7 +1027,7 @@ span menu {
 span p.small {
 	margin-bottom: 7px;
 	}
-#custom_html-3 img, #custom_html-4 img, #custom_html-5 img, .widget_adrotate_widgets img, .adfooter a img, .adsingle a img  {
+#custom_html-3 img, #custom_html-4 img, #custom_html-5 img  {
 	border: 1px solid #BBBBBB;
 	}
 
